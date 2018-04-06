@@ -7,9 +7,9 @@ sitemap:
     lastmod: 2017-11-02
     changefreq: weekly
 ---
-## About The Planetarium
+## Planetarium Stats
 
-- Seats: 55
+- Seats: 58
 
 - Analog Projection System: Spitz 512
 - Installed: 1973-74
