@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: page
 title: CCNY Planetarium Posts
 description: What's going on in our dome?
 sitemap:

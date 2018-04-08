@@ -1,13 +1,40 @@
-<!-- Footer -->
-<div id="footer">
-  
-  <!-- Copyright -->
-  <ul class="copyright">
-    {% if site.title or site.author %}
-      <li>&copy; {{- site.title | default: site.author -}}. All rights reserved.</li>
-    {% endif %}
-    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-    <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
-  </ul>
-  
+
+<div class="py-5 border-top">
+  <div class="container">
+
+    <p class="h5 mb-3">{{ site.title | escape }}</p>
+
+    <div class="row">
+
+      <div class="col-sm">
+        <ul class="list-unstyled">
+          <li>
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+          </li>
+          {%- if site.facebook_username -%}
+          <li><a href="https://facebook.com/{{site.facebook_username}}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+          {%- endif -%}
+          {%- if site.email -%}
+            <li>
+              <a href="mailto:{{ site.email }}">
+                {{ site.email }}
+              </a>
+            </li>
+          {%- endif -%}
+        </ul>
+      </div>
+
+
+      <div class="col-sm text-right">
+        <p>{{- site.description | escape -}}</p>
+
+      </div>
+
+    </div>
+
+  </div>
 </div>
