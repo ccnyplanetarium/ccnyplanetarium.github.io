@@ -14,3 +14,5 @@ sitemap:
 - Analog Projection System: Spitz 512A
 - Dome: 30 ft diameter
 - Installed: 1973-74
+
+- more to come
