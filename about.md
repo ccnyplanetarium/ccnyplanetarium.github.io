@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CCNY Planetarium
+title: About the Planetarium
 description: About the City College Planetarium
 sitemap:
     priority: 0.7
@@ -9,7 +9,10 @@ sitemap:
 ---
 ## About The Planetarium
 
-<span class="image left"><img src="{{ "/images/pano-view.jpg" | absolute_url }}" alt="" /></span>
+<figure class="figure col-12">
+  <img src="{{ "assets/images/pano-view.jpg" | absolute_url }}" class="figure-img img-fluid rounded" alt="CCNY planetarium">
+  <figcaption class="figure-caption">The Planetarium Panorama view</figcaption>
+</figure>
 
 The CCNY Planetarium is one of three found on the island in Manhattan (The AMNH and The Lower East Side Girls Club both have one as well.) It is currently undergoing minor upgrades and repairs and we hope to have shows again, real soon!
 

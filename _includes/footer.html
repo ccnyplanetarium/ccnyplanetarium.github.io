@@ -2,35 +2,25 @@
 <div class="py-5 border-top">
   <div class="container">
 
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
-
-    <div class="row">
+  <div class="row">
 
       <div class="col-sm">
-        <ul class="list-unstyled">
-          <li>
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-          </li>
+        <ul class="list-unstyled icons alt">
           {%- if site.facebook_username -%}
           <li><a href="https://facebook.com/{{site.facebook_username}}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
           {%- endif -%}
-          {%- if site.email -%}
-            <li>
-              <a href="mailto:{{ site.email }}">
-                {{ site.email }}
-              </a>
-            </li>
+          {%- if site.instagram_username -%}
+          <li><a href="https://instagram.com/{{site.instagram_username}}" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+          {%- endif -%}
+          {%- if site.github_username -%}
+          <li><a href="https://github.com/{{site.github_username}}" class="icon fa-github"><span class="label">Github</span></a></li>
           {%- endif -%}
         </ul>
       </div>
 
 
       <div class="col-sm text-right">
-        <p>{{- site.description | escape -}}</p>
+
 
       </div>
 

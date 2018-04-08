@@ -1,3 +1,56 @@
 // This is the place to place Bootstrap-related CSS customizations.
 // As example you can start by importing the _bootswatch.scss file from one of the
 // theme provided by https://bootswatch.com .
+
+/* Icons */
+
+	.icon {
+		text-decoration: none;
+
+		&:before {
+			display: inline-block;
+			font-family: FontAwesome;
+			font-size: 1.25em;
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		> .label {
+			display: none;
+		}
+	}
+
+  ul.icons.alt li .icon:before {
+    box-shadow: inset 0 0 0 2px #e2e2e2;
+  }
+
+  ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+ul.icons li {
+  display: inline-block;
+  padding: 0 0.5rem 0 0;
+  vertical-align: middle;
+}
+ul.icons li:last-child {
+  padding-right: 0;
+}
+ul.icons li .icon:before {
+  width: 2.25rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 1.25rem;
+}
+
+.navbar-brand {
+  font-family: $font-family-brand;
+}
