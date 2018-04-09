@@ -1,0 +1,49 @@
+---
+layout: home
+title: CCNY Planetarium
+---
+
+<img style="margin-bottom:5rem;" src="{{ "assets/images/logo.png" | absolute_url }}" class="" alt="CCNY planetarium">
+
+
+<div class="row">
+
+<div class="card col-12">
+  <div class="card-body">
+    <h2>Welcome to the CCNY Planetarium.</h2>
+    <p>We're in the process of sprucing the place up and adding some new technologies. </p>
+  </div>
+</div>
+
+</div>
+
+<div class="row mt-3">
+
+
+<div class="card-deck">
+    {% for post in site.posts limit:2 %}
+    {% assign mod3 = forloop.index | modulo: 2 %}
+      <div class="card">
+        <img class="card-img-top" src="{{ post.image | absolute_url }}" alt="Card image cap">
+        <div class="card-body">
+          <span class="date">{{ post.date | date_to_string }}</span>
+          <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+          <p class="card-text">{{ post.excerpt }}</p>
+        <a href="{{ post.url | absolute_url }}" class="btn btn-primary">Read More</a></li>
+      </div>
+    </div>
+    {% if mod3 == 0 %}
+    <div class="card">
+      <img class="card-img-top" src="{{ sl | absolute_url }}" alt="Card image cap">
+      <div class="card-body">
+
+
+        <p class="card-text">stuff</p>
+
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+</div>

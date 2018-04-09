@@ -1,16 +1,5 @@
 // This is the place to place Bootstrap's variables overrides.
-// As example you can start by importing the _variables.scss file from one of the
-// theme provided by https://bootswatch.com .
 
-
-// Some customization of the container class to have a better display in the guide.
-// Don't hesitate to remove it to have a standard Bootstrap behavior
-// $container-max-widths: (
-//   sm: 540px,
-//   md: 640px,
-//   lg: 690px,
-//   xl: 720px
-// ) !default;
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -35,7 +24,9 @@ $green:   #43ac6a !default;
 $teal:    #20c997 !default;
 $cyan:    #5bc0de !default;
 
-$primary:       $blue !default;
+$lavender: #9093CE !default;
+
+$primary:       $lavender !default;
 $secondary:     $gray-200 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -48,9 +39,9 @@ $yiq-contrasted-threshold: 200 !default;
 
 // Components
 
-$border-radius:               0 !default;
-$border-radius-lg:            0 !default;
-$border-radius-sm:            0 !default;
+$border-radius:               .25rem !default;
+$border-radius-lg:            .5rem !default;
+$border-radius-sm:            .1rem !default;
 
 // Fonts
 
@@ -85,6 +76,8 @@ $navbar-dark-color:                 rgba($white,.7) !default;
 $navbar-dark-hover-color:           $white !default;
 
 $navbar-dark-active-color:          $white;
+
+
 // Pagination
 
 $pagination-color:                  $gray-600 !default;

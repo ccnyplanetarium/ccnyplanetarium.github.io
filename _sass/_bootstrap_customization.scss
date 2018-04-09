@@ -2,6 +2,12 @@
 // As example you can start by importing the _bootswatch.scss file from one of the
 // theme provided by https://bootswatch.com .
 
+.starsbackground {
+  background-color: #000000;
+  background: url("images/heic1411a.jpg");
+}
+
+
 /* Icons */
 
 	.icon {
@@ -53,4 +59,8 @@ ul.icons li .icon:before {
 
 .navbar-brand {
   font-family: $font-family-brand;
+}
+
+.bg-lavender {
+  background-color: $lavender;
 }
