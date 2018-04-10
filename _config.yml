@@ -1,63 +1,40 @@
-# Site
-title:              CCNY Planetarium
-bio:                'Since 1974, the stars have been shining in Harlem.'
-description:        "There is a planetarium in the basement at City College - come explore the universe!"
-locale:             en_US
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    layout: post
-    author:
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: CCNY Planetarium
+email: ""
+description: >- # this means to ignore newlines until "baseurl:"
+  The City College of New York has a planetarium.
+#baseurl: "" # the subpath of your site, e.g. /blog
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+facebook_username:  ccnyplanetarium
+instagram_username: ccnyplanetarium
+github_username: ccnyplanetarium
+repository: ""
 
-# Jekyll
-permalink:          /blog/:title/
-markdown:           kramdown
-highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
-sass:
-  sass_dir:         css
-  style:            expanded
-
-# Comments
-disqus_shortname:   default
-
-# Social
-analytics-id:       "default"
-twitter:            default
-facebook:           ccnyplanetarium
-instagram:          ccnyplanetarium
-github:             ccnyplanetarium
-
-# personal
-location:           New York, NY
-phone:
-email:
-
-# Gems
-gems:
-  - jekyll-mentions
-  - jekyll-sitemap
+# Build settings
+plugins:
   - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
 
-paginate: 6
-paginate_path: "/blog/page:num/"
+# A list of the pages to display in the navigation bar
+header_pages:
+  - people.html
+  - technical.html
 
-jekyll-mentions:
-    base_url: https://github.com
-
-# Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, _site, src, vendor, CNAME, LICENSE, Rakefile, old]

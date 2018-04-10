@@ -3,7 +3,7 @@ layout: post
 title:  "The New Website"
 date:   2018-04-03
 excerpt: "A new home for the planetarium, online"
-image: "/images/website.jpg"
+image: "assets/images/website.jpg"
 ---
 
 ## Building a new Website for the Planetarium
