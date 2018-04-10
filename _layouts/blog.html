@@ -5,12 +5,16 @@ layout: default
 
 						{% for post in site.posts %}
 						{% assign mod3 = forloop.index | modulo: 3 %}
-<div class="row mb-5">
-									<a href="{{ post.url | absolute_url }}" class="col-3">
-										<img src="{{ post.image | absolute_url }}" alt="" />
-									</a>
+<div class="row my-3">
+	<figure class="figure col-md-4 col-sm-12">
+		<a href="{{ post.url | absolute_url }}" class="">
+			<img class="figure-img img-fluid rounded" src="{{ post.image | absolute_url }}" alt="" />
+		</a>
+	  <!-- <figcaption class="figure-caption">James Hedberg at the controls of the Spitz 512</figcaption> -->
+	</figure>
 
-									<div class="col-9">
+
+									<div class="col">
 									<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
 									<h6>{{ post.date | date_to_string }}</h6>
 									<p>{{ post.excerpt }}</p>
