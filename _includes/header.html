@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-lavender">
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-lavender">
   <div class="container">
     <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
@@ -13,6 +13,7 @@
           <li class="nav-item {% if page.url contains 'about' %} active {% endif %}"><a class="nav-link" href="{{ "/about/" | absolute_url }}">About</a></li>
         <li class="nav-item "><a class="nav-link {% if page.url contains 'technical' %} active {% endif %}" href="{{ "/technical/" | absolute_url }}">Technical</a></li>
         <li class="nav-item {% if page.url contains 'people' %} active {% endif %}"><a class="nav-link" href="{{ "/people/" | absolute_url }}">People</a></li>
+        <li class="nav-item {% if page.url contains 'blog' %} active {% endif %}"><a class="nav-link" href="{{ "/blog/" | absolute_url }}">Posts</a></li>
         <!-- {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.menuListing -%}

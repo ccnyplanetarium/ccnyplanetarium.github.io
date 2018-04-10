@@ -1,10 +1,12 @@
 ---
 layout: home
 title: CCNY Planetarium
+imagecredit: <a href="http://hubblesite.org/image/1467/news_release/2004-07">Hubble Ultra Deep Field</a>
 ---
 
-<img style="margin-bottom:5rem;" src="{{ "assets/images/logo.png" | absolute_url }}" class="" alt="CCNY planetarium">
-
+<div class="jumbotron">
+<img src="{{ "assets/images/logo-trans.png" | absolute_url }}" class="" alt="CCNY planetarium">
+</div>
 
 <div class="row">
 
@@ -23,23 +25,21 @@ title: CCNY Planetarium
 <div class="card-deck">
     {% for post in site.posts limit:2 %}
     {% assign mod3 = forloop.index | modulo: 2 %}
-      <div class="card">
+      <div class="card border-dark">
         <img class="card-img-top" src="{{ post.image | absolute_url }}" alt="Card image cap">
         <div class="card-body">
-          <span class="date">{{ post.date | date_to_string }}</span>
-          <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+          <h6 class="card-text">{{ post.date | date_to_string }}</h6>
+          <h5 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h5>
           <p class="card-text">{{ post.excerpt }}</p>
         <a href="{{ post.url | absolute_url }}" class="btn btn-primary">Read More</a></li>
       </div>
     </div>
     {% if mod3 == 0 %}
-    <div class="card">
-      <img class="card-img-top" src="{{ sl | absolute_url }}" alt="Card image cap">
+    <div class="card border-dark">
+      <!-- <img class="card-img-top" src="{{ sl | absolute_url }}" alt="Card image cap"> -->
+      <h5 class="card-header">Events</h5>
       <div class="card-body">
-
-
-        <p class="card-text">stuff</p>
-
+        <p class="card-text">... coming soon.</p>
     </div>
   </div>
   {% endif %}
