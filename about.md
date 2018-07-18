@@ -20,6 +20,6 @@ The CCNY Planetarium is one of three found on the island in Manhattan (The AMNH 
 
 <div class="card">
 <div class="card-body">
-  <p>Check back soon when we have thing underway. In the meantime, you can send us a note at planetarium <i>at</i> ccny <i>dot</i> cuny <i>dot</i> edu, or do the social media things below. </p>
+  <p>Check back soon when we have thing underway. In the meantime, you can send us a note at planetarium@ccny.cuny.edu, or do the social media things below. </p>
   </div>
 </div>
