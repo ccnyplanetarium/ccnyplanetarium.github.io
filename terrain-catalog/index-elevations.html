@@ -1,0 +1,89 @@
+---
+layout: page
+title: The Catalog of Terrains
+permalink: /terrain-catalog/
+navigation_weight: 1
+order: 1
+excerpt: Catalog of High Resolution Terrains
+---
+
+
+
+{% assign planetgroups = site.terrain | group_by: "planet" | sort: "name" %}
+
+<ul class="planet-list">
+{% for item in planetgroups %}
+<li class="{{item.name}}"><h3>  <a href="#{{item.name}}">{{item.name}}</a></h3></li>
+{% assign datasetgroups = item.items | group_by: "dataset" | sort: "name" %}
+<ul class="dataset-list {{item.name}}topics">
+  {% for item in datasetgroups %}
+  <li><a href="#{{item.name}}">{{item.name}}</a></li>
+  {%endfor%}
+</ul>
+
+{%endfor%}
+</ul>
+
+{% for item in planetgroups %}
+
+
+<h2 id="{{item.name}}" class="subject">{{ item.name }} Terrain Patches</h2>
+
+
+
+
+    {% assign topicgroups = item.items | group_by: "dataset" %}
+
+    {% for item in topicgroups %}
+
+    <h3 id="{{item.name}}" class="topic">{{item.name}}</h3>
+
+
+
+
+      {% for terrain in item.items %}
+
+          <div class="row">
+            <div class="col-3">
+
+
+            <figure class="figure col-6 float-left">
+              <a href="{{site.baseurl}}/terrain/{{terrain.nice-name}}">
+              <img  src="{{site.baseurl}}/assets/terrains-img/{{terrain.nice-name}}_image-rot.jpg" class="figure-img img-fluid rounded" alt="{{terrain.title}}">
+            </a>
+              <figcaption class="figure-caption">Image</figcaption>
+            </figure>
+
+            <figure class="figure col-6">
+              <a href="{{site.baseurl}}/terrain/{{terrain.nice-name}}">
+              <img  src="{{site.baseurl}}/assets/terrains-img/{{terrain.nice-name}}_elevation-rot.jpg" class="figure-img img-fluid rounded" alt="{{terrain.title}}">
+            </a>
+              <figcaption class="figure-caption">Elevations</figcaption>
+            </figure>
+            </div>
+
+
+              <div style="overflow:hidden;">
+                <figure class="figure col-6 float-left">
+                  <a href="{{site.baseurl}}/terrain/{{terrain.nice-name}}">
+                <img  src="{{site.baseurl}}/assets/terrains-img/{{terrain.nice-name}}_globebrowsing-1-th.jpg"class="figure-img img-fluid rounded" alt="{{terrain.title}}">
+                </a>
+                  <figcaption class="figure-caption"></figcaption>
+                </figure>
+
+              <h4> <a href="{{site.baseurl}}/terrain/{{terrain.nice-name}}">{{terrain.title}}</a></h4>
+              <p>
+                {{terrain.summary}}
+              </p>
+              <p>Lat, Long: {{terrain.latitude}}, {{terrain.longitude}}</p>
+              <a class="btn btn-primary"  href="../terrain/{{terrain.nice-name}}">More Details &rarr;</a>
+              </div>
+
+          </div>
+
+
+      {%endfor%}
+
+    {%endfor%}
+
+{%endfor%}

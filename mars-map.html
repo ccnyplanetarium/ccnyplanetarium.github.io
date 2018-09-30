@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<title>mars</title>
+<link href="https://fonts.googleapis.com/css?family=Lora:400i" rel="stylesheet">
+<style>
+
+body {
+  /* set margin to 0 and overflow to hidden, to go fullscreen */
+  margin: 0;
+  overflow: hidden;
+}
+
+#info1 {
+  position: fixed;
+  bottom: 55px;
+  left: 40px;
+  text-align: left;
+  color: white;
+  font-family: "Lora", serif;
+  font-size: 60px;
+}
+#info2 {
+  position: fixed;
+  bottom: 35px;
+  left: 40px;
+  text-align: left;
+  color: white;
+  font-family: "Lora", serif;
+  font-size: 30px;
+}
+
+.line {
+  width: 350px;
+  height: 47px;
+  bottom: 30px;
+  left: 40px;
+  border-bottom: 1px solid white;
+  position: fixed;
+}
+
+div.tooltip {
+  position: absolute;
+  top: 90px;
+  right: 10px;
+  text-align: left;
+  vertical-align: top;
+  width: 280px;
+  height: 345px;
+  padding: 5px;
+  color: #000;
+  font-family: "Lora", serif;
+  font-size: 12px;
+  font-weight: bold;
+  background: #fff;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);
+  border: 2px;
+  border-radius: 2px;
+  z-index: 6;
+}
+
+</style>
+
+<body>
+
+<div id="info1">Mars</div>
+<div id="info2">Landing Sites</div>
+<div class="line"></div>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/97/three.min.js"></script>
+<script src="http://localhost/~james/threejs/js/controls/OrbitControls.js"></script>
+<script src="http://localhost/~james/threejs/js/libs/dat.gui.min.js"></script>
+<script src="http://localhost/~james/threejs/js/libs/stats.min.js"></script>
+
+<!-- ---------------- Custom Shader Code ------------------------ -->
+<script id="vertexShader" type="x-shader/x-vertex">
+varying vec3 vNormal;
+void main()
+{
+    vNormal = normalize( normalMatrix * normal );
+    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+}
+</script>
+
+<!-- fragment shader a.k.a. pixel shader -->
+<script id="fragmentShader" type="x-shader/x-vertex">
+varying vec3 vNormal;
+void main()
+{
+	float intensity = pow( 0.7 - dot( vNormal, vec3( 0.0, 0.0, 1.0 ) ), 4.0 );
+    gl_FragColor = vec4( 1.0, 1.0, 1.0, 1.0 ) * intensity;
+}
+</script>
+<!-- ----------------------------------------------------------- -->
+
+<script>
+
+var renderer, scene, camera;
+var control;
+var stats;
+var container;
+var sprite1, canvas1, context1, texture1;
+var cameraControl;
+var radius = 7.6;
+var group = new THREE.Object3D();
+var raycaster = new THREE.Raycaster();
+var mouse = new THREE.Vector3(), INTERSECTED;
+
+// Define the tooltip for hover-over info windows
+var div = d3.select("body").append("div")
+  	.attr("class", "tooltip")
+  	.style("opacity", 0);
+
+// Initialize the scene, camera and objects.
+function init() {
+
+  container = document.createElement( 'div' );
+  document.body.appendChild( container );
+
+  // To display anything, you need 3 things: (1) Scene, (2) Camera, (3) Renderer
+  scene = new THREE.Scene();
+  camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 1000);
+  renderer = new THREE.WebGLRenderer();
+  renderer.setClearColor(0x000000, 1.0);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.shadowMapEnabled = true;
+
+  // Mars needs (1) geometry, (2) material, (3) mesh
+  var sphereGeometry = new THREE.SphereGeometry(15, 60, 60);
+  var sphereMaterial = createMarsMaterial();
+  var marsMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
+  marsMesh.name = 'mars';
+  scene.add(marsMesh);
+
+  // Position and point the camera to the center of the scene
+  camera.position.x = 25;
+  camera.position.y = 26;
+  camera.position.z = 30;
+  camera.lookAt(scene.position);
+
+  // Add controls
+  cameraControl = new THREE.OrbitControls(camera);
+
+  // Setup the control object for the control GUI
+  control = new function () {
+    this.rotationSpeed = 0.001;
+  };
+
+  // Add extras
+  addControlGui(control);
+  addStatsObject();
+
+  // Add the output of the renderer to the html element
+  document.body.appendChild(renderer.domElement);
+
+  // Create custom material from the shader code above
+	// that is within specially labeled script tags
+	var customMaterial = new THREE.ShaderMaterial(
+	{
+	  uniforms: {  },
+    vertexShader:   document.getElementById( 'vertexShader'   ).textContent,
+    fragmentShader: document.getElementById( 'fragmentShader' ).textContent,
+		side: THREE.BackSide,
+		blending: THREE.AdditiveBlending,
+		transparent: true
+	});
+
+	var ballGeometry = new THREE.SphereGeometry( 18, 50, 50 );
+	var ball = new THREE.Mesh( ballGeometry, customMaterial );
+	scene.add( ball );
+
+  // Add a star field
+  var starsGeometry = new THREE.Geometry();
+  for ( var i = 0; i < 10000; i ++ ) {
+    var star = new THREE.Vector3();
+    star.x = THREE.Math.randFloatSpread( 2000 );
+    star.y = THREE.Math.randFloatSpread( 2000 );
+    star.z = THREE.Math.randFloatSpread( 2000 );
+    starsGeometry.vertices.push( star )
+  }
+  var starsMaterial = new THREE.PointsMaterial( { color: 0xF9F9CF } )
+  var starField = new THREE.Points( starsGeometry, starsMaterial );
+  scene.add( starField );
+
+  // Start animating
+  render();
+
+}
+// Create the basemap of Mars
+function createMarsMaterial() {
+
+  // 4096 is the maximum width for maps
+  var marsTexture = THREE.ImageUtils;
+  marsTexture.crossOrigin = "";
+
+  marsTexture = THREE.ImageUtils.loadTexture("https://tatornator12.github.io/classes/final-project/Three.js_Version/Images/mars.jpg");
+  var marsMaterial = new THREE.MeshBasicMaterial();
+  marsMaterial.map = marsTexture;
+  return marsMaterial;
+}
+
+// Add a control GUI function for the rotation speed
+function addControlGui(controlObject) {
+  var gui = new dat.GUI();
+  gui.add(controlObject, 'rotationSpeed', -0.01, 0.01);
+}
+
+// Add a stats monitor function
+function addStatsObject() {
+  stats = new Stats();
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+}
+// Render the scene
+function render() {
+  stats.update();
+  cameraControl.update();
+  scene.getObjectById(2, true).rotation.y += control.rotationSpeed;
+
+  renderer.render(scene, camera);
+  requestAnimationFrame(render);
+}
+// Window resize function
+function handleResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+window.onload = init;
+window.addEventListener('resize', handleResize, false);
+window.addEventListener( 'mousemove', onMouseMove, false );
+
+// Add the JSON data using D3.js
+var Landing_Sites = "https://tatornator12.github.io/classes/final-project/Three.js_Version/Data/Mars_LandingSites2.json";
+
+d3.queue()
+  .defer(d3.json, Landing_Sites)
+  .await(ready);
+
+function ready(error, json) {
+  if (error) throw error;
+
+  json.features.forEach(function(d) { group.add(createDot(d)) });
+  scene.add(group);
+
+}
+
+// Converts a point [longitude, latitude] in degrees to a THREE.Vector3.
+function vertex(point) {
+  var lambda = point[0] * Math.PI / 180,
+      phi = point[1] * Math.PI / 180,
+      cosPhi = Math.cos(phi);
+  return new THREE.Vector3(
+    radius * cosPhi * Math.cos(lambda),
+    radius * Math.sin(phi),
+    - radius * cosPhi * Math.sin(lambda)
+  );
+}
+
+// Create the dot feature for the landing sites JSON
+function createDot(feature) {
+
+  var landingSitesGeometry = new THREE.Geometry();
+  var position = vertex(feature.geometry.coordinates);
+  landingSitesGeometry.vertices.push( position );
+
+  var landingSitesMaterial = new THREE.PointsMaterial({ size: 1.5, color: 0xff0000, map: THREE.ImageUtils.loadTexture("https://tatornator12.github.io/classes/final-project/Three.js_Version/Images/disc.png"), transparent: true });
+
+  var dot = new THREE.Points(landingSitesGeometry, landingSitesMaterial);
+
+  dot.name = "<img style='height: 270px; width: 280px; object-fit:contain' src=\'" + feature.properties.IMAGE + "'>" + "<br>" + "<font size='4'>" + feature.properties.NAME + "</font><br>" + feature.properties.COUNTRY + ", " + feature.properties.YEAR
+           + "<br><a href=\'" + feature.properties.WEB_LINK + "' target='_blank'>" + "More Info" + "</a>";
+
+  dot.position.set(position.x, position.y, position.z);
+
+  // Creates a bounding sphere for mouse detection
+  // in the MouseOver event
+  dot.geometry.boundingSphere = new THREE.Sphere();
+  dot.geometry.boundingSphere.center.x = position.x;
+  dot.geometry.boundingSphere.center.y = position.y;
+  dot.geometry.boundingSphere.center.z = position.z;
+  dot.geometry.boundingSphere.radius = .75;
+
+  return dot;
+}
+
+// Create the MouseOver event
+function onMouseMove( event ) {
+
+	// Calculate mouse position in normalized device coordinates
+	// (-1 to +1) for both components
+  event.preventDefault();
+	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+  // Update the picking ray with the camera and mouse position
+	raycaster.setFromCamera( mouse, camera );
+
+
+  // Calculate objects intersecting the picking ray
+	var intersects = raycaster.intersectObjects( scene.children[3].children );
+
+  // If there is one (or more) intersections
+  if ( intersects.length > 0 )
+  {
+
+    // If the closest object intersected is not the currently stored intersection object
+    if ( intersects[ 0 ].object != INTERSECTED )
+    {
+
+        // Restore previous intersection object (if it exists) to its original color
+        if ( INTERSECTED )
+            INTERSECTED.material.color.setHex( INTERSECTED.currentHex );
+
+        // Store reference to closest object as current intersection object
+        INTERSECTED = intersects[ 0 ].object;
+
+        // Store color of closest object (for later restoration)
+        INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
+
+        // Set a new color for closest object
+        INTERSECTED.material.color.setHex( 0x00ff00 );
+
+        // Add referenced JSON data to the div element
+        // and style the transition
+        div
+          .html(INTERSECTED.name)
+        .transition()
+          .duration(200)
+          .style("opacity", .8)
+          .style("stroke", "black")
+    }
+  }
+  else // There are no intersections
+  {
+
+    // Restore previous intersection object (if it exists) to its original color
+    if ( INTERSECTED )
+
+        INTERSECTED.material.color.setHex( INTERSECTED.currentHex );
+
+        // Remove previous intersection object reference
+        // by setting current intersection object to "nothing"
+        INTERSECTED = null;
+
+        // Style the div element's transition
+        div.transition()
+           .delay(1000)
+           .duration(400)
+           .style("opacity", 0);
+
+}
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+---
+layout: page
+title: The Catalog of Terrains
+permalink: /terrain-catalog/
+navigation_weight: 1
+order: 1
+excerpt: Catalog of High Resolution Terrains
+---
+
+
+
+{% assign planetgroups = site.terrain | group_by: "planet" | sort: "name" %}
+
+<ul class="planet-list">
+{% for item in planetgroups %}
+<li class="{{item.name}}"><h3>  <a href="#{{item.name}}">{{item.name}}</a></h3></li>
+{% assign datasetgroups = item.items | group_by: "dataset" | sort: "name" %}
+<ul class="dataset-list {{item.name}}topics">
+  {% for item in datasetgroups %}
+  <li><a href="#{{item.name}}">{{item.name}}</a></li>
+  {%endfor%}
+</ul>
+
+{%endfor%}
+</ul>
+
+{% for item in planetgroups %}
+
+
+<h2 id="{{item.name}}" class="subject">{{ item.name }} Terrain Patches</h2>
+
+
+
+
+    {% assign topicgroups = item.items | group_by: "dataset" %}
+
+    {% for item in topicgroups %}
+
+    <h3 id="{{item.name}}" class="topic">Data from {{item.name}}</h3>
+
+
+
+
+
+          <div class="row">
+            {% for terrain in item.items %}
+
+            <div class="col-sm-6 col-xs-12 float-left">
+
+
+              <figure class="figure col-6 float-left">
+                  <a href="{{site.baseurl}}/terrain/{{terrain.nice-name}}">
+                <img  src="{{site.baseurl}}/assets/terrains-img/{{terrain.nice-name}}_globebrowsing-1-th.jpg"class="figure-img img-fluid rounded" alt="{{terrain.title}}">
+                </a>
+                  <figcaption class="figure-caption"></figcaption>
+                </figure>
+              <div style="overflow:hidden;">
+              <h4> <a href="{{site.baseurl}}/terrain/{{terrain.nice-name}}">{{terrain.title}}</a></h4>
+              <p>
+                {{terrain.summary}}
+              </p>
+
+              <a class="btn btn-primary"  href="../terrain/{{terrain.nice-name}}">More Details &rarr;</a>
+              </div>
+              </div>
+
+
+      {%endfor%}
+    </div>
+
+    {%endfor%}
+
+{%endfor%}

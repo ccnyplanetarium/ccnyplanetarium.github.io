@@ -65,3 +65,14 @@ ul.icons li .icon:before {
 .bg-lavender {
   background-color: $lavender;
 }
+
+ul.dev-contribs {
+  list-style-type: none;
+}
+
+
+.carousel-caption {
+  bottom: 1rem;
+  left: ((100% - $carousel-caption-width) / 4);
+  z-index: 10;
+}

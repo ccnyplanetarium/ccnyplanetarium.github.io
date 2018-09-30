@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>mars map</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+
+	<style>
+		body {
+
+			font-family: sans-serif;
+			font-size: 13px;
+			text-align: center;
+			background-color: #fff;
+			margin: 0px;
+			overflow: hidden;
+		}
+
+		a {
+			color: #000;
+		}
+
+		#info {
+			color: #000;
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			padding: 5px;
+		}
+
+		.controlButton {
+			background-color: rgb(201, 217, 233);
+			border: none;
+			border-radius: 5px;
+			color: black;
+			padding: 10px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: none;
+			font-size: 16px;
+			width: 10em;
+			position: absolute;
+			left: 10px;
+			top: 100px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<button type="button" class="controlButton" id="startButtonId">Pause</button>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js	"></script>
+	<script src="OrbitControls.js"></script>
+	<script src="Detector.js"></script>
+
+
+	<script>
+		if (!Detector.webgl) Detector.addGetWebGLMessage();
+
+		var params = {
+			opacity: 1,
+			rotationSpeed: .2
+		};
+
+		var urlparams = location.href.split('?')[1].split('&');
+data = {};
+for (x in urlparams)
+ {
+data[urlparams[x].split('=')[0]] = urlparams[x].split('=')[1];
+ }
+
+		var container, stats;
+		var camera, scene, renderer, controls;
+		var initAnim = true;
+		var runAnim = false;
+		var isPlay = true;
+		var t = 0;
+		var deltaTime = 0.01;
+		var axis = new THREE.Vector3(0, 1, 0)
+		var radius = 9.1;
+		init();
+		animate();
+
+		function init() {
+
+			container = document.createElement('div');
+			document.body.appendChild(container);
+
+			var startButton = document.getElementById('startButtonId');
+			//startButton.innerHTML = 'Pause';
+			startButton.onclick = function StartAnimation() {
+
+				// if (initAnim) {
+				// 	initAnim = false;
+				// 	runAnim = true;
+				//
+				// }
+				// Start and Pause
+				if (deltaTime > 0) {
+
+					//runAnim = false;
+					//isPlay = true;
+					deltaTime = 0;
+					startButton.innerHTML = 'Restart &#9658';
+					//animate();
+				} else {
+					startButton.innerHTML = 'Pause';
+					//runAnim = true;
+					//isPlay = false;
+					deltaTime = 0.01;
+				}
+			}
+			var landingSitesGeometry = new THREE.Geometry();
+			var position = vertex(data['lat'], data['long']);
+			landingSitesGeometry.vertices.push( position );
+
+			camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 2000);
+			camera.position.set(position.x, position.y, 90 * 1);
+			//camera.position.set(0,200,0)
+			scene = new THREE.Scene();
+			scene.background = new THREE.Color(0x000000);
+
+			//
+
+			var geometry = new THREE.SphereGeometry(18, 30, 30);
+
+			var material1 = new THREE.MeshStandardMaterial({
+				roughness: 1
+			});
+
+			var material2 = new THREE.MeshStandardMaterial({
+				opacity: params.opacity,
+				premultipliedAlpha: true,
+				transparent: true,
+				roughness: 1
+			});
+
+
+
+			var textureLoader = new THREE.TextureLoader();
+			textureLoader.load("2k_mars.jpg", function(map) {
+
+				map.anisotropy = 8;
+
+				material1.map = map;
+				material1.needsUpdate = true;
+				material1.opacity = 1;
+
+			});
+
+			var mesh = new THREE.Mesh(geometry, material1);
+			mesh.position.x = 0.0;
+			mesh.name = "theMars";
+
+			scene.add(mesh);
+
+
+
+
+			var landingSitesMaterial = new THREE.PointsMaterial({ size: 5, color: 0xffffff, map: THREE.ImageUtils.loadTexture("bull.png"), transparent: true });
+
+			var dot = new THREE.Points(landingSitesGeometry, landingSitesMaterial);
+			dot.position.set(position.x, position.y, position.z);
+
+			mesh.add(dot);
+			scene.add(dot);
+
+
+
+			// Lights
+
+			// var directionalLight = new THREE.DirectionalLight(0xffffff, 2);
+			// directionalLight.position.set(500, 0, 0);
+			// directionalLight.name = "sunLight";
+			// scene.add(directionalLight);
+			var light = new THREE.AmbientLight( 0x404040,5 ); // soft white light
+			scene.add( light );
+			//
+
+			renderer = new THREE.WebGLRenderer();
+			renderer.setPixelRatio(window.devicePixelRatio);
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			renderer.shadowMap.enabled = true;
+			container.appendChild(renderer.domElement);
+
+			renderer.gammaInput = true;
+			renderer.gammaOutput = true;
+
+
+			controls = new THREE.OrbitControls(camera, renderer.domElement);
+			controls.target.set(0, 0, 0);
+			controls.enableZoom = true;
+			controls.update();
+
+			window.addEventListener('resize', onWindowResize, false);
+
+
+
+		}
+
+		function onWindowResize() {
+
+			var width = window.innerWidth;
+			var height = window.innerHeight;
+
+			camera.aspect = width / height;
+			camera.updateProjectionMatrix();
+
+			renderer.setSize(width, height);
+
+		}
+
+		//
+
+		function animate(delta) {
+			if (!isPlay) return;
+			requestAnimationFrame(animate);
+			t += deltaTime;
+			render();
+			//console.log(deltaTime);
+		}
+
+		function render() {
+
+			// var theMars = scene.getObjectByName("theMars");
+			// theMars.rotation.y = -t * params.rotationSpeed;
+			renderer.render(scene, camera);
+
+		}
+
+	function vertex(lat,long) {
+  	var lambda = long * Math.PI / 180,
+      phi = lat * Math.PI / 180,
+      cosPhi = Math.cos(phi);
+  	return new THREE.Vector3(
+    radius * cosPhi * Math.cos(lambda),
+    radius * Math.sin(phi),
+    - radius * cosPhi * Math.sin(lambda)
+  );
+}
+
+
+
+	</script>
+</body>
+
+</html>
