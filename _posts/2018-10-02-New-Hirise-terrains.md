@@ -12,12 +12,12 @@ image: "assets/images/mars-landscape-1-small.jpg"
 
 <figure class="figure col-lg-6 col-sm-12">
 <img class="figure-img img-fluid rounded" src="{{ "assets/images/mars-landscape-1-1200.jpg" | absolute_url }}" alt="mars surface" />
-  <figcaption class="figure-caption">View of a meandering feature on Mars.</figcaption>
+  <figcaption class="figure-caption">View of a meandering feature on Mars. Imported from this HiRISE DTM location:     <a href="https://www.uahirise.org/dtm/dtm.php?ID=ESP_020673_1750">Martian Meanders and Scroll Bars</a></figcaption>
 </figure>
 
 <div class="col">
 <p>
-Since 200x, the Mars Reconnaissance Orbiter has been taking very high resolution images of the Martian surface. Using some advanced tools, we can extract height information from them and reconstruct the surface features of Mars. This process will create a DTM (digital terrain model), essentially a large matrix of x,y,z values that can be used to create 3d models of the topography.
+Since 2006, the <a href="https://www.nasa.gov/mission_pages/MRO/main/index.html">Mars Reconnaissance Orbiter</a> has been taking very high resolution images of the Martian surface. Using some advanced software tools, we can extract height information from these images and reconstruct the surface features of Mars. This process will create a DTM (digital terrain model), essentially a large matrix of x,y,z values that can be used to create 3d models of the topography.
 </p>
 
 </div>

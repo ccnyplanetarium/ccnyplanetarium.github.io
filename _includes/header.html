@@ -12,7 +12,7 @@
       <ul class="navbar-nav ml-auto">
           <li class="nav-item {% if page.url contains 'about' %} active {% endif %}"><a class="nav-link" href="{{ "/about.html" | absolute_url }}">About</a></li>
         <li class="nav-item "><a class="nav-link {% if page.url contains 'technical' %} active {% endif %}" href="{{ "/technical.html" | absolute_url }}">Technical</a></li>
-        <li class="nav-item "><a class="nav-link {% if page.url contains 'terrain' %} active {% endif %}" href="{{ "/terrain-catalog/index.html" | absolute_url }}">Mars Terrains</a></li>
+        <li class="nav-item "><a class="nav-link {% if page.url contains 'terrain-catalog' %} active {% endif %}" href="{{ "/terrain-catalog/index.html" | absolute_url }}">Mars Terrains</a></li>
         <li class="nav-item {% if page.url contains 'people' %} active {% endif %}"><a class="nav-link" href="{{ "/people.html" | absolute_url }}">People</a></li>
         <li class="nav-item {% if page.url contains 'blog' %} active {% endif %}"><a class="nav-link" href="{{ "/blog.html" | absolute_url }}">Posts</a></li>
         <!-- {%- for path in page_paths -%}
