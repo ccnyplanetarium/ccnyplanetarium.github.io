@@ -31,7 +31,7 @@ The workflow involves converting the files available on the HiRISE site into for
 Here are a few of the basic ideas if you're just getting started.
   - There are two data files necessary: 1) a DTM (or elevations) data set which has the height data stored at every pixel in the image and 2) the image texture that will be draped over top of the heightmap.
   - The terrain information is stored in a file called DTEEC-xxx.IMG.  If you download it and try to open it in a regular application, don't be surprised if it doesn't look normal or even recognizable. You'll need to process it before you can really see it in the same way you would a regular image. (it's not just a regular image)
-  - The images textures are usually called ESP-xx.JP2 or PSP-xx.JP2. (The JP2 is a JPEG2000, which version the regular jpeg image file format) You'll need to find the one that corresponds to the DTEEC file shown on the HiRISE DTM extras column. Again, those are probably not going to open well in most consumer applications, but you can use HiView to view them: [HiView](https://www.uahirise.org/hiview/)
+  - The images textures are usually called ESP-xx.JP2 or PSP-xx.JP2. (The JP2 is a JPEG2000, an alternative version the regular jpeg image file format good for this type of data.) You'll need to find the one that corresponds to the DTEEC file shown on the HiRISE DTM extras column. Again, those are probably not going to open well in most consumer applications, but you can use HiView to view them: [HiView](https://www.uahirise.org/hiview/)
 
 Some other things to be aware of:
   - the files, both the downloads, and the ones you create during the process are large! (1-2 gigabytes is normal). Make sure your internet is up to it, and you have some extra storage space.
