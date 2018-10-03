@@ -12,6 +12,10 @@ references:
   - https://en.wikipedia.org/wiki/Gorgonum_Chaos
 tags:
   - Chaos Terrain
+nice-views:
+  - globebrowsing-1
+  - globebrowsing-2
+  - globebrowsing-3
 contributors: hedbergj
 updated: 2018-09-29
 ---

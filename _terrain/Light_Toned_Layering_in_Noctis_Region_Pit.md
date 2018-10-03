@@ -11,7 +11,11 @@ hiriseSiteUrl: https://www.uahirise.org/dtm/dtm.php?ID=ESP_017399_1680
 references:
   -
 tags:
-  -
+  - Sedimentary/Layering Processes
+nice-views:
+  - globebrowsing-1
+  - globebrowsing-2
+  - globebrowsing-3
 contributors: hedbergj
 updated: 2018-09-29
 ---

@@ -2,7 +2,7 @@
 title: Flow Boundary in Elysium Planitia
 nice-name: Flow_Boundary_in_Elysium_Planitia
 summary: Some interesting landforms
-notes: 
+notes:
 latitude: 28.3
 longitude: 172.7
 planet: Mars
@@ -12,6 +12,10 @@ hiriseSiteUrl: https://www.uahirise.org/dtm/dtm.php?ID=ESP_028149_2085
 tags:
   - Flow
   - water evidence
+nice-views: 
+    - globebrowsing-1
+    - globebrowsing-2
+    - globebrowsing-3
 contributors: hedbergj
 updated: 2018-09-29
 ---

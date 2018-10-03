@@ -32,9 +32,11 @@ excerpt: Catalog of High Resolution Terrains
 
 
 
-    {% assign topicgroups = item.items | group_by: "dataset" %}
+    {% assign topicgroups = item.items | group_by: 'dataset' %}
 
     {% for item in topicgroups %}
+
+    {% assign terrains = item.items | sort: 'nice-name' %}
 
     <h3 id="{{item.name}}" class="topic">Data from {{item.name}}</h3>
 
@@ -43,14 +45,18 @@ excerpt: Catalog of High Resolution Terrains
 
 
           <div class="row">
-            {% for terrain in item.items %}
+            {% for terrain in terrains %}
 
-            <div class="col-sm-6 col-xs-12 float-left">
+            <div class="col-sm-6 col-xs-12 float-left mb-4">
 
 
               <figure class="figure col-6 float-left">
                   <a href="{{site.baseurl}}/terrain/{{terrain.nice-name}}">
+                    {% if terrain.nice-views %}
                 <img  src="{{site.baseurl}}/assets/terrains-img/{{terrain.nice-name}}_globebrowsing-1-th.jpg"class="figure-img img-fluid rounded" alt="{{terrain.title}}">
+                    {% else %}
+                <img  src="{{site.baseurl}}/assets/terrains-img/gray.jpg" class="figure-img img-fluid rounded" alt="{{terrain.title}}">
+                  {% endif %}
                 </a>
                   <figcaption class="figure-caption"></figcaption>
                 </figure>

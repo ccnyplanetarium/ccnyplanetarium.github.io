@@ -12,6 +12,10 @@ references:
   - https://planetarynames.wr.usgs.gov/Feature/5874
 tags:
   - Prior Water Evidence
+nice-views:
+  - globebrowsing-1
+  - globebrowsing-2
+  - globebrowsing-3
 contributors: hedbergj
 updated: 2018-09-29
 ---
