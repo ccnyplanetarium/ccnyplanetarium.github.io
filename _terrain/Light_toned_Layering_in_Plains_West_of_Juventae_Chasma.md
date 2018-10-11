@@ -8,6 +8,7 @@ planet: Mars
 dataset: HiRISE
 marstreklink:
 hiriseSiteUrl: https://www.uahirise.org/dtm/dtm.php?ID=PSP_003434_1755
+download: https://www.openspaceproject.com/beta-version-0120/
 references:
   -
 tags:
