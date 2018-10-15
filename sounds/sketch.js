@@ -50,6 +50,7 @@ var Doorbell = function(x_, y_, r_, label_,sound_) {
   this.r = r_;
   this.label = label_;
   this.sound = sound_;
+  this.playing = false;
 
   // Is a point inside the doorbell? (used for mouse rollover, etc.)
   this.contains = function(mx, my) {
@@ -77,6 +78,13 @@ var Doorbell = function(x_, y_, r_, label_,sound_) {
     pop()
   };
   this.clicked = function(){
+    if (this.playing == false){
     this.sound.play()
+    this.playing = true;
+  }
+  else if (this.playing == true){
+    this.sound.stop()
+    this.playing = false;
+  }
   };
 };
