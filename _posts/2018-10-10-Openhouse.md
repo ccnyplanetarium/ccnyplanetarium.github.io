@@ -24,11 +24,22 @@ Solar System Tour
 2:00 PM - 2:30 PM
 Phantom of the Universe (movie)
 
-3:00 PM - 3:30 PM
-Solar System Tour
+~~3:00 PM - 3:30 PM~~
+~~Solar System Tour~~
+
+(The 3 pm viewing has been changed to tentative.)
 
 See the [Facebook event here](https://www.facebook.com/events/2215806531994154/)
 
-For more information, contact planetarium@ccny.cuny.edu
+For more information, contact
+
+<script type="text/javascript">
+  emailE = 'ccny.cuny.edu'
+  emailE = ('planetarium' + '@' + emailE)
+  document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+</script>
+
+
+### Poster for the event
 
 ![Poster]({{ "assets/images/sneakpeak-letter-web.jpg" | absolute_url }})
