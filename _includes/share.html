@@ -15,7 +15,7 @@
 
 {% if site.facebook_username %}
 <li>
-  <div class="fb-share-button" data-href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+  <div class="fb-share-button" data-href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.slug | default:"" | uri_escape}}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.slug | default:"" | uri_escape}}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 
 </li>
 {% endif %}
