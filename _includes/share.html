@@ -1,9 +1,10 @@
 <div class="sharebuttons">
   <hr />
+    <h4 class="sharetitle"> Share this: </h4>
   <ul>
-    <li>
-      <p class="sharetitle"> Share this: </p>
-    </li>
+
+
+
     {% if site.twitter_username %}
   <li>
   <a href="https://twitter.com/intent/tweet?via={{site.twitter_username}}&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}" target="_blank">
@@ -14,7 +15,8 @@
 
 {% if site.facebook_username %}
 <li>
-<div class="fb-share-button" data-href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+  <div class="fb-share-button" data-href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
 </li>
 {% endif %}
 
