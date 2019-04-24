@@ -26,6 +26,6 @@ One event on the day's busy schedule was a quick trip around the universe in the
 
 The most common comment during the three shows that afternoon was something to the effect of: "I didn't even know there was a planetarium!"
 
-We look forward to the next Day of Science, when perhaps we can spend more the 10 minutes exploring the known universe.
+We look forward to the next Day of Science, when perhaps we can spend more than 10 minutes exploring the known universe.
 
 <br style="clear:both"/>
