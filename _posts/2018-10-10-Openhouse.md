@@ -24,10 +24,8 @@ Solar System Tour
 2:00 PM - 2:30 PM
 Phantom of the Universe (movie)
 
-~~3:00 PM - 3:30 PM~~
-~~Solar System Tour~~
-
-(The 3 pm viewing has been changed to tentative.)
+3:00 PM - 3:30 PM
+Solar System Tour
 
 See the [Facebook event here](https://www.facebook.com/events/2215806531994154/)
 
