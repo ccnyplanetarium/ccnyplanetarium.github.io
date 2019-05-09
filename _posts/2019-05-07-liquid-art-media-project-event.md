@@ -10,6 +10,8 @@ author: "James Hedberg"
 
 <figure class="figure col-lg-3 col-sm-6 float-left">
 <img class="figure-img img-fluid rounded" src="{{site.baseurl}}/assets/images/poster-LAMP.jpg" alt="Day of Science" />
+<figcaption class="figure-caption"><a href="{{site.baseurl}}/assets/images/poster-LAMP.jpg">Download Poster </a></figcaption>
+
 </figure>
 
 
