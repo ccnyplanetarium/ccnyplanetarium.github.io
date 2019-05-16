@@ -37,20 +37,3 @@ Or, send a message on one of our social platforms:
     {%- endif -%}
   </ul>
 </div>
-
-## Directions
-
-We are located in the basement of the Marshak Science Building, on the City College Campus.
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.414334196341!2d-73.95131698459174!3d40.818861979320424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f7adc1de0acf%3A0xfb928a383cd77c13!2sCCNY+Planetarium!5e0!3m2!1sen!2sus!4v1540147257665" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-Here is a map of the building showing the rough location of the room:
-
-<figure class="figure col-12">
-  <img src="{{ "assets/images/map-to-ccny-planetarium.jpg" | absolute_url }}" class="figure-img img-fluid rounded" alt="CCNY planetarium location">
-  <figcaption class="figure-caption">Map of Ground Floor of the Marshak Building</figcaption>
-</figure>
-
-### Accessibility
-
-The planetarium can be reached via elevator, however advanced notice should be given since it requires assistance from a public safety officer. Please contact us to arrange.
