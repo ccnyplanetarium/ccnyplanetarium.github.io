@@ -31,16 +31,13 @@ imagecredit: <a href="http://hubblesite.org/image/1467/news_release/2004-07">Hub
           <h6 class="card-text">{{ post.date | date_to_string }}</h6>
           <h5 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h5>
           <p class="card-text">{{ post.excerpt }}</p>
-        <a href="{{ post.url | absolute_url }}" class="btn btn-primary">Read More</a></li>
+        <a href="{{ post.url | absolute_url }}" class="btn btn-primary">Read More</a>
       </div>
     </div>
     {% if mod3 == 0 %}
     <div class="card border-dark">
-        <a class="twitter-timeline" data-height="500" href="https://twitter.com/CCNYPlanetarium?ref_src=twsrc%5Etfw">Tweets by CCNYPlanetarium</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-          <div class="card-footer bg-transparent">
-             <a href="https://twitter.com/ccnyplanetarium?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ccnyplanetarium</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
+<a class="twitter-timeline" href="https://twitter.com/CCNYPlanetarium?ref_src=twsrc%5Etfw">Tweets by CCNYPlanetarium</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
 
 
