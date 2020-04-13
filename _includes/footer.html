@@ -6,6 +6,9 @@
 
       <div class="col-sm">
         <ul class="list-unstyled icons alt">
+          {%- if site.youtube_username -%}
+          <li><a href="http://www.youtube.com/channel/UCK0idWfnwPocnlCwhJoxMng" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+          {%- endif -%}
           {%- if site.facebook_username -%}
           <li><a href="https://facebook.com/{{site.facebook_username}}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
           {%- endif -%}

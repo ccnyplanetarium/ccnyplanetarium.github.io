@@ -104,7 +104,7 @@ local TrappistCenter = {
 assetHelper.registerSceneGraphNodesAndExport(asset, {TrappistCenter})
 ```
 
-Lastly, we have the actual star asset, named `trappiststar.asset`. This file makes the asset a `RenderableGlobe` and attaches it to the asset made earlier: `TrappistCenter`. The physical parameters of the star (i.e. its radius) can be included here, as well as any textures that should be visible on the globe. 
+Lastly, we have the actual star asset, named `trappiststar.asset`. This file makes the asset a `RenderableGlobe` and attaches it to the asset made earlier: `TrappistCenter`. The physical parameters of the star (i.e. its radius) can be included here, as well as any textures that should be visible on the globe.
 
 ```
 #trappiststar.asset
