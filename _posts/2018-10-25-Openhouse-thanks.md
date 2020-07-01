@@ -5,6 +5,7 @@ date:   2018-10-25
 excerpt: "Takeaways from the OpenHouse"
 image: "assets/images/moon-shot.jpg"
 author: "James Hedberg"
+categories: posts
 ---
 
 ### The Openhouse and more

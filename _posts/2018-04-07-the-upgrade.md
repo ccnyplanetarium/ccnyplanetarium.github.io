@@ -5,6 +5,7 @@ author: James Hedberg
 date:   2018-04-03
 excerpt: "A brief description of the upcoming improvements the CCNY Planetarium"
 image: assets/images/mirrors.jpg
+categories: posts
 ---
 
 ## Installing a new projection system

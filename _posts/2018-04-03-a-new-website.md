@@ -4,6 +4,7 @@ title:  "The New Website"
 date:   2018-04-03
 excerpt: "A new home for the planetarium, online"
 image: "assets/images/website.jpg"
+categories: posts
 ---
 
 ## Building a new Website for the Planetarium

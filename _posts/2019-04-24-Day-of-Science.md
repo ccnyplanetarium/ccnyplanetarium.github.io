@@ -5,6 +5,7 @@ date:   2019-04-24
 excerpt: "We celebrated science at City College"
 image: "assets/images/day-of-science-1.jpg"
 author: "James Hedberg"
+categories: posts
 ---
 
 On April 11th, the Division of Science hosted Alumni and Friends for a tour of the sciences at City College during our first ever [Day of Science](https://www.ccny.cuny.edu/news/inaugural-day-science-showcases-world-class-ccny-research).

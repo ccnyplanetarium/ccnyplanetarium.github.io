@@ -5,6 +5,7 @@ date: 2020-06-06
 excerpt: "Can't make it to Manhattanhenge this year? Nor can we, so we've decided to simulate it"
 image: "assets/images/manhattanhenge_still_1_250.jpg"
 author: "James Hedberg"
+categories: posts
 ---
 
 Twice a year, the setting sun is aligned with the Manhattan Street Grid. This event is reminiscent of ancient civilizations that built structures whose geometry was related to the positions of the sun or moon or other heavenly bodies.

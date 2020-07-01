@@ -4,6 +4,7 @@ title:  "Adding New Mars Landscapes"
 date:   2018-10-02
 excerpt: "How to add new HiRISE data into openspace."
 image: "assets/images/mars-landscape-1-small.jpg"
+categories: posts
 ---
 
 ## Importing more HiRISE data into OpenSpace

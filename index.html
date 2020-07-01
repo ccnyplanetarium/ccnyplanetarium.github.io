@@ -28,13 +28,13 @@ imagecredit: <a href="http://hubblesite.org/image/1467/news_release/2004-07">Hub
 
 
 <div class="card-deck">
-    {% for post in site.posts limit:2 %}
+    {% for post in site.categories.posts limit:2 %}
     {% assign mod3 = forloop.index | modulo: 2 %}
       <div class="card border-dark">
-        <img class="card-img-top" src="{{ post.image | absolute_url }}" alt="Card image cap">
+        <img class="card-img-top" src="{{ post.image | relative_url }}" alt="Card image cap">
         <div class="card-body">
           <h6 class="card-text">{{ post.date | date_to_string }}</h6>
-          <h5 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h5>
+          <h5 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h5>
           <p class="card-text">{{ post.excerpt }}</p>
         <a href="{{ post.url | absolute_url }}" class="btn btn-primary">Read More</a>
       </div>

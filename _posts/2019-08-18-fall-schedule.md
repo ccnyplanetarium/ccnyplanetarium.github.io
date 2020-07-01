@@ -5,6 +5,7 @@ date:   2019-08-18
 excerpt: ""
 image: "assets/images/shuttle-launch-250.jpg"
 author: "James Hedberg"
+categories: posts
 ---
 
 

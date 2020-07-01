@@ -5,6 +5,7 @@ date:   2019-05-07
 excerpt: "On May 17th, join scientists, artists, and beyond for a free hands-on organic art experience using analog projection and fluid interactions!"
 image: "assets/images/lamp-event-250.jpg"
 author: "James Hedberg"
+categories: posts
 ---
 
 

@@ -4,6 +4,7 @@ title:  "Planetarium Open House"
 date:   2018-10-10
 excerpt: "Come by for a quick tour - of the universe!"
 image: "assets/images/sneak-peek-web.jpg"
+categories: posts
 ---
 
 ## Openhouse on October 22nd

@@ -4,6 +4,7 @@ title:  "Spherical Mirror Setup"
 date:   2018-08-01
 excerpt: "Here's our spherical mirror hardware"
 image: "assets/images/spherical-mirror-setup-small.jpg"
+categories: posts
 ---
 
 ## Spherical Mirror setup
@@ -17,7 +18,7 @@ image: "assets/images/spherical-mirror-setup-small.jpg"
 
 <div class="col">
 <p>
-Here's a shot of our spherical mirror system in place. We use a plane mirror to reflect the image back on to the spherical mirror. While it does complicate the set up a little bit, it enables us to keep the projector tucked nicely under the cove, otherwise it would need to be placed on a long cantilever type arm the extends into the room. 
+Here's a shot of our spherical mirror system in place. We use a plane mirror to reflect the image back on to the spherical mirror. While it does complicate the set up a little bit, it enables us to keep the projector tucked nicely under the cove, otherwise it would need to be placed on a long cantilever type arm the extends into the room.
 </p>
 
 <p>

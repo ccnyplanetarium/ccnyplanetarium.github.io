@@ -4,6 +4,7 @@ title:  "Original Drawing"
 date:   2018-04-24
 excerpt: "The technical drawing from the original manual"
 image: "images/original-drawing-small.jpg"
+categories: posts
 ---
 
 ## Original Technical Drawing of Spitz 512

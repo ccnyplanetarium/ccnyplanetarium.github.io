@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="galleryBackground">
+    <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+    {%- include header.html -%}
+
+    <div class="p-2">
+      <div class="container  page-content">
+          <h1 class="text-white">{{ page.title }}</h1>
+          <div class="row">
+          <figure class="figure d-block mx-auto" style="max-width: 1280px;">
+             <img class="figure-img img-fluid" src="{{site.baseurl}}/assets/gallery/{{page.file}}"  alt=""/>
+             <!-- <figcaption class="figure-caption"> {{ page.excerpt }}</figcaption> -->
+          </figure>
+          </div>
+
+          <p class="text-white">{{page.description}}</p>
+          <p class="text-white">Credit: {{page.credits}}</p>
+          <p class="text-white">License: {{page.license}}</p>
+          {% if page.moreURL %}
+          <p class="text-white">Here's something related: <a href="{{page.moreURL}}" target="_blank">{{page.more}}</a> </p>
+          {% endif %}
+          <section >
+              {% include share.html %}
+          </section>
+      </div>
+    </div>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

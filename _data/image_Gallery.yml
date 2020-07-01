@@ -1,0 +1,35 @@
+- image: Solar Eclipse
+  file: eclipse2020-avg.jpg
+  thumb: eclipse2020-avg@0.1x.jpg
+  description: A composite simulation of the June 21, 2020 Eclipse. This eclipse was an annular eclipse meaning from the earth, a very thin ring of the sun is visible around the moon, the so called Ring of Fire.
+  moreURL:
+  credits:
+
+
+- image: Martian Star Trails
+  file: startrails_gale_crater_1.jpg
+  thumb: startrails_gale_crater_1@0.1x.jpg
+  description: A timelapse composite image showing star trails from the bottom of a trench on Gale Crator.
+  moreURL: https://ccnyplanetarium.org/2020/06/23/martian-star-trails.html
+  credits:
+
+- image: A Month on the Moon
+  file: monthonthemoon_max.jpg
+  thumb: monthonthemoon_max@0.1x.jpg
+  description: What would it look like if you took a picture of the Earth every 24 hours from the surface of the moon? Something like this. Notice how the Earth goes through phases, Full, Half, New, etc. The big difference is that its position in the sky doesn't change all that much over the 28 days. This is because the Moon is tidally locked to always have one face (more or less) pointed towards the Earth.
+  moreURL:
+  credits:
+
+- image: The Pole Star on Venus?
+  file: venus_stars_north.jpg
+  thumb: venus_stars_north@0.1x.jpg
+  description: Venus is similar to Earth in some ways, but very different in others. For example, the two planets are rought the same same size, but Venus rotates much slower than Earth. Usually, taking a timelapse of the night sky on earth for 24 hours would lead to 1 complete rotation of the celestial sphere, around the Pole star (Polaris). On Venus however, the rotation is very slow, and the axis of rotation is different. This image shows about 2 days worth of star trails. Notice how the center of rotation is not Polaris, but a non descript region in the constellation of Draco.
+  moreURL:
+  credits:
+
+- image: Jupiter, from Ganymede
+  file: jupiter-ganymede.jpg
+  thumb: jupiter-ganymede.jpg
+  description: Perched above the surface of Ganymede, we see the mighty Jupiter rising, with Europa passing between.
+  moreURL: https://youtu.be/-qhx-ATrUbo
+  credits:

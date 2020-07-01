@@ -5,6 +5,7 @@ date: 2020-06-23
 excerpt: "Let's try some introductory astrophotography... on Mars!"
 image: "assets/images/martian-star-trails-500.jpg"
 author: "James Hedberg"
+categories: posts
 ---
 
 One the first things any budding astrophotographer will do is to make a *star trail* image. This involves taking a series of consecutive images of the night sky over usually a period of a few hours, then merging the images together so that the stars form circular lines in the sky, showing the rotation of the celestial sphere (really the Earth) over the course of an evening. They are usually very stunning images if done right.

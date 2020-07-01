@@ -1,0 +1,35 @@
+---
+layout: gallery
+title: Gallery
+menuListing: Gallery
+description: Images produced by the CCNY Planetarium
+permalink: /gallery/
+sitemap:
+    priority: 0.7
+    lastmod: 2020-06-23
+    changefreq: weekly
+---
+
+
+<div class="row row-cols-1 row-cols-md-3">
+  {% for post in site.categories.gallery %}
+
+<div class="col mb-4">
+<div class="card border-primary text-white bg-dark">
+  {% if post.thumb %}
+<img src="{{site.baseurl}}/assets/gallery/{{post.thumb}}" class="card-img-top" alt="...">
+  {% else %}
+<img src="{{site.baseurl}}/assets/gallery/{{post.file}}" class="card-img-top" alt="...">
+{% endif %}
+<div class="card-body">
+  <h4>{{post.title}}</h4>
+  <p class="card-text small">{{post.excerpt}}</p>
+  <p class="card-text small"><a href="{{ post.url | relative_url }}">Read More</a></p>
+
+
+</div>
+</div>
+</div>
+
+{% endfor %}
+</div>
