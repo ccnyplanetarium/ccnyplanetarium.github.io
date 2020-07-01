@@ -3,7 +3,7 @@ layout: default
 ---
 <!-- Post -->
 
-						{% for post in site.posts %}
+						{% for post in site.categories.posts %}
 						{% assign mod3 = forloop.index | modulo: 3 %}
 <div class="row my-3">
 	<figure class="figure col-md-4 col-sm-12">
