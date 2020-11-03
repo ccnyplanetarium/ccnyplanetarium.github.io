@@ -113,3 +113,11 @@ Kepler Manuscript:
 [Library of Congress, Tabvlæ Rudolphinæ, 1627](http://hdl.loc.gov/loc.rbc/Rosenwald.1316.1)
 
 The content is rendered using the open-source Astrovisualization framework [OpenSpace](https://openspaceproject.com) which is a collaboration between Linköping University, the American Museum of Natural History, Goddard's Community Coordinated Modeling Center, New York University, and the University of Utah.
+
+---
+
+### About the author
+
+Dr. Hedberg studied the ancient cosmologies of Ptolemy, Tycho, and Kepler as an undergrad at St. John's College (Santa Fe) as part of the Program's [Mathematics tutorial](https://www.sjc.edu/academic-programs/undergraduate/classes/mathematics-tutorial), though we didn't have the [beautiful tool](https://www.sjc.edu/news/armillary-sphere-unveiled-santa-fe-campus) when he attended there. Since then, his work in programming and science visualization has sometimes takes delightful detours into the past:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve always thought <a href="https://twitter.com/hashtag/Kepler?src=hash&amp;ref_src=twsrc%5Etfw">#Kepler</a>&#39;s nested solid model would be fun to animate. Though not based on what we would now deem &#39;physics&#39;, he must have nonetheless been pretty excited when he figured out these ratios. I get excited just watching. <a href="https://twitter.com/hashtag/historyofastronomy?src=hash&amp;ref_src=twsrc%5Etfw">#historyofastronomy</a> <a href="https://t.co/SOwPfWciTI">pic.twitter.com/SOwPfWciTI</a></p>&mdash; James Hedberg (@jameshedberg) <a href="https://twitter.com/jameshedberg/status/1301237872201281538?ref_src=twsrc%5Etfw">September 2, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
