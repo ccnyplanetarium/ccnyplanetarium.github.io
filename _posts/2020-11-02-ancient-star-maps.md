@@ -99,11 +99,9 @@ Ptolemy, 2nd cent; Peters, Christian Heinrich Friedrich, 1813-1890; Knobel, E. B
 Ptolemy/Toomer:
 [Ptolemy's Almagest](https://www.google.com/books/edition/_/43XvAAAAMAAJ?hl=en&gbpv=0), Springer New York, 1984
 
-F. Verbunt and R. H. van Gent:
+F. Verbunt and R. H. van Gent: [Three editions of the star catalogue of Tycho Brahe](https://www.aanda.org/articles/aa/abs/2010/08/aa14002-10/aa14002-10.html) A&A Volume 516, June-July 2010
 
-[Three editions of the star catalogue of Tycho Brahe](https://www.aanda.org/articles/aa/abs/2010/08/aa14002-10/aa14002-10.html) A&A Volume 516, June-July 2010
-
-[The star catalogues of Ptolemaios and Ulugh Beg](https://doi.org/10.1051/0004-6361/201219596) A&A
+F. Verbunt and R. H. van Gent: [The star catalogues of Ptolemaios and Ulugh Beg](https://doi.org/10.1051/0004-6361/201219596) A&A
 Volume 544, August 2012
 
 [Seeing Ancient Stars](http://www.etwright.org/astro/almagest.html)
