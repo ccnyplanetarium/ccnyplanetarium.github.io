@@ -21,7 +21,7 @@ file="almagest_ursa_major.png" alt="Almagest Facsimile, Ursa Major"
 caption="The stars from the constellation Ursa Major, with Lat, Long, and Brightness"
 %}
 
-Much work has already been done analyzing these tables of star positions - our task here is not to dig too deep into the data set and its artifacts, but rather to make a compelling visualization. Several technical issues arise when trying to do so. First, we can't just throw a 500 year old scanned image at a piece of software and have it turn it into a picture. Someone needs to type all those numbers up into a machine readable file. Fortunately that's been done before in several places. (Graßhoff, 1990; Ptolemy, G. J. Toomer 1984)
+Much work has already been done analyzing these tables of star positions - our task here is not to dig too deep into the data set and its artifacts, but rather to make a compelling visualization. Several technical issues arise when trying to do so. First, we can't just throw a 500 year old scanned image at a piece of software and have it turn it into a picture. A dedicated individual needs to type all those numbers up into a machine readable file. Not that I'm not up for it, but it's been done before in several places. (Graßhoff, 1990; Ptolemy, G. J. Toomer 1984)
 
 Next, we have to understand what the numbers are indicating. For Ptolemy, the most natural system of measurements involved using the degrees above and below the ecliptic plane, and the degrees east or west of the vernal equinox - the location in the sky where the ecliptic plane crosses the celestial equator. The tricky thing is that due to orbital precession, this position changes about 1 degree every 72 years. So, we need to know _when_ Ptolemy made these measurements in order to convert them the modern epoch. Again, fortunately, this has been done. (Peters, 1915) The best estimate for which equinox to use has been figured out to be 58 AD.  
 
@@ -48,7 +48,7 @@ caption="No Southern Skies in this catalog"
 
 Despite its imperfections (only visible really from our modern vantage point), the importance of this 'database' for the development of astronomy cannot be overstated. It remains the oldest table of such data and was used for centuries to help understand the motions of the heaven. And then, a new astronomer came on the scene.
 
-## Tycho Brahe + Johannes Keppler - _Tabulae Rudolphinae_
+## Tycho Brahe + Johannes Kepler - _Tabulae Rudolphinae_
 
 Tycho was from Denmark, and he had a passion for all things exact. Among his numerous contributions to the development of science, and there were many, was a new catalog of stars. The technology he invented to make the observations is an [entire story in itself](https://www2.hao.ucar.edu/Education/FamousSolarPhysicists/tycho-brahes-observations-instruments). For our purposes, we'll refrain from telling that story (except for mentioning he had an entire castle constructed on an island for making astronomical measurements), and stick to the task at hand.
 
@@ -99,8 +99,14 @@ Ptolemy, 2nd cent; Peters, Christian Heinrich Friedrich, 1813-1890; Knobel, E. B
 Ptolemy/Toomer:
 [Ptolemy's Almagest](https://www.google.com/books/edition/_/43XvAAAAMAAJ?hl=en&gbpv=0), Springer New York, 1984
 
-F. Verbunt and R. H. van Gent
+F. Verbunt and R. H. van Gent:
+
 [Three editions of the star catalogue of Tycho Brahe](https://www.aanda.org/articles/aa/abs/2010/08/aa14002-10/aa14002-10.html) A&A Volume 516, June-July 2010
+
+[The star catalogues of Ptolemaios and Ulugh Beg](https://doi.org/10.1051/0004-6361/201219596) A&A
+Volume 544, August 2012
+
+[Seeing Ancient Stars](http://www.etwright.org/astro/almagest.html)
 
 Almagest Manuscript:
 [Library of Congress, Almagestū Cl. Ptolemei, 1515](http://hdl.loc.gov/loc.rbc/General.17936)
