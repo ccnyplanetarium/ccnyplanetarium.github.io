@@ -62,7 +62,7 @@ file="tycho_kepler_fixed_stars.jpg" alt="The Tycho/Kepler Data Set"
 caption="The Catalog of Fixed Stars showing, again, the listing for Ursa Major"
 %}
 
-Using a similar method as above, with some minor modifications due to the way the data is structured, we can transform these manuscripts to a data format we can work with. Others have already done most of the heavy lifting, we just have to run some coordinate transforms and data format fixes. Here are the stars from the Almagest (in <span style="color: purple">PURPLE</span>) and the stars from Kepler's Tables, based on Tycho's measurements (in <span style="color: LimeGreen">GREEN</span>) shown on a sphere around the earth. Again, these astronomers didn't have any reasonable means to assess the distance to these stars since telescopes were still a few years away, and their cosmologies didn't requires it either. All the stars were fixed in the crystalline celestial spheres. 
+Using a similar method as above, with some minor modifications due to the way the data is structured, we can transform these manuscripts to a data format we can work with. Others have already done most of the heavy lifting, we just have to run some coordinate transforms and data format fixes. Here are the stars from the Almagest (in <span style="color: purple">PURPLE</span>) and the stars from Kepler's Tables, based on Tycho's measurements (in <span style="color: LimeGreen">GREEN</span>) shown on a sphere around the earth. Again, these astronomers didn't have any reasonable means to assess the distance to these stars since telescopes were still a few years away, and their cosmologies didn't require it either – all the stars were fixed in the crystalline celestial spheres. 
 
 
 {%
