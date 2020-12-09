@@ -39,12 +39,12 @@ The orientation of the planets with respect to the earth will depend on the view
 {%
 include figure.html
 max-width="1200px"
-file="jupiter-saturn-conjunction-2020-3-places.jpg" alt="jupiter saturn conjunction 2020 nyc gif"
-caption="Animated view of the Jupiter Saturn Conjunction [CC-BY: J.Hedberg/CCNYPlanetarium]"
+file="jupiter-saturn-conjunction-2020-3-places.jpg" alt="jupiter saturn conjunction 2020 three views"
+caption="three views of the Jupiter Saturn Conjunction [CC-BY: J.Hedberg/CCNYPlanetarium]"
 %}
 
 
-<table class="table">
+<table class="table table-bordered">
  <thead>
 <tr>
 <th>Location</th>
