@@ -2,7 +2,7 @@
 layout: post
 title:  "The Jupiter Saturn Conjunction of 2020"
 date: 2020-12-09
-excerpt: "When wondering stars align"
+excerpt: "When wandering stars align"
 image: "assets/images/jupiter-saturn-conjunction-500.jpg"
 author: "James Hedberg"
 categories: posts
@@ -28,7 +28,7 @@ We can animate the view over time as well, so that the arrow of time can be clea
 {%
 include figure.html
 max-width="1200px"
-file="jupiter-saturn-conjunction-nyc-2020.gif" alt="jupiter saturn conjunction 2020 nyc gif"
+file="jupiter-saturn-conjunction-2020-nyc.gif" alt="jupiter saturn conjunction 2020 nyc gif"
 caption="Animated view of the Jupiter Saturn Conjunction [CC-BY: J.Hedberg/CCNYPlanetarium]"
 %}
 
@@ -123,7 +123,6 @@ max-width="1200px"
 file="jupiter-saturn-conjunction-2020-solar-system.gif" alt="jupiter saturn conjunction 2020 solar system gif"
 caption="Animated view of the solar system showing the 2020 Jupiter Saturn Conjunction [CC-BY: J.Hedberg/CCNYPlanetarium]"
 %}
-
 
 
 
