@@ -14,12 +14,12 @@ Inspired by some awkward images online of the Jupiter-Saturn Conjunction of 2020
 
 ## The Basic Scene
 
-Below is an image showing about 60 days of consecutive images, superimposed on each other. The two bright spots are Jupiter and Saturn. Over the course of the months shown, their apparent separation in the sky becomes smaller, eventually reaching a minimum on Dec 21st. This view is looking downtown on the island of Manhattan at 6 PM EST.
+Below is an image showing about 60 days of consecutive images, superimposed on each other. Every day is shown, with highlights each week. Over the course of the months shown, their apparent separation in the sky becomes smaller, eventually reaching a minimum on Dec 21st. This view is looking downtown on the island of Manhattan at 6 PM EST.
 
 {%
 include figure.html
 max-width="1200px"
-file="jupiter-saturn-conjunction-2020-labeled-nyc.png" alt="jupiter saturn conjunction 2020 nyc"
+file="Jup_Sat_GC_nyc_overlay_angles.png" alt="jupiter saturn conjunction 2020 nyc"
 caption="This view show consecutive night from Nov 1st through Dec 30, 2020, at 6 PM, from a vantage point in Manhattan. [CC-BY: J.Hedberg/CCNYPlanetarium]"
 %}
 
@@ -28,7 +28,7 @@ We can animate the view over time as well, so that the arrow of time can be clea
 {%
 include figure.html
 max-width="1200px"
-file="jupiter-saturn-conjunction-2020-nyc.gif" alt="jupiter saturn conjunction 2020 nyc gif"
+file="Jup_Sat_GC_nyc.gif" alt="jupiter saturn conjunction 2020 nyc gif"
 caption="Animated view of the Jupiter Saturn Conjunction [CC-BY: J.Hedberg/CCNYPlanetarium]"
 %}
 
@@ -109,7 +109,11 @@ caption="three views of the Jupiter Saturn Conjunction [CC-BY: J.Hedberg/CCNYPla
 
 Since few things bring out the nit-picking in folks like special astronomical events do, here are some technical details of the above images in case anyone asks.
 
-All images are simulated and rendered with [OpenSpace](https://www.openspaceproject.com/). A camera location is given in the Lat/Long column. The stacked images are all snapshots of the night sky (stars excluded for clarity) at the given time. Also not included are advanced atmospheric effects and changing light due to sunset, which should happen about an hour before the images are taken.
+All images are simulated and rendered with [OpenSpace](https://www.openspaceproject.com/). A camera location is given in the Lat/Long column. The stacked images are all snapshots of the night sky (stars excluded for clarity) at the given time. Also not included in the images are advanced atmospheric effects and changing light due to sunset, which should happen about an hour before the images are taken. (Angular separation values do include atmospheric effects.)
+
+Thanks to [Prof. Emily Rice](https://twitter.com/emilylurice) for helpful comments in the preparation of the NYC skyline  image.
+
+The 3d Buildings of NYC are from [NYC DOITT](https://www1.nyc.gov/site/doitt/initiatives/3d-building.page).
 
 And, while we're delighted to see these being used (as opposed to other, mildly misleading images out there), we'd also be delighted with a credit line somewhere, i.e. [Credit: J.Hedberg/CCNYPlanetarium] is certainly reasonable. Thx.
 
