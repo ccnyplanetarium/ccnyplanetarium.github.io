@@ -43,7 +43,7 @@ file="jupiter-saturn-conjunction-2020-3-places.jpg" alt="jupiter saturn conjunct
 caption="three views of the Jupiter Saturn Conjunction [CC-BY: J.Hedberg/CCNYPlanetarium]"
 %}
 
-
+<div class="table-responsive">
 <table class="table table-bordered">
  <thead>
 <tr>
@@ -104,6 +104,7 @@ caption="three views of the Jupiter Saturn Conjunction [CC-BY: J.Hedberg/CCNYPla
 </tr>
 </tbody>
 </table>
+</div>
 
 ### Technical Info
 
