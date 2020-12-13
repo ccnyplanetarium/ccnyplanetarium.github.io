@@ -19,8 +19,8 @@ Below is an image showing about 60 days of consecutive images, superimposed on e
 {%
 include figure.html
 max-width="1200px"
-file="Jup_Sat_GC_nyc_overlay_angles.png" alt="jupiter saturn conjunction 2020 nyc"
-caption="This view show consecutive night from Nov 1st through Dec 30, 2020, at 6 PM, from a vantage point in Manhattan. [CC-BY: J.Hedberg/CCNYPlanetarium]"
+file="Jup_Sat_GC_nyc_overlay_angles.png" alt="great conjunction jupiter saturn 2020 nyc"
+caption="The Great Conjunction 2020 - This view shows consecutive night from Nov 1st through Dec 30, 2020, at 6 PM, from a vantage point in Manhattan. [CC-BY: J.Hedberg/CCNYPlanetarium]"
 %}
 
 We can animate the view over time as well, so that the arrow of time can be clearly seen
@@ -129,7 +129,13 @@ file="jupiter-saturn-conjunction-2020-solar-system.gif" alt="jupiter saturn conj
 caption="Animated view of the solar system showing the 2020 Jupiter Saturn Conjunction [CC-BY: J.Hedberg/CCNYPlanetarium]"
 %}
 
+---
 
+Update 12/13/2020: Need a Gif to share?
+
+Here's one:
+
+<iframe src="https://giphy.com/embed/olEMK88olWpnNUZcWm" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/astronomy-great-conjunction-jupiter-saturn-olEMK88olWpnNUZcWm">via GIPHY</a></p>
 
 ---
 
