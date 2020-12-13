@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Jupiter Saturn Conjunction of 2020"
+title:  "The Jupiter Saturn Great Conjunction of 2020"
 date: 2020-12-09
 excerpt: "When wandering stars align"
 image: "assets/images/jupiter-saturn-conjunction-500.jpg"
