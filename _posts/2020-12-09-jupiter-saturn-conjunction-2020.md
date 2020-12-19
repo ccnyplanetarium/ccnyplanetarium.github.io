@@ -135,7 +135,7 @@ Update 12/13/2020: Need a Gif to share?
 
 Here's one:
 
-<iframe src="https://giphy.com/embed/olEMK88olWpnNUZcWm" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/astronomy-great-conjunction-jupiter-saturn-olEMK88olWpnNUZcWm">via GIPHY</a></p>
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/olEMK88olWpnNUZcWm" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/astronomy-great-conjunction-jupiter-saturn-olEMK88olWpnNUZcWm">via GIPHY</a></p>
 
 ---
 
