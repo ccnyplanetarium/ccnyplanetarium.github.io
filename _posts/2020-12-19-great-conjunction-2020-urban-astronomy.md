@@ -2,8 +2,8 @@
 layout: post
 title:  "The Jupiter Saturn Great Conjunction of 2020"
 date: 2020-12-19
-excerpt: "Don't mind me, I'm just taking pictures of these awesome planets."
-image: "assets/images/jupiter-saturn-conjunction-500.jpg"
+excerpt: "Don't mind me here on the sidewalk, I'm just taking pictures of these awesome planets."
+image: "assets/images/greatconjunction2020-500px.jpg"
 author: "James Hedberg"
 categories: posts
 ---
