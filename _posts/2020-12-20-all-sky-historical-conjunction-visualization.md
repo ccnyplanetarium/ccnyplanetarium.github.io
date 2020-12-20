@@ -16,7 +16,7 @@ This year, they will only be separated by about 1/10 of a degree, or 6.1 arcminu
 
 And even cooler, during the 1226 conjunction, which would have been visible (unless is was cloudy), the two gas giants were separated by only 2.1 arcminutes.
 
-With any further delay, here is the 360 viz. Use your mouse move the view around.
+With any further delay, here is the 360 viz. Use your mouse move the view around. (the link is right below for a full page version)
 
 <div class='embed-container'>
 <iframe width="560" height="315" src="https://ccnyplanetarium.org/dynamic-sims/pano/jupiter-saturn-historical.html" frameborder="0" allow="accelerometer; gyroscope;" allowfullscreen></iframe>
@@ -30,11 +30,11 @@ Find the different conjunctions. Notice that for many, the planets never overlap
 
 Here's a link to the full-page/full-screen version: [360 Great Conjunction Historical Visualization](https://ccnyplanetarium.org/dynamic-sims/pano/jupiter-saturn-historical.html)
 
-It should work great on phones, cardboard VR, or probably a real VR system.
+It should work great on phones, cardboard VR, or probably a real VR system. (You might have to allow the simulation to access your phones motion sensors. )
 
 ---
 
-Each dot represents one day's observations. For each conjunction, days are shown 2 weeks before and after the main conjunction event, with weekly highlights indicated by the emphasized points. 
+Each dot represents one day's observations. For each conjunction, days are shown 2 weeks before and after the main conjunction event, with weekly highlights indicated by the emphasized points.
 
 We can show some projections of the 360 image as well. Though, they are less fun.
 
