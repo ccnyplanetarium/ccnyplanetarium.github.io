@@ -10,7 +10,7 @@ categories: posts
 
 # Introduction
 
-Inspired by some awkward images online of the Jupiter-Saturn Conjunction of 2020, we've put together a few of our own for folks to use and share. These are all made with NASA grade [planetary data](https://naif.jpl.nasa.gov/naif/data.html) and should represent, to extreme precision, what would appear in the sky (assuming it was perfect weather every night and you had a great camera and could trek out to these locations)
+Inspired by some awkward (and astronomically impossible) images online of the Jupiter-Saturn Conjunction of 2020, we've put together a few of our own for folks to use and share. These are all made with NASA grade [planetary data](https://naif.jpl.nasa.gov/naif/data.html) and should represent, to extreme precision, what would appear in the sky (assuming it was perfect weather every night and you had a great camera and could trek out to these locations). In short, if you see one that looks like a big V over a pretty sunset, you should know it was essentially made up - i.e. a photoshop job.  
 
 ## The Basic Scene
 
