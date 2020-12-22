@@ -8,6 +8,8 @@ author: "James Hedberg"
 categories: posts
 ---
 
+[Updated 12-21-2020: See the final pics down [below](#themainevent)]
+
 As I write this, the skies are looking pretty cloudy, so it's likely there won't be any observations of the Great Conjunction from my location tonight. So, instead, here are a few images from the past few days showing how it appears, even the dirtiest of dirty places, NYC.
 
 If you want a chance to see them through a telescope, and are lacking a telescope, then do go check out [The Amateur Astronomers Association of NY](https://www.aaa.org/observing). They are having observing nights for the next few days. If you would be happy with just a naked eye view, then try to find an area with some (doesn't need to be a lot of) open space towards the south west. Just a big intersection might do. Parks are great. Higher ground is always helpful.
@@ -58,6 +60,33 @@ file="great-conjunction-2020/greatconjunctionfultonandgreene.jpg" alt="jupiter s
 caption="This was at the intersection of Fulton and Greene, duh. [CC-BY: J.Hedberg/CCNYPlanetarium]"
 %}
 ---
+
+<h2><a name="themainevent">Update - The Main Event</a></h2>
+
+
+And I'll append a few shots here at the end, of the period of closest visible conjunction, 12-21-2020. These shots are again from the neighborhood park in Brooklyn. It was a 30-40% cloud covered sky I'd estimate, so when the two orbs finally poked through, it was spectacular.
+
+{%
+include figure.html
+max-width="1200px"
+file="great-conjunction-2020/great-conjunction-12-21-2020-ftgreene.jpg" alt="jupiter saturn conjunction 2020 nyc "
+caption="Here it is. The best shot of the evening. I'm not an experienced astrophotog, and I have rudimentary camera equipment, so it's obviously not the most amazing shot, but after a few weeks of waiting, it was still a joy. [CC-BY: J.Hedberg/CCNYPlanetarium]"
+%}
+
+{%
+include figure.html
+max-width="1200px"
+file="great-conjunction-2020/great-conjunction-12-21-2020-ftgreene-3.jpg" alt="jupiter saturn conjunction 2020 nyc "
+caption="The crowd was gathering. A few were mislead by a bright star further to the west, but we steered them in the right direction. It was also someone's birthday. We sang to her. The little dot 3/4 of the way across, under the tree branch is the object of interest. [CC-BY: J.Hedberg/CCNYPlanetarium]"
+%}
+
+{%
+include figure.html
+max-width="1200px"
+file="great-conjunction-2020/great-conjunction-12-21-2020-ftgreene-2.jpg" alt="jupiter saturn conjunction 2020 nyc "
+caption="One more before they dipped into the trees and then behind the high rises. [CC-BY: J.Hedberg/CCNYPlanetarium]"
+%}
+
 
 ### About the author
 
