@@ -2,7 +2,7 @@
 layout: post
 title:  "Mars 2020"
 date: 2021-02-18
-excerpt: ""
+excerpt: "The long awaited arrival of Mars 2020 and the Perseverance Rover is today!"
 image: "assets/images/mars-2020-500px.jpg"
 author: "James Hedberg"
 categories: posts
