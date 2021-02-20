@@ -22,7 +22,7 @@ It took about 216 Earth days for the rover make its way across a small part of t
 
 <div class='embed-container'><iframe width="560" height="315" src="https://www.youtube.com/embed/CIMI0mCwNpE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-What would the Martians see, had they beeb watching Earth during the last year? On July 30th last summer, they would have seen a small object leave Earth and get closer and closer to Mars. Something like the following:
+What would the Martians see, had they been watching Earth during the last year? On July 30th last summer, they would have seen a small object leave Earth and get closer and closer to Mars. Something like the following:
 
 
 <div class='embed-container'><iframe width="560" height="315" src="https://www.youtube.com/embed/nQWi_DPH9JQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -38,7 +38,7 @@ We'll see what the rover finds shortly.
 
 <h4>Coloring Pages</h4>
 
-Here's a few pages you can print out and color on. All images are made with real topographic data from the HiRISE mission.
+Here's a few pages you can print out and color on. All images are made with real topographic data from the HiRISE mission. We recommend the red crayon.
 
 <a href="{{site.baseurl}}/assets/docs/mars-jezero-coloringbook.pdf" target="_blank">Download PDF of Mars 2020 Coloring Pages</a>
 
