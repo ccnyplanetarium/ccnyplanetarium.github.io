@@ -101,3 +101,11 @@ While it will still be a number of years before budding astrophotographers get t
 Credits: The content is rendered using the open-source Astrovisualization framework [OpenSpace](https://openspaceproject.com) which is a collaboration between Linköping University, the American Museum of Natural History, Goddard's Community Coordinated Modeling Center, New York University, and the University of Utah.
 
 HiRISE Terrains are thanks to NASA/JPL/University of Arizona
+
+---
+
+### About the author
+
+Dr. Hedberg studied the ancient cosmologies of Ptolemy, Tycho, and Kepler as an undergrad at St. John's College (Santa Fe) as part of the Program's [Mathematics tutorial](https://www.sjc.edu/academic-programs/undergraduate/classes/mathematics-tutorial), though the college didn't have this [beautiful tool](https://www.sjc.edu/news/armillary-sphere-unveiled-santa-fe-campus) when he attended there. Since then, his work in programming and science visualization sometimes takes delightful detours into the past, present and future.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">No sense competing with the major <a href="https://twitter.com/hashtag/sciviz?src=hash&amp;ref_src=twsrc%5Etfw">#sciviz</a> centers&#39; gpus when it comes to photo-realistic renders of Mars - but I can have as much fun. Here are some new shots from Jezero Crater with <a href="https://twitter.com/HiRISE?ref_src=twsrc%5Etfw">@HiRISE</a> topo data, done in my favorite ligne claire style. <a href="https://twitter.com/hashtag/Mars2020?src=hash&amp;ref_src=twsrc%5Etfw">#Mars2020</a> <a href="https://twitter.com/hashtag/b3d?src=hash&amp;ref_src=twsrc%5Etfw">#b3d</a> <a href="https://twitter.com/hashtag/bnpr?src=hash&amp;ref_src=twsrc%5Etfw">#bnpr</a> <a href="https://t.co/JJclZOghYS">pic.twitter.com/JJclZOghYS</a></p>&mdash; James Hedberg (@jameshedberg) <a href="https://twitter.com/jameshedberg/status/1362392537781186561?ref_src=twsrc%5Etfw">February 18, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

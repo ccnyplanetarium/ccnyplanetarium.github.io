@@ -131,11 +131,7 @@ caption="Animated view of the solar system showing the 2020 Jupiter Saturn Conju
 
 ---
 
-Update 12/13/2020: Need a Gif to share?
 
-Here's one:
-
-<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/olEMK88olWpnNUZcWm" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/astronomy-great-conjunction-jupiter-saturn-olEMK88olWpnNUZcWm">via GIPHY</a></p>
 
 ---
 
