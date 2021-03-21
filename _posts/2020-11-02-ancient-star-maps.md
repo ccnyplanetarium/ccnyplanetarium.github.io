@@ -12,7 +12,7 @@ It's often said that astronomy is the oldest science. That must mean they had so
 
 ## Cladius Ptolemy - _The Almagest_
 
-First up is Ptolemy's Catalog of Stars from his book Μαθηματικὴ Σύνταξις otherwise known as The Almagest. In addition to laying out and entire cosmological system rooted in Euclidean Geometry, Ptolemy also included a catalog of 1022 'fixed stars', listing their positions (ecliptic latitude and longitude) as well as a data point indicating the star's apparent brightness (on a scale of 1-6, 1 being the brightest).
+First up is Ptolemy's Catalog of Stars from his book Μαθηματικὴ Σύνταξις otherwise known as The Almagest. In addition to laying out an entire cosmological system rooted in Euclidean Geometry, Ptolemy also included a catalog of 1022 'fixed stars', listing their positions (ecliptic latitude and longitude) as well as a data point indicating the star's apparent brightness (on a scale of 1-6, 1 being the brightest).
 
 {%
 include figure.html
@@ -86,7 +86,7 @@ Stay tuned to our channels, since we'll likely have some shows featuring this ma
 
 Notes
 
-1. We used the word 'made' in reference to the measurements of the star positions. However, it is very likely that Ptolemy did not in fact make many of these measurements, but instead updated and transformed the existing catalog of the ancient Greek astronomy Hipparcos. 
+1. We used the word 'made' in reference to the measurements of the star positions. However, it is very likely that Ptolemy did not in fact make many of these measurements, but instead updated and transformed the existing catalog of the ancient Greek astronomer Hipparchus.
 
 ---
 
