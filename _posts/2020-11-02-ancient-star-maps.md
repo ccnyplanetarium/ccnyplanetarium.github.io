@@ -23,7 +23,7 @@ caption="The stars from the constellation Ursa Major, with Lat, Long, and Bright
 
 Much work has already been done analyzing these tables of star positions - our task here is not to dig too deep into the data set and its artifacts, but rather to make a compelling visualization. Several technical issues arise when trying to do so. First, we can't just throw a 500 year old scanned image at a piece of software and have it turn it into a picture. A dedicated individual needs to type all those numbers up into a machine readable file. Of course I'd be up for it, but it's been done [before](http://www.etwright.org/astro/almagest.html) in several places. (Graßhoff, 1990; Ptolemy, G. J. Toomer 1984)
 
-Next, we have to understand what the numbers are indicating. For Ptolemy, the most natural system of measurements involved using the degrees above and below the ecliptic plane, and the degrees east or west of the vernal equinox - the location in the sky where the ecliptic plane crosses the celestial equator. The tricky thing is that due to orbital precession, this position changes about 1 degree every 72 years. So, we need to know _when_ Ptolemy made these measurements in order to convert them the modern epoch. Again, fortunately, this has been done. (Peters, 1915) The best estimate for which equinox to use has been figured out to be 58 AD.  
+Next, we have to understand what the numbers are indicating. For Ptolemy, the most natural system of measurements involved using the degrees above and below the ecliptic plane, and the degrees east or west of the vernal equinox - the location in the sky where the ecliptic plane crosses the celestial equator. The tricky thing is that due to orbital precession, this position changes about 1 degree every 72 years. So, we need to know _when_ Ptolemy made<sup>1</sup> these measurements in order to convert them the modern epoch. Again, fortunately, this has been done. (Peters, 1915) The best estimate for which equinox to use has been figured out to be 58 AD.  
 
 So, now we can transform this table of data into something modern sci-viz software can work with. With a little help from `astropy.coordinates`, this task is a breeze. (Full script in the [GitHub Repo](https://github.com/ccnyplanetarium/addons/tree/master/historical-star-catalogs)) Here at the CCNY Planetarium, we use [OpenSpace](https://www.openspaceproject.com/) to do our simulations, which can read in a table of X,Y,Z positions for a star catalog and make nice little stars in the right place in sky.
 
@@ -82,7 +82,11 @@ It's easy to see the transition fromt the Modern Hipparcos Catalog to Ptolemy's.
 
 Stay tuned to our channels, since we'll likely have some shows featuring this material when we return to in-person formats.
 
+---
 
+Notes
+
+1. We used the word 'made' in reference to the measurements of the star positions. However, it is very likely that Ptolemy did not in fact make many of these measurements, but instead updated and transformed the existing catalog of the ancient Greek astronomy Hipparcos. 
 
 ---
 
