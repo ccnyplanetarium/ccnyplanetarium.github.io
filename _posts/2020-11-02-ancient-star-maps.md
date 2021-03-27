@@ -25,7 +25,7 @@ Much work has already been done analyzing these tables of star positions - our t
 
 Next, we have to understand what the numbers are indicating. For Ptolemy, the most natural system of measurements involved using the degrees above and below the ecliptic plane, and the degrees east or west of the vernal equinox - the location in the sky where the ecliptic plane crosses the celestial equator. The tricky thing is that due to orbital precession, this position changes about 1 degree every 72 years. So, we need to know _when_ Ptolemy made<sup>1</sup> these measurements in order to convert them the modern epoch. Again, fortunately, this has been done. (Peters, 1915) While it's still a very complicated and thorny issue, the best estimate for which equinox to use has been figured out to be 58 AD. This value gives the best overlap with the modern stars, on average.
 
-So, now we can transform this table of data into something modern sci-viz software can work with. With a little help from `astropy.coordinates`, this task is a breeze. (Full script in the [GitHub Repo](https://github.com/ccnyplanetarium/addons/tree/master/historical-star-catalogs)) Here at the CCNY Planetarium, we use [OpenSpace](https://www.openspaceproject.com/) to do our simulations, which can read in a table of X,Y,Z positions for a star catalog and make nice little stars in the right place in sky, with appropriate brightness levels. 
+So, now we can transform this table of data into something modern sci-viz software can work with. With a little help from `astropy.coordinates`, this task is a breeze. (Full script in the [GitHub Repo](https://github.com/ccnyplanetarium/addons/tree/master/historical-star-catalogs)) Here at the CCNY Planetarium, we use [OpenSpace](https://www.openspaceproject.com/) to do our simulations, which can read in a table of X,Y,Z positions for a star catalog and make nice little stars in the right place in sky, with appropriate brightness levels.
 
 {%
 include figure.html
@@ -81,6 +81,14 @@ And now, thanks to the powers of OpenGL we can see these catalogs from the vanta
 It's easy to see the transition from the Modern Hipparcos Catalog to Ptolemy's. His data had plenty of systematic and acute errors. And then, again from Ptolemy to Tycho, the deltas are obvious. However, during the fade from Tycho back to Hipparcos, it's nearly impossible within the presented field of view to see the difference (for many stars). The errors and history of these data sets has been explored very thoroughly in the literature and make for great studies in the history of science and data. But, visualizing them in an immersive planetarium experience is about as close to time travel as we can get.
 
 Stay tuned to our channels, since we'll likely have some shows featuring this material when we return to in-person formats.
+
+#### Cosmic Conversation
+
+We had a great conversation with the Morrison Planetarium about these data sets. Check it out here:
+
+<div class='embed-container'>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3isO_IVHlqU?start=108" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ---
 
