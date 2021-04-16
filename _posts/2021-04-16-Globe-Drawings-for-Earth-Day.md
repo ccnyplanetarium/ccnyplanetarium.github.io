@@ -20,7 +20,7 @@ caption="Wrapping a map on a sphere [CC-BY: J.Hedberg/CCNYPlanetarium]"
 I don't know about you, but around here we love drawing maps, and we love looking at globes. But, it's been a little hard to do both at the same time. Globe making is not a particularly easy hobby, and especially when little hands are involved, the painstaking work of printing out a dozen little segments (gores) and gluing them to a perfect sphere can be challenging. So, here's a compromise. You draw a map, we'll put it on a virtual sphere that you can play with. Like this one (click and drag to see the whole globe):
 
 <canvas id="c" style="display: block; padding: 5px;
-  width: 50%;
+  width: 80%;
   height: 350px;
   margin: auto;"></canvas>
 
