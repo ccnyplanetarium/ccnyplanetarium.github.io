@@ -1,0 +1,207 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Planet {{page.record}}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122321528-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-122321528-1');
+	</script>
+
+	 <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  {%- seo -%}
+	  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+	  <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
+	  <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+
+	  <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans|Righteous" rel="stylesheet">
+
+
+	<style>
+    * {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #444;
+    }
+
+
+
+    #content {
+      position: absolute;
+      top: 0; width: 100%;
+      z-index: 1;
+      padding: 3em 0 0 0;
+    }
+
+    #c {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+    }
+
+		.information {
+			position: absolute;
+			top: 10px;
+			width: 100%;
+			text-align: left;
+			z-index: 100;
+			display:block;
+			color: #fff;
+			padding: 2em;
+
+		}
+		.sharing {
+			position: absolute;
+			color: #fff;
+			padding: 2em;
+			bottom: 2em;
+			z-index: 100;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="information">
+
+		<table>
+			<tr>
+				<td><h3>{{page.subname}}</h3></td>
+			</tr>
+			<tr>
+				<td>Globe by: {{page.artist}}</td>
+			</tr>
+			<tr>
+				<td>Description: {{page.description}}</td>
+			</tr>
+			<tr>
+				<td>Age: {{page.age}}</td>
+			</tr>
+			<tr>
+				<td>Medium: {{page.media}}</td>
+			</tr>
+		</table>
+
+	</div>
+	<div class="sharing">
+
+		{% include share.html %}
+	</div>
+  <canvas id="c"></canvas>
+
+			<div id="content">
+
+			</div>
+
+
+    <script type="module">
+
+			import * as THREE from '{{base.url}}/assets/javascript/threejs/three.module.js';
+			import { OrbitControls } from '{{base.url}}/assets/javascript/threejs/OrbitControls.js';
+
+	function main() {
+	  const canvas = document.querySelector('#c');
+	  const renderer = new THREE.WebGLRenderer({canvas});
+
+	  const fov = 75;
+	  const aspect = 2;  // the canvas default
+	  const near = 0.1;
+	  const far = 5;
+	  const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+	  camera.position.z = 2;
+
+	  const scene = new THREE.Scene();
+
+	  {
+	    const color = 0xFFFFFF;
+	    const intensity = 1;
+	    const light = new THREE.DirectionalLight(color, intensity);
+	    light.position.set(-1, 2, 4);
+	    scene.add(light);
+	  }
+
+		const controls = new OrbitControls( camera, canvas );
+		controls.minDistance = 1.5;
+		controls.maxDistance = 5;
+		controls.enablePan = false;
+		controls.enableZoom = true;
+
+
+		const geometry = new THREE.SphereGeometry( 1, 64, 32 );
+		geometry.name = "theGlobe";
+		const material = new THREE.MeshStandardMaterial({
+			roughness: 1
+		});
+
+		const textureLoader = new THREE.TextureLoader();
+		textureLoader.load("{{base.url}}/assets/dynamic-media/globes/globe-drawings/{{page.image}}", function(map) {
+
+			map.anisotropy = 8;
+
+			material.map = map;
+			material.needsUpdate = true;
+			material.opacity = 1;
+
+		});
+		const theGlobe = new THREE.Mesh( geometry, material )
+		theGlobe.name = "theGlobe"
+		scene.add( theGlobe);
+
+
+	  function resizeRendererToDisplaySize(renderer) {
+	    const canvas = renderer.domElement;
+	    const width = canvas.clientWidth;
+	    const height = canvas.clientHeight;
+	    const needResize = canvas.width !== width || canvas.height !== height;
+	    if (needResize) {
+	      renderer.setSize(width, height, false);
+	    }
+	    return needResize;
+	  }
+
+	  function render(time) {
+	    time *= 0.0001;
+
+			theGlobe.rotation.y = time;
+	    if (resizeRendererToDisplaySize(renderer)) {
+	      const canvas = renderer.domElement;
+	      camera.aspect = canvas.clientWidth / canvas.clientHeight;
+	      camera.updateProjectionMatrix();
+	    }
+
+
+
+	    renderer.render(scene, camera);
+
+	    requestAnimationFrame(render);
+	  }
+
+	  requestAnimationFrame(render);
+	}
+
+	main();
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>celestial sphere</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+
+	<style>
+		body {
+
+			font-family: sans-serif;
+			font-size: 13px;
+			text-align: center;
+
+			margin: 0px;
+			overflow: hidden;
+		}
+
+		a {
+			color: #000;
+		}
+
+		#info {
+			color: #000;
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			padding: 5px;
+		}
+
+		.controlButton {
+			background-color: rgb(201, 217, 233);
+			border: none;
+			border-radius: 5px;
+			color: black;
+			padding: 10px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			width: 10em;
+			position: absolute;
+			left: 10px;
+			top: 40px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<button type="button" class="controlButton" id="startButtonId">Pause</button>
+	<!-- <div class="controlButton" id="startButtonId">Play</div> -->
+
+	<div id="info"><h2>The 88 constellations</h2>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js" integrity="sha512-U4J4PbEJ2TMjFqPUSiKq7LLTHuEkPZVo0jl2fomi9pT7UAExh4xVi8KmoR7EfmyigH95aA68zpW7y3XzuoSurQ==" crossorigin="anonymous"></script>
+<script src="assets/dynamic-media/Detector.js"></script>
+
+	<script src="assets/dynamic-media/OrbitControls.js"></script>
+
+
+	<script>
+		if (!Detector.webgl) Detector.addGetWebGLMessage();
+
+		var params = {
+			opacity: 1,
+			rotationSpeed: .2
+		};
+
+		var container, stats;
+		var camera, scene, renderer, controls;
+		var initAnim = true;
+		var runAnim = false;
+		var isPlay = true;
+		var t = 0;
+		var deltaTime = 0.01;
+		var axis = new THREE.Vector3(0, 1, 0)
+		init();
+		animate();
+
+		function init() {
+
+			container = document.createElement('div');
+			document.body.appendChild(container);
+
+			var startButton = document.getElementById('startButtonId');
+			//startButton.innerHTML = 'Pause';
+			startButton.onclick = function StartAnimation() {
+
+				// if (initAnim) {
+				// 	initAnim = false;
+				// 	runAnim = true;
+				//
+				// }
+				// Start and Pause
+				if (deltaTime > 0) {
+
+					//runAnim = false;
+					//isPlay = true;
+					deltaTime = 0;
+					startButton.innerHTML = 'Restart &#9658';
+					//animate();
+				} else {
+					startButton.innerHTML = 'Pause';
+					//runAnim = true;
+					//isPlay = false;
+					deltaTime = 0.01;
+				}
+			}
+
+			camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 2000);
+			camera.position.set(0.0, 00, 100 * 2);
+			//camera.position.set(0,200,0)
+			scene = new THREE.Scene();
+			//scene.background = new THREE.Color(0xffffff);
+
+			//
+
+			var geometry = new THREE.SphereGeometry(18, 30, 30);
+
+			var material1 = new THREE.MeshStandardMaterial({
+				roughness: 1
+			});
+
+			var material2 = new THREE.MeshStandardMaterial({
+				opacity: params.opacity,
+				premultipliedAlpha: true,
+				transparent: true,
+				roughness: 1
+
+			});
+
+
+
+			var textureLoader = new THREE.TextureLoader();
+			textureLoader.load("globe-drawings/earth-jah.jpg", function(map) {
+
+				map.anisotropy = 8;
+
+				material1.map = map;
+				material1.needsUpdate = true;
+				material1.opacity = 1;
+
+			});
+
+
+
+
+
+
+			var mesh = new THREE.Mesh(geometry, material1);
+			mesh.position.x = 0.0;
+			mesh.name = "theEarth";
+
+			scene.add(mesh);
+
+
+
+			//rotation = -Math.Pi/2;
+
+
+
+
+
+
+			// Lights
+
+			var directionalLight = new THREE.DirectionalLight(0xffffff, 2);
+			directionalLight.position.set(500, 0, 0);
+			directionalLight.name = "sunLight";
+			scene.add(directionalLight);
+			//
+
+      renderer = new THREE.WebGLRenderer({ alpha: true });
+      //renderer.setClearColor( 0x000000, 0 );
+      renderer.setPixelRatio(window.devicePixelRatio);
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			renderer.shadowMap.enabled = true;
+			container.appendChild(renderer.domElement);
+
+			renderer.gammaInput = true;
+			renderer.gammaOutput = true;
+
+
+			controls = new THREE.OrbitControls(camera, renderer.domElement);
+			controls.target.set(0, 0, 0);
+			controls.enableZoom = true;
+			controls.update();
+
+			window.addEventListener('resize', onWindowResize, false);
+
+
+
+		}
+
+		function onWindowResize() {
+
+			var width = window.innerWidth;
+			var height = window.innerHeight;
+
+			camera.aspect = width / height;
+			camera.updateProjectionMatrix();
+
+			renderer.setSize(width, height);
+
+		}
+
+		//
+
+		function animate(delta) {
+			if (!isPlay) return;
+			requestAnimationFrame(animate);
+			t += deltaTime;
+			render();
+			//console.log(deltaTime);
+		}
+
+		function render() {
+
+			// for ( var i = 0, l = scene.children.length; i < l; i ++ ) {
+			//
+			// 	var object = scene.children[ 1 ];
+			//
+			// 	if ( object.geometry instanceof THREE.SphereGeometry ) {
+			// 		object.rotation.y = - t * params.rotationSpeed;
+			// 	}
+			//
+			// }
+
+			var sunLight = scene.getObjectByName("sunLight");
+			sunLight.position.x = 200 * Math.cos(t * params.rotationSpeed);
+			sunLight.position.z = 200 * Math.sin(t * params.rotationSpeed);
+
+
+			renderer.render(scene, camera);
+
+		}
+	</script>
+</body>
+
+</html>
