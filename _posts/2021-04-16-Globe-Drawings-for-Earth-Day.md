@@ -24,6 +24,9 @@ I don't know about you, but around here we love drawing maps, and we love lookin
   height: 350px;
   margin: auto;"></canvas>
 
+---
+
+### Instructions:
 
 Here's a quick list of steps to make your own virtual globe based on a drawing:
 
@@ -40,7 +43,7 @@ Here's a quick list of steps to make your own virtual globe based on a drawing:
 
 
 
-2 - Then print out the pdf, get some crayons or pencils or whatever you want and have fun coloring your map.
+2 - Then print out the pdf, get some crayons or pencils or whatever you want and have fun coloring your map. (when you print it out, make sure to select the option that scales the image to fit your paper - every printer is a little different and this will make sure you get the whole map printed)
 
 3 - After you're done, you'll need to scan it in, or take a picture of it and submit it via this form:
 
@@ -48,7 +51,7 @@ Here's a quick list of steps to make your own virtual globe based on a drawing:
 
 4 - Then, we'll process the image and add it to the growing gallery of hand drawn globes:
 
-Check it out:
+Check it out <a href="{{base.url}}/kids-draw-planets/">here</a>:
 
 <div class="row">
 <figure class="figure d-block mx-auto" style="max-width: 300px;">
@@ -64,7 +67,7 @@ Check it out:
 
 ### About the author
 
-Dr. Hedberg has made some globes by hand and can assure you it's difficult. Though, if he had to it all over again, being a globe maker might be a choice.
+Dr. Hedberg has made some globes by hand and can assure you it's difficult. Though, if he had to it all over again, being a globe maker wouldn't be a good choice.
 
 {%
 include figure.html
