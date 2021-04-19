@@ -18,7 +18,6 @@ excerpt: Let's draw some planets
 
 				import * as THREE from '/assets/javascript/threejs/three.module.js';
 
-				import { OrbitControls } from '/assets/javascript/threejs/OrbitControls.js';
 				import { array } from '/assets/dynamic-media/globes/globe-data.js'
 
 				let canvas, renderer;
@@ -62,15 +61,10 @@ excerpt: Let's draw some planets
 						camera.position.z = 2;
 						scene.userData.camera = camera;
 
-						const controls = new OrbitControls( scene.userData.camera, scene.userData.element );
-						controls.minDistance = 2;
-						controls.maxDistance = 5;
-						controls.enablePan = false;
-						controls.enableZoom = false;
-						scene.userData.controls = controls;
+
 
 						// add one random mesh to each scene
-						const geometry = new THREE.SphereGeometry( 0.5, 32, 32 );
+						const geometry = new THREE.SphereGeometry( 0.8, 16, 16 );
 
 						const material = new THREE.MeshStandardMaterial({
 							roughness: 1
