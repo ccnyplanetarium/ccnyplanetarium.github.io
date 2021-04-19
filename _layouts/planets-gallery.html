@@ -19,6 +19,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {%- seo -%}
+    <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ccnyplanetarium">
+  <meta name="twitter:creator" content="@ccnyplanetarium">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{page.excerpt}}">
+  <meta name="twitter:image" content="{{page.image}}">
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 
     <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
@@ -40,18 +46,18 @@
           color: #08f;
         } */
 
-        #content {
+        #threejscontent {
           position: absolute;
           top: 0;
-          width: 100%;
+          width: 80%;
           z-index: 1;
-          padding: 3em 0 0 0;
+          padding: 0 0 0 0;
         }
 
         #c {
           position: absolute;
           left: 0;
-          width: 100%;
+          width: 80%;
           height: 100%;
           background: #000;
         }
