@@ -67,7 +67,7 @@ Check it out <a href="{{base.url}}/kids-draw-planets/">here</a>:
 
 ### About the author
 
-Dr. Hedberg has made some globes by hand and can assure you it's difficult. Though, if he had to it all over again, being a globe maker wouldn't be a good choice.
+Dr. Hedberg has made some globes by hand and can assure you it's difficult. Though, if he had to it all over again, being a globe maker would have been a good choice.
 
 {%
 include figure.html
