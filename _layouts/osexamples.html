@@ -1,0 +1,27 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="galleryBackground">
+    <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+    {%- include header.html -%}
+
+    <div class="p-2">
+      <div class="container  page-content">
+        <h1 class="text-white">OpenSpace Examples</h1>
+        <p>Some example images to show <i>The places you can go</i> in Open Space.</p>
+            {{ content }}
+
+      </div>
+    </div>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
