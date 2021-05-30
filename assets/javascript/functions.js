@@ -1,3 +1,6 @@
+// Adapted from http://hub.openspaceproject.com/
+
+
 var setupHeader = () => {
   $(".header-container").hide();
   $("#show-connect").click(() => {
