@@ -1,0 +1,155 @@
+---
+layout: osimageexamples
+title: Example Image
+permalink: /OpenSpaceControls/ExampleImage/
+navigation_weight: 1
+order: 1
+excerpt: ExampleImage
+---
+
+
+<ul class="nav nav-pills" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">Example 1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#eclipse2017" role="tab" aria-controls="general" aria-selected="true">Eclipse 2017</a>
+  </li>
+</ul>
+
+
+
+<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+  {% include_relative mainshow.html %}
+  </div>
+  <div class="tab-pane fade" id="eclipse2017" role="tabpanel" aria-labelledby="eclipse2017-tab">
+  {% include_relative Eclipse2017.html %}
+  </div>
+</div>
+
+
+      <script type="text/javascript">
+
+        connectToOpenSpace('localhost');
+
+      function enableConstellation(name) {
+
+          var wsmessage = {
+            topic: 0,
+            type: 'set',
+            payload: {
+              property: "Scene.Constellation Art-"+name+".Renderable.Enabled",
+              value: true
+            }
+          }
+          console.log("send message", wsmessage);
+          ws.send(JSON.stringify(wsmessage));
+
+      }
+      function disableConstellation(name) {
+
+          var wsmessage = {
+            topic: 0,
+            type: 'set',
+            payload: {
+              property: "Scene.Constellation Art-"+name+".Renderable.Enabled",
+              value: false
+            }
+          }
+          console.log("send message", wsmessage);
+          ws.send(JSON.stringify(wsmessage));
+
+      }
+      function fadeOut(name) {
+
+          var wsmessage = {
+            topic: 0,
+            type: 'luascript',
+            payload: {
+              script:"openspace.setPropertyValue('Scene.Constellation Art-"+name+".Renderable.Opacity',0,2)"
+
+            }
+          }
+          console.log("send message", wsmessage);
+          ws.send(JSON.stringify(wsmessage));
+
+      }
+
+      function fadeIn(name) {
+
+          var wsmessage = {
+            topic: 0,
+            type: 'luascript',
+            payload: {
+              script:"openspace.setPropertyValue('Scene.Constellation Art-"+name+".Renderable.Opacity',.5,2)"
+
+            }
+          }
+          console.log("send message", wsmessage);
+          ws.send(JSON.stringify(wsmessage));
+
+      }
+
+      function allConstellationsState(state){
+      var wsmessage = {
+        topic: 0,
+        type: 'luascript',
+        payload: {
+          script: "openspace.setPropertyValue('{ConstellationArtImage}.Renderable.Enabled',"+state+")"
+        }
+      }
+      console.log("send message", wsmessage);
+      ws.send(JSON.stringify(wsmessage));
+    }
+    function changeOpacityOfAll(opacityLevel){
+    var wsmessage = {
+      topic: 0,
+      type: 'luascript',
+      payload: {
+        script: "openspace.setPropertyValue('{ConstellationArtImage}.Renderable.Opacity',"+opacityLevel+",1)"
+      }
+    }
+    console.log("send message", wsmessage);
+    ws.send(JSON.stringify(wsmessage));
+  }
+
+    function zodiacConstellationsState(state){
+    var wsmessage = {
+      topic: 0,
+      type: 'luascript',
+      payload: {
+        script: "openspace.setPropertyValue('{zodiac}.Renderable.Enabled',"+state+")"
+      }
+    }
+    console.log("send message", wsmessage);
+    ws.send(JSON.stringify(wsmessage));
+  }
+  function constellationLinesState(state){
+  var wsmessage = {
+    topic: 0,
+    type: 'set',
+    payload: {
+      property: "Scene.Constellations.Renderable.Enabled",
+      value: state
+
+    }
+  }
+  console.log("send message", wsmessage);
+  ws.send(JSON.stringify(wsmessage));
+}
+function constellationLabelsState(state){
+var wsmessage = {
+  topic: 0,
+  type: 'set',
+  payload: {
+    property: "Scene.Constellations.Renderable.DrawLabels",
+    value: state
+
+  }
+}
+console.log("send message", wsmessage);
+ws.send(JSON.stringify(wsmessage));
+}
+
+      </script>

@@ -1,0 +1,42 @@
+<div class="row my-3 p-2 " id = "maincontrols">
+  <button type="button" class="btn btn-dark mr-2" onclick="SetUpGEOSats()">Set Up Image</button>
+</div>
+
+<div class="row my-3 p-2 " id = "maincontrols">
+
+<img class="col-1-2" src="{{site.baseurl}}/assets/osexamples/geo-stationary-sats.jpg"/>
+
+</div>
+
+<script type="text/javascript">
+
+  function SetUpGEOSats(navState) {
+
+            //currentNavState = openspace.navigation.getNavigationState();
+            //navToSet = navState[1]
+            //navState.Anchor =  'Earth';
+            //navToSet.Yaw = 0.0;
+            //openspace.navigation.setNavigationState(navToSet)
+            openspace.globebrowsing.goToGeo(40,-70,1e8);
+            openspace.setPropertyValueSingle("Scene.geo.Renderable.Opacity", 0.0)
+            openspace.setPropertyValueSingle("Scene.geo.Renderable.Enabled", true)
+            openspace.setPropertyValueSingle("Scene.geo.Renderable.Opacity", 1,2)
+    }
+
+    async function getNavState() {
+        try {
+        startingNavState = await openspace.navigation.getNavigationState();
+          console.log("Current nav state: ");
+          console.log(startingNavState)
+          console.log('Anchor: '+ startingNavState[1].Anchor)
+          console.log('Pitch: '+startingNavState[1].Pitch);
+          console.log('UP 1: '+startingNavState[1].Up[0]);
+          console.log('UP 2: '+startingNavState[1].Up[1]);
+          console.log('UP 3: '+startingNavState[1].Up[2]);
+          console.log('Yaw: '+startingNavState[1].Yaw);
+          SetUpGEOSats(startingNavState)
+        } catch (e) {
+          console.log('failed to get NavState. Error: \n', e);
+        }
+      }
+</script>

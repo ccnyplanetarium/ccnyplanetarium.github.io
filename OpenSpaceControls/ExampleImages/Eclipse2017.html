@@ -1,0 +1,50 @@
+<div class="row my-3 p-2 " id = "maincontrols">
+  <button type="button" class="btn btn-dark mr-2" onclick="SetUpEclipse()">Set Up Image</button>
+</div>
+
+<div class="row my-3 p-2 " id = "maincontrols">
+
+<img class="col-1-2" src="{{site.baseurl}}/assets/osexamples/northamericaneclipse2021.jpg"/>
+
+</div>
+
+<script type="text/javascript">
+
+  function SetUpEclipse() {
+
+            //currentNavState = openspace.navigation.getNavigationState();
+            //navToSet = navState[1]
+            openspace.time.setTime("2017-08-21T18:18:11.778")
+            openspace.setPropertyValueSingle("Scene.Earth.Renderable.Layers.ColorLayers.ESRI_VIIRS_Combo.Enabled", false);
+            openspace.setPropertyValueSingle("Scene.Earth.Renderable.Layers.ColorLayers.ESRI_World_Imagery.Enabled", true);
+            openspace.setPropertyValueSingle("Scene.Earth.Renderable.Eclipse", true);
+            var navState  = {
+              Anchor:"Earth",
+              Pitch:0.346191E0,
+              Position:[-1.130614E6,-9.777455E6,4.751854E6],
+              Up:[0.248193E0,0.400069E0,0.882239E0],
+              Yaw:0.906997E-2
+            }
+
+            openspace.navigation.setNavigationState(navState)
+
+            //openspace.time.interpolateTogglePause()
+    }
+
+    async function getNavState() {
+        try {
+        startingNavState = await openspace.navigation.getNavigationState();
+          console.log("Current nav state: ");
+          console.log(startingNavState)
+          console.log('Anchor: '+ startingNavState[1].Anchor)
+          console.log('Pitch: '+startingNavState[1].Pitch);
+          console.log('UP 1: '+startingNavState[1].Up[0]);
+          console.log('UP 2: '+startingNavState[1].Up[1]);
+          console.log('UP 3: '+startingNavState[1].Up[2]);
+          console.log('Yaw: '+startingNavState[1].Yaw);
+          SetUpGEOSats(startingNavState)
+        } catch (e) {
+          console.log('failed to get NavState. Error: \n', e);
+        }
+      }
+</script>

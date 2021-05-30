@@ -1,0 +1,21 @@
+body.oscontrol {
+  background-color: #000;
+  font-family: Abel;
+}
+
+#maincontrols {
+  border: thin solid #aaa;
+  border-radius: 5px;
+}
+
+#individualcontrols {
+  border: thin solid #aaa;
+  border-radius: 5px;
+}
+.constellation-card {
+  font-family: Abel;
+}
+
+.constellation-card > img {
+  width: 100px;
+}

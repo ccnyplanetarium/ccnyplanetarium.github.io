@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     {%- seo -%}
+     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+     <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
+     <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+     <script type="text/javascript" src="{{ "/assets/javascript/functions.js" | relative_url }}"></script>
+
+     <script src="{{ "/assets/javascript/openspace-api.js" | relative_url }}"></script>
+
+     <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans|Righteous" rel="stylesheet">
+
+     <script type="text/javascript">
+
+$(function() {
+
+
+
+  connectToOpenSpace('localhost');
+});
+</script>
+  </head>
+  <header id="page-header">OpenSpace - <a href="#" id="show-connect">(connecting)</a></header>
+
+  <div class="header-container">
+    <div id="connection-status" class="connection-status">
+      Connect to OpenSpace:
+      <input id='ipaddress' type=text placeholder="Enter ip address"/>
+      <button onClick="connectToOpenSpace();">Connect</button>
+    </div>
+  </div>
+  <body class="oscontrol">
+
+
+    <div class="p-2">
+      <div class="container  page-content ">
+          {{ content }}
+      </div>
+    </div>
+
+  </body>
+
+</html>
