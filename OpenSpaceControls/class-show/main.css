@@ -56,12 +56,29 @@ div.connected .connection-status {
 }
 
 .card {
-  background-color: #111;
+  /* background-color: #111; */
   margin: 1em;
   padding: 0.5em;
   color: #eee;
+  clear:both;
 }
 
+.group {
+  border: thin solid white;
+  float: left;
+  width: auto;
+  padding: .5em;
+  margin: .5em;
+
+}
+.group button {
+  font-size: 1.5em;
+}
+.group .groupName {
+  display: block;
+  font-variant: small-caps;
+
+}
 button {
   transition: all 0.5s;
   border-radius: 0.2em;

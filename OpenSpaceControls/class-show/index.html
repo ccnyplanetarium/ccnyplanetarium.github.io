@@ -158,47 +158,90 @@
       </div>
       <div class='card'>
         <h2>Cardinal Directions</h2>
-        <button onClick="fadeInSceneGraphNode('CardinalDirectionSphere');">Fadein Cardinal Directions</button>
-        <button onClick="fadeOutSceneGraphNode('CardinalDirectionSphere');">Fadeout Cardinal Directions</button>
+        <div class="group">
+          <span class="groupName">CardinalDirectionSphere</span>
+          <button onClick="fadeInSceneGraphNode('CardinalDirectionSphere');">On</button>
+          <button onClick="fadeOutSceneGraphNode('CardinalDirectionSphere');">Off</button>
+        </div>
+        
       </div>
       <div class='card'>
         <h2>NYC Buildings</h2>
-        <button onClick="fadeInSceneGraphNode('LowerManhattanModel');">Fadein LowerManhattanModel</button>
-        <button onClick="fadeOutSceneGraphNode('LowerManhattanModel');">Fadeout LowerManhattanModel</button>
-        <button onClick="fadeInSceneGraphNode('UpperManhattanModel');">Fadein UpperManhattanModel</button>
-        <button onClick="fadeOutSceneGraphNode('UpperManhattanModel');">Fadeout UpperManhattanModel</button>
+        <div class="group">
+          <span class="groupName">LowerManhattanModel</span>
+          <button onClick="fadeInSceneGraphNode('LowerManhattanModel');">On</button>
+          <button onClick="fadeOutSceneGraphNode('LowerManhattanModel');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">UpperManhattanModel</span>
+          <button onClick="fadeInSceneGraphNode('UpperManhattanModel');">On</button>
+          <button onClick="fadeOutSceneGraphNode('UpperManhattanModel');">Off</button>
+        </div>
+
+
       </div>
 
       <div class='card'>
         <h2>Grids</h2>
-        <button onClick="fadeInSceneGraphNode('EquatorialSphere');">Fadein EquatorialSphere</button>
-        <button onClick="fadeOutSceneGraphNode('EquatorialSphere');">Fadeout EquatorialSphere</button>
-        <button onClick="fadeInSceneGraphNode('EclipticSphere');">Fadein EclipticSphere</button>
-        <button onClick="fadeOutSceneGraphNode('EclipticSphere');">Fadeout EclipticSphere</button>
-        <button onClick="fadeInSceneGraphNode('AltAZGrid');">Fadein AltAZGrid</button>
-        <button onClick="fadeOutSceneGraphNode('AltAZGrid');">Fadeout AltAZGrid</button>
+        <div class="group">
+          <span class="groupName">Equatorial Sphere</span>
+          <button onClick="fadeInSceneGraphNode('EquatorialSphere');">On</button>
+          <button onClick="fadeOutSceneGraphNode('EquatorialSphere');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">Ecliptic Sphere</span>
+          <button onClick="fadeInSceneGraphNode('EclipticSphere');">On</button>
+          <button onClick="fadeOutSceneGraphNode('EclipticSphere');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">AltAZ Grid</span>
+          <button onClick="fadeInSceneGraphNode('AltAZGrid');">On</button>
+          <button onClick="fadeOutSceneGraphNode('AltAZGrid');">Off</button>
+        </div>
+
+
       </div>
       <div class='card'>
         <h2>Reference Planes</h2>
-        <button onClick="fadeInSceneGraphNode('CelestialEquator');">Fadein CelestialEquator</button>
-        <button onClick="fadeOutSceneGraphNode('CelestialEquator');">Fadeout CelestialEquator</button>
-        <button onClick="fadeInSceneGraphNode('EclipticPlane');">Fadein EclipticPlane</button>
-        <button onClick="fadeOutSceneGraphNode('EclipticPlane');">Fadeout EclipticPlane</button>
+        <div class="group">
+          <span class="groupName">CelestialEquator</span>
+        <button onClick="fadeInSceneGraphNode('CelestialEquator');">On</button>
+        <button onClick="fadeOutSceneGraphNode('CelestialEquator');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">EclipticPlane</span>
+        <button onClick="fadeInSceneGraphNode('EclipticPlane');">On</button>
+        <button onClick="fadeOutSceneGraphNode('EclipticPlane');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">ZodiacRange</span>
+          <button onClick="fadeInSceneGraphNode('ZodiacRange');">On </button>
+          <button onClick="fadeOutSceneGraphNode('ZodiacRange');">Off </button>
+        </div>
+
       </div>
 
 
 
 
       <div class='card'>
-        <h2>Milkyway</h2>
-        <button onClick="fadeInSceneGraphNode('Constellations');">Fadein Constellations</button>
-        <button onClick="fadeOutSceneGraphNode('Constellations');">Fadeout Constellations</button>
+        <h2>Constellations</h2>
+        <div class="group">
+          <span class="groupName">Constellations</span>
+        <button onClick="fadeInSceneGraphNode('Constellations');">On</button>
+        <button onClick="fadeOutSceneGraphNode('Constellations');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">Constellations Art</span>
+        <button onClick="fadeInSceneGraphNode('ConstellationArt-*');">On</button>
+        <button onClick="fadeOutSceneGraphNode('ConstellationArt-*');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">Zodiac Const Art</span>
+          <button onClick="fadeInTagGroup('{zodiac}');">On</button>
+          <button onClick="fadeOutTagGroup('{zodiac}');">Off</button>
+        </div>
 
-        <button onClick="fadeInSceneGraphNode('ConstellationArt-*');">Fadein Constellation Art</button>
-        <button onClick="fadeOutSceneGraphNode('ConstellationArt-*', 'NoDisable');">Fadeout Constellation Art</button>
-
-        <button onClick="fadeInTagGroup('{zodiac}');">Fadein Zodiac Const Art</button>
-        <button onClick="fadeOutTagGroup('{zodiac}');">Fadeout Zodiac Const Art</button>
 
 
 
