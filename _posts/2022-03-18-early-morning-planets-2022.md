@@ -8,8 +8,6 @@ author: "James Hedberg"
 categories: posts
 ---
 
-### Introduction
-
 This spring, 4 planets are putting on a show in the pre-dawn skies. During March, they will be setting up for a very nice alignment to occur in late April.
 
 In late March, the first movement of this performance will culminate in a trio of Mars, Venus, and Saturn, all in a very compact triangle.
@@ -39,7 +37,7 @@ file="nyc-2022-planets/planets-spring-2022.gif" alt="Daily positions of the Jupi
 caption="Daily positions of the Jupiter, Venus, Mars and Saturn in the Spring of 2022. Time is 1 hour before sunrise in NYC. Rendered with OpenSpace"
 %}
 
-And, the space-bird's eye view is always nice too. Here are the 2 months looking down on the solar system. From this perspective, it easily seen that in late March, Venus, Mars, and Saturn are all nearly in a line extending out from Earth.
+And, the space-bird's eye view is always nice too. Here are the 2 months looking down on the solar system. From this perspective, we can see that in late March, Venus, Mars, and Saturn are all nearly in a line extending out from Earth.
 
 {%
 include figure.html
