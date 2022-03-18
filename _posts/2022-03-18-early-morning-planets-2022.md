@@ -3,7 +3,7 @@ layout: post
 title:  "Planetary Conjunctions and Alignments in the Early Mornings of Spring 2022"
 date: 2022-03-18
 excerpt: "The planets are doing cool things while we're sleeping"
-image: "assets/images/nyc-2022-planets/4-planet-alignment-card.jpg"
+image: "assets/images/4-planet-alignment-500.jpg"
 author: "James Hedberg"
 categories: posts
 ---
