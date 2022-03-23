@@ -2,6 +2,7 @@
 layout: page
 title: Media Usage FAQ
 description: Policies regarding our media and content
+permalink: /media-faq/
 sitemap:
     priority: 0.7
     lastmod: 2022-03-23
