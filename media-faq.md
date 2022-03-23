@@ -12,7 +12,7 @@ sitemap:
 
 #### Can I post your content to our social media pages?
 
-In general, no. Our media is not currently licensed for free distribution. You are always welcome to share our posts using legal means, like retweets, or share to stories on IG, but using a 3rd party downloader and then reposting to your own account, even with proper credit, is not permitted
+In general, no. Our media is not currently licensed for free distribution. You are always welcome to share our posts using legal means, like retweets, or share to stories on IG, but using a 3rd party downloader and then reposting to your own account, even with proper credit, is not permitted.
 
 #### Can I use them in my classes?
 
