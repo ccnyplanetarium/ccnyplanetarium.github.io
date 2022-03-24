@@ -10,14 +10,13 @@ sitemap:
 ## About The Planetarium
 
 <figure class="figure col-12">
-  <img src="{{ "assets/images/pano-view.jpg" | absolute_url }}" class="figure-img img-fluid rounded" alt="CCNY planetarium">
-  <figcaption class="figure-caption">The Planetarium Panorama view</figcaption>
+  <img src="{{ "assets/images/ccnyplanetarium-room-view.jpg" | absolute_url }}" class="figure-img img-fluid rounded" alt="CCNY planetarium">
+  <figcaption class="figure-caption">The room set up right before a sci-art show with <a href="https://liquidlightlab.com/home.html">Liquid Light Lab</a>  </figcaption>
 </figure>
 
 The CCNY Planetarium is one of three found on the island in Manhattan (The AMNH and The Lower East Side Girls Club both have one as well.)
 
-
-<br/>  
+We like to host shows for k-12 schools, CCNY students, and the wider NYC audience. Our favorites are our live space tours. We are also interested in more artistic and interdisciplinary uses of the immersive space. If you are too and have some ideas - reach out!
 
 <div class="row mt-3 mb-3">
 <div class="card bg-warning">
