@@ -14,16 +14,44 @@ sitemap:
   <figcaption class="figure-caption">The Planetarium Panorama view</figcaption>
 </figure>
 
-The CCNY Planetarium is one of three found on the island in Manhattan (The AMNH and The Lower East Side Girls Club both have one as well.) It is currently undergoing minor upgrades and repairs and we hope to have shows again, real soon!
+The CCNY Planetarium is one of three found on the island in Manhattan (The AMNH and The Lower East Side Girls Club both have one as well.)
+
 
 <br/>  
 
-<div class="row mt-3">
-<div class="card">
+<div class="row mt-3 mb-3">
+<div class="card bg-warning">
 <div class="card-body">
+  <p>Like many planetariums around the world, we had to pause our live shows starting in March 2020. We hope to be able to open our doors wide in the very near future.</p>
   <p>Check back soon when we have thing underway. In the meantime, you can send us a note at planetarium@ccny.cuny.edu, or do the social media things below. </p>
   </div>
 </div>
+</div>
+
+<h3>Technical Details</h3>
+<div class="row mt-3">
+
+
+
+<ul>
+  <li>Installed: 1973-74</li>
+  <li>Seats: 58</li>
+  <li>Dome: 30 ft diameter</li>
+  <li>Projection Systems: </li>
+  <ol>
+    <li>Opto-mechanical: Spitz 512A (original)</li>
+    <li>Digital Projection: Spherical Mirror (Homebuilt, 2018)</li>
+  </ol>
+
+  <li>Software in use:</li>
+  <ol>
+    <li>Openspace</li>
+    <li>Stellarium</li>
+    <li>Quartz Composer</li>
+    <li>VLC</li>
+  </ol>
+</ul>
+
 </div>
 
 <div class="row mt-3">

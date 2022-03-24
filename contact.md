@@ -19,9 +19,9 @@ You can always send us an email at:
 </script>
 
 
-Or, send a message on one of our social platforms:
+Or, send a message on one of our social platforms, listed below.
 
-<div class="col-sm">
+<!-- <div class="col-sm">
   <ul class="list-unstyled icons alt">
     {%- if site.facebook_username -%}
     <li><a href="https://facebook.com/{{site.facebook_username}}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
@@ -36,4 +36,6 @@ Or, send a message on one of our social platforms:
     <li><a href="https://github.com/{{site.github_username}}" class="icon fa-github"><span class="label">Github</span></a></li>
     {%- endif -%}
   </ul>
-</div>
+</div> -->
+--- 
+If you are asking about our media use policies, they can be found here: <a href="{{ "/media-faq/" | absolute_url }}">Media Use Policy</a>.
