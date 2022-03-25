@@ -14,9 +14,9 @@ sitemap:
   <figcaption class="figure-caption">The room set up right before a sci-art show with <a href="https://liquidlightlab.com/home.html">Liquid Light Lab</a>  </figcaption>
 </figure>
 
-The CCNY Planetarium is one of three found on the island in Manhattan (The AMNH and The Lower East Side Girls Club both have one as well.)
+The CCNY Planetarium is one of three found on the island in Manhattan. (The AMNH and The Lower East Side Girls Club have the other two.) It first opened around 1973 when the Marshak Science Building was constructed on the North Campus of City College. For decades, it served the neighboring communities in Upper Harlem. In the last few years, we've been trying to bring this beautiful room back to life with some technological upgrades and more exciting content and events.
 
-We like to host shows for k-12 schools, CCNY students, and the wider NYC audience. Our favorites are our live space tours. We are also interested in more artistic and interdisciplinary uses of the immersive space. If you are too and have some ideas - reach out!
+We love to host shows for nearby k-12 schools, CCNY students, and the wider NYC audience. Our favorites are our live space tours in which we use our universe simulator to fly all over the cosmos. Tours can start with a fly over of our Hamilton Heights neighborhood, then visit the Moon or Mars, and finally leave the solar system system all together and visit newly discovered exoplanet systems or intergalactic space. We are also interested in more artistic and interdisciplinary uses of the immersive space. If you are too and have some ideas - reach out!
 
 <div class="row mt-3 mb-3">
 <div class="card bg-warning">
