@@ -2,7 +2,7 @@
 layout: page
 title: Science Visualization
 description: How we display the natural world
-permalink: /sci-viz/
+permalink: /sci-vis/
 sitemap:
     priority: 0.7
     lastmod: 2022-03-29
@@ -11,7 +11,7 @@ sitemap:
 
 ### What is Science Visualization?
 
-A brief overview (for non-specialists) of what we do as science visualizers in the planetarium.
+A brief overview (for non-specialists) of what we do as science visualizers (SciVis for short) in the planetarium.
 
 #### Introduction
 
