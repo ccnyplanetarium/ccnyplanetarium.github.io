@@ -6,6 +6,7 @@ excerpt: "When wandering stars align"
 image: "assets/images/jupiter-saturn-conjunction-500.jpg"
 author: "James Hedberg"
 categories: posts
+tag: scivis
 ---
 
 # Introduction

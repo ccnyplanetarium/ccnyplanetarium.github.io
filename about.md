@@ -10,8 +10,8 @@ sitemap:
 ## About The Planetarium
 
 <figure class="figure col-12">
-  <img src="{{ "assets/images/ccnyplanetarium-room-view.jpg" | absolute_url }}" class="figure-img img-fluid rounded" alt="CCNY planetarium">
-  <figcaption class="figure-caption">The room set up right before a sci-art show with <a href="https://liquidlightlab.com/home.html">Liquid Light Lab</a>  </figcaption>
+  <img src="{{ "assets/images/room-orange-glow.jpg" | absolute_url }}" class="figure-img img-fluid rounded" alt="CCNY planetarium">
+  <figcaption class="figure-caption">The CCNY Planetarium.</figcaption>
 </figure>
 
 The CCNY Planetarium is one of three found on the island in Manhattan. (The AMNH and The Lower East Side Girls Club have the other two.) It first opened around 1973 when the Marshak Science Building was constructed on the North Campus of City College. For decades, it served the neighboring communities in Upper Harlem. In the last few years, we've been trying to bring this beautiful room back to life with some technological upgrades and more exciting content and events.
