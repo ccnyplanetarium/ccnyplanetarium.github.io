@@ -11,7 +11,7 @@ sitemap:
 
 ## Science Visualization
 
-We specialize in turning scientific data into memorable and informative visualizations. Here's we'll collect some posts about our processes and work.
+We specialize in turning scientific data into memorable and informative visualizations. Here we will collect some posts about our processes and work.
 
 
 <div class="row mt-3">
