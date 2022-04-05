@@ -101,7 +101,7 @@ The above treatment of the Voyager trajectory shows just a few of the simplest m
 
 ### Conclusion
 
-Our work in the Planetarium is largely driven by the mission to present science accurately to our guests. If they want Hollywood movie magic, there are other venues for that. That doesn't mean we just show plots and graphs though. We strive to find the happy middle ground between serious science content and engaging visualizations. 
+Our work in the Planetarium is largely driven by the mission to present science accurately to our guests. If they want Hollywood movie magic, there are other venues for that. That doesn't mean we just show plots and graphs though. We strive to find the happy middle ground between serious science content and engaging visualizations.
 
 
 
@@ -113,4 +113,4 @@ Our work in the Planetarium is largely driven by the mission to present science 
 
 [2] Sea Surface Tempearture, GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis (v4.1) [https://podaac.jpl.nasa.gov/dataset/MUR-JPL-L4-GLOB-v4.1](https://podaac.jpl.nasa.gov/dataset/MUR-JPL-L4-GLOB-v4.1)
 
-[3] [OpenSpace Project](https://www.openspaceproject.com/)
+[3] [OpenSpace Project](https://www.openspaceproject.com/) : <i>open source interactive data visualization software designed to visualize the entire known universe and portray our ongoing efforts to investigate the cosmos.</i>
