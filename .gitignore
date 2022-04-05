@@ -3,3 +3,8 @@ _site
 .jekyll-metadata
 .DS_Store
 reports
+assets/constellations
+constellation-guide
+OpenSpaceControls
+assets/constellations_tour
+_data/constellations
