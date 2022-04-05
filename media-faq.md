@@ -42,4 +42,4 @@ Then please use legal means to share our content. We have spent years developing
 
 Also, since our visualizations often require more context and explanations that can be fit into 30 seconds, we like to be able to respond and answer questions. We find that when they end up on random channels around the internet, there is no one behind the scenes there to answer questions and clarify.
 
-Lastly, the vast majority of short videos found on many social media sites are garbage. A few a good works of science visualization, but many are not. We prefer to be distanced from these pages. 
+Lastly, the vast majority of short videos found on many social media sites are garbage. A few a good works of science visualization, but many are not. We prefer to be distanced from these pages. How can you tell the good from the bad? Start by reading this: [Introduction to Scientific Visualization]({% post_url 2022-03-29-intro-to-sci-vis %})
