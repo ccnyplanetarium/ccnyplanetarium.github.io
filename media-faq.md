@@ -41,3 +41,5 @@ Nope. That is a common misconception about copyright law. Some other copyright m
 Then please use legal means to share our content. We have spent years developing the tools to produce our videos and it really hurts when they are taken and used by others to try to sell crap (which is what most of the astro-related account in IG are - portals for drop-shipping outfits... they don't actually want to inform about science, they just want you to buy a moon lamp or something.) Or better yet, make your own things! That's where the joy is.
 
 Also, since our visualizations often require more context and explanations that can be fit into 30 seconds, we like to be able to respond and answer questions. We find that when they end up on random channels around the internet, there is no one behind the scenes there to answer questions and clarify.
+
+Lastly, the vast majority of short videos found on many social media sites are garbage. A few a good works of science visualization, but many are not. We prefer to be distanced from these pages. 
