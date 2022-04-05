@@ -99,6 +99,10 @@ caption="The same image, but with the scales of the planets increased by a 1000 
 
 The above treatment of the Voyager trajectory shows just a few of the simplest modifications we can make that increase the information content of a visualization, while staying true to the data. That's the delicate balance every science visualization must content with. Do you just want to show what the human eye would see? Or do you want to show what we understand about the natural world. Those can be different things.
 
+### Conclusion
+
+Our work in the Planetarium is largely driven by the mission to present science accurately to our guests. If they want Hollywood movie magic, there are other venues for that. That doesn't mean we just show plots and graphs though. We strive to find the happy middle ground between serious science content and engaging visualizations. 
+
 
 
 ---
