@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Interpreting astronomy visualizations for beginners"
+title:  "Interpreting Astronomy Visualizations for Beginners"
 date: 2022-04-05
 excerpt: "Here are some of the techniques used by scientists to help visualize the cosmos, for the purposes of communicating their science"
 image: "assets/images/astrovizbasics/interpreting-astro-vis-post.jpg"
