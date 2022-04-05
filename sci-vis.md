@@ -17,8 +17,8 @@ We specialize in turning scientific data into memorable and informative visualiz
 <div class="row mt-3">
 
 
-<div class="card-deck">
-    {% for post in site.categories.posts offset:0 %}
+<div class="card-columns">
+    {% for post in site.tags.scivis offset:0 limit:5 %}
       {% if post.tags contains 'scivis' %}
       <div class="card border-dark">
         <img class="card-img-top" src="{{ post.image | relative_url }}" alt="Card image cap">
@@ -31,5 +31,7 @@ We specialize in turning scientific data into memorable and informative visualiz
     </div>
       {% endif %}
   {% endfor %}
+
 </div>
+
 </div>

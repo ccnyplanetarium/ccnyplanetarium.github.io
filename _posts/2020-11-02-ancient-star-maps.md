@@ -6,6 +6,7 @@ excerpt: "Sci Viz with 2000 year old data"
 image: "assets/images/ancient-sky-maps-500.jpg"
 author: "James Hedberg"
 categories: posts
+tag: scivis
 ---
 
 It's often said that astronomy is the oldest science. That must mean they had some data? Right? What's science without data. Here we look at visualizing some of the oldest data sets from astronomy.
