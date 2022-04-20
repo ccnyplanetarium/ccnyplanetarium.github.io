@@ -169,12 +169,14 @@
     </script>
 
     <script type="text/javascript">
+       let sunRiseTimes = []
+      let sunSetTimes = []
     function days(){
       let howManyDays = document.getElementById('howManyDays').value;
     }
     function calcSunrise(){
-      let sunRiseTimes = []
-      let sunSetTimes = []
+       sunRiseTimes = []
+       sunSetTimes = []
       var today = new Date();
       //document.getElementById('howManyDays').value = 20
       howManyDays = document.getElementById('howManyDays').value;
