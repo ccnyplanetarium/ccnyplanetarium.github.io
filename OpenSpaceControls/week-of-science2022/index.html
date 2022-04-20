@@ -1,0 +1,332 @@
+<html>
+  <head>
+    <title>Week of Science</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="openspace-api.js"></script>
+    <script type="text/javascript" src="openspace-default-buttons.js"></script>
+    <script type="text/javascript" src="suncalc.js"></script>
+
+    <script type="text/javascript">
+      //variable for js libarary
+      var openspace = null;
+
+      const delay = ms => new Promise(res => setTimeout(res, ms));
+
+      var htmlFunction = (action, id) => {
+          var cardHTML = "<div id=\"" + action.title + "\" class='card'><h2>" + action.title + "</h2>";
+          if (action.description) {
+            action.description.split('\n').map(item => {
+              cardHTML += "<p>" + item + "</p>";
+            });
+          }
+          if (action.buttons) {
+            Object.keys(action.buttons).map(button => {
+              const fn = action.buttons[button];
+              cardHTML += "<button id=\"" + action.title+button + "\">"+ button +"</button>";
+            });
+          }
+          cardHTML += "</div>";
+          document.getElementById('main').innerHTML += cardHTML;
+      };
+
+      var clickFunction = (action, id) => {
+        if (action.buttons) {
+          Object.keys(action.buttons).map(button => {
+              const fn = action.buttons[button];
+              document.getElementById(action.title+button).addEventListener("click", fn);
+          });
+        }
+      }
+
+      //helper function to map the buttons to html
+      function mapButtons(openspace) {
+        document.getElementById('main').innerHTML += "<div class='card'>Default Buttons</div>"
+        defaultButtonGroups.map(htmlFunction);
+        defaultButtonGroups.map(clickFunction);
+      }
+
+      //helper function to connect to opensapce
+      var connectToOpenSpace = () => {
+        //setup the api params
+        var host = document.getElementById('ipaddress').value;
+        var api = window.openspaceApi(host, 4682);
+        //notify users on disconnect
+        api.onDisconnect(() => {
+          console.log("disconnected");
+          document.getElementById('container').className = "disconnected";
+          document.getElementById('connection-status').style.opacity = 1;
+          var disconnectedString = "Connect to OpenSpace: ";
+          disconnectedString += '<input id="ipaddress" type=text placeholder="Enter ip address" /> ';
+          disconnectedString += '<button onClick="connectToOpenSpace();">Connect</button>';
+          document.getElementById('connection-status').innerHTML = disconnectedString;
+          openspace = null;
+        });
+        //notify users and map buttons when connected
+        api.onConnect(async () => {
+          try {
+            document.getElementById('container').className = "connected";
+            document.getElementById('connection-status').innerHTML = "";
+            openspace = await api.library();
+            console.log('connected');
+            // mapButtons(openspace);
+          } catch (e) {
+            console.log('OpenSpace library could not be loaded: Error: \n', e);
+            return;
+          }
+        })
+        //connect
+        api.connect();
+      };
+
+      function logMessage(message) {
+        console.log(message);
+        document.getElementById('connection-status').innerHTML = message;
+        document.getElementById("connection-status").style.opacity = 1;
+        fadeOut();
+      }
+
+      // function that fades out the log div after 5 seconds
+      function fadeOut() {
+        setTimeout(function() {
+          var fade = document.getElementById("connection-status");
+          var timerId = setInterval(function() {
+            var opacity = fade.style.opacity;
+            if (opacity == 0.0) {
+              clearInterval(timerId);
+            } else {
+              fade.style.opacity = opacity - 0.05;
+            }
+          }, 100);
+        }, 5000);
+      }
+
+      async function fadeOutSceneGraphNode(sgn, option) {
+        openspace.setPropertyValue('Scene.' + sgn + '.Renderable.Opacity', 0.0, 1.0);
+        if (option != 'NoDisable') {
+          await delay(1500);
+          openspace.setPropertyValue('Scene.' + sgn + '.Renderable.Enabled', false)    ;
+        }
+      }
+      function fadeInSceneGraphNode(sgn) {
+        openspace.setPropertyValue('Scene.' + sgn + '.Renderable.Opacity', 0.0);
+        openspace.setPropertyValue('Scene.' + sgn + '.Renderable.Enabled', true);
+        openspace.setPropertyValue('Scene.' + sgn + '.Renderable.Opacity', 0.9, 1.0);
+      }
+
+      function fadeInTagGroup(sgn) {
+        openspace.setPropertyValue(sgn + '.Renderable.Opacity', 0.0);
+        openspace.setPropertyValue(sgn + '.Renderable.Enabled', true);
+        openspace.setPropertyValue(sgn + '.Renderable.Opacity', 0.9, 1.0);
+      }
+
+      async function fadeOutTagGroup(sgn, option) {
+        openspace.setPropertyValue(sgn + '.Renderable.Opacity', 0.0, 1.0);
+        if (option != 'NoDisable') {
+          await delay(1500);
+          openspace.setPropertyValue(sgn + '.Renderable.Enabled', false)    ;
+        }
+      }
+      async function fadeOutColorLayer(planet, layer) {
+        openspace.setPropertyValueSingle('Scene.' + planet + '.Renderable.Layers.ColorLayers.' + layer + '.Settings.Opacity', 0.0, 1.0);
+        await delay(1500);
+        openspace.setPropertyValueSingle('Scene.' + planet + '.Renderable.Layers.ColorLayers.' + layer + '.Enabled', false);
+      }
+
+      function fadeInColorLayer(planet, layer) {
+        openspace.setPropertyValueSingle('Scene.' + planet + '.Renderable.Layers.ColorLayers.' + layer + '.Settings.Opacity', 0.0);
+        openspace.setPropertyValueSingle('Scene.' + planet + '.Renderable.Layers.ColorLayers.' + layer + '.Enabled', true);
+        openspace.setPropertyValueSingle('Scene.' + planet + '.Renderable.Layers.ColorLayers.' + layer + '.Settings.Opacity', 1.0, 1.0);
+      }
+
+      async function disableHeightLayer(planet, layer) {
+        openspace.setPropertyValueSingle('Scene.' + planet + '.Renderable.Layers.HeightLayers.' + layer + '.Enabled', false);
+      }
+
+      function enableHeightLayer(planet, layer) {
+        openspace.setPropertyValueSingle('Scene.' + planet + '.Renderable.Layers.HeightLayers.' + layer + '.Enabled', true);
+      }
+
+      async function runSunrise() {
+
+        for (let i=0; i<howManyDays; i++) {
+            //console.log("initialTime"+t[1]+'  -  i = '+i);
+            openspace.time.setTime(goTimes[i]);
+            await delay(1000);
+        }
+
+      }
+      async function runSunset() {
+
+        for (let i=0; i<howManyDays; i++) {
+            //console.log("initialTime"+t[1]+'  -  i = '+i);
+            openspace.time.setTime(sunRiseTimes[i]);
+            await delay(1000);
+        }
+
+      }
+
+
+    </script>
+
+    <script type="text/javascript">
+    function days(){
+      let howManyDays = document.getElementById('howManyDays').value;
+    }
+    function calcSunrise(){
+      let sunRiseTimes = []
+      let sunSetTimes = []
+      var today = new Date();
+      //document.getElementById('howManyDays').value = 20
+      howManyDays = document.getElementById('howManyDays').value;
+      //howManyDays = 5;
+      for (let i=0;i<howManyDays;i++){
+      var tomorrow = today.setDate(today.getDate()+1);
+      var times = SunCalc.getTimes(tomorrow, 40.7128, -74.0060);
+      sunRiseTimes[i] = times.sunriseEnd.toISOString().slice(0, -1)
+      sunSetTimes[i] = times.sunsetStart.toISOString().slice(0, -1)
+      console.log(sunSetTimes[i]);
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <!-- HTML Containers -->
+    <div id="container" class="disconnected">
+      <div id="connection-status" class="connection-status">
+        Connect to OpenSpace:
+        <input id='ipaddress' type=text placeholder="Enter ip address"/>
+        <button onClick="connectToOpenSpace();">Connect</button>
+      </div>
+
+      <div class='card'>
+        <h2>Time Controls</h2>
+
+        <div class="group">
+          <span class="groupName">Auto Sunrise</span>
+
+          <div id="radecinput" class="row">
+          <div id="left-col" class="card two-text-column">
+            Days: <input id="howManyDays" type=text class="coord" placeholder="Days"
+                  onchange="days();" onkeypress="this.onchange();"
+                  onpaste="this.onchange();" oninput="this.onchange();"
+                />
+
+          </div>
+          <button onClick="calcSunrise();">Calculate Times</button>
+          </div>
+          <button onClick="runSunrise();">Do Sunrises</button>
+          <button onClick="runSunset();">Do Sunsets</button>
+
+      </div>
+
+      </div>
+
+      <div class='card'>
+        <h2>Cardinal Directions</h2>
+        <div class="group">
+          <span class="groupName">CardinalDirectionSphere</span>
+          <button onClick="fadeInSceneGraphNode('CardinalDirectionSphere');">On</button>
+          <button onClick="fadeOutSceneGraphNode('CardinalDirectionSphere');">Off</button>
+        </div>
+
+      </div>
+
+      <div class='card'>
+        <h2>NYC Buildings</h2>
+        <div class="group">
+          <span class="groupName">LowerManhattanModel</span>
+          <button onClick="fadeInSceneGraphNode('LowerManhattanModel');">On</button>
+          <button onClick="fadeOutSceneGraphNode('LowerManhattanModel');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">UpperManhattanModel</span>
+          <button onClick="fadeInSceneGraphNode('UpperManhattanModel');">On</button>
+          <button onClick="fadeOutSceneGraphNode('UpperManhattanModel');">Off</button>
+        </div>
+
+
+      </div>
+
+      <div class='card'>
+        <h2>Grids</h2>
+        <div class="group">
+          <span class="groupName">Equatorial Sphere</span>
+          <button onClick="fadeInSceneGraphNode('EquatorialSphere');">On</button>
+          <button onClick="fadeOutSceneGraphNode('EquatorialSphere');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">Ecliptic Sphere</span>
+          <button onClick="fadeInSceneGraphNode('EclipticSphere');">On</button>
+          <button onClick="fadeOutSceneGraphNode('EclipticSphere');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">AltAZ Grid</span>
+          <button onClick="fadeInSceneGraphNode('AltAZGrid');">On</button>
+          <button onClick="fadeOutSceneGraphNode('AltAZGrid');">Off</button>
+        </div>
+
+
+      </div>
+
+      <div class='card'>
+        <h2>Reference Planes</h2>
+        <div class="group">
+          <span class="groupName">CelestialEquator</span>
+        <button onClick="fadeInSceneGraphNode('CelestialEquator');">On</button>
+        <button onClick="fadeOutSceneGraphNode('CelestialEquator');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">EclipticPlane</span>
+        <button onClick="fadeInSceneGraphNode('EclipticPlane');">On</button>
+        <button onClick="fadeOutSceneGraphNode('EclipticPlane');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">ZodiacRange</span>
+          <button onClick="fadeInSceneGraphNode('ZodiacRange');">On </button>
+          <button onClick="fadeOutSceneGraphNode('ZodiacRange');">Off </button>
+        </div>
+
+      </div>
+
+
+      <div class='card'>
+        <h2>Stars</h2>
+        <div class="group">
+          <span class="groupName">Regular Stars</span>
+        <button onClick="fadeInSceneGraphNode('Stars');">On</button>
+        <button onClick="fadeOutSceneGraphNode('Stars');">Off</button>
+        </div>
+      </div>
+
+      <div class='card'>
+        <h2>Constellations</h2>
+        <div class="group">
+          <span class="groupName">Constellations</span>
+        <button onClick="fadeInSceneGraphNode('Constellations');">On</button>
+        <button onClick="fadeOutSceneGraphNode('Constellations');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">Constellations Art</span>
+        <button onClick="fadeInSceneGraphNode('ConstellationArt-*');">On</button>
+        <button onClick="fadeOutSceneGraphNode('ConstellationArt-*');">Off</button>
+        </div>
+        <div class="group">
+          <span class="groupName">Zodiac Const Art</span>
+          <button onClick="fadeInTagGroup('{zodiac}');">On</button>
+          <button onClick="fadeOutTagGroup('{zodiac}');">Off</button>
+        </div>
+      </div>
+
+
+
+
+      </div>
+
+      <div id="main">
+      </div>
+      <script type="text/javascript">
+        connectToOpenSpace('localhost');
+      </script>
+    </div>
+  <body>
+</html>
