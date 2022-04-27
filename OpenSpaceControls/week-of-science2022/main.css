@@ -55,18 +55,6 @@ div.connected .connection-status {
   color: #eee;
 }
 
-.script {
-  margin: 1em;
-  color: #000;
-  background-color: #EEEEEE;
-  padding: 0.5em 10%;
-  line-height: 1.4em;
-  clear:both;
-}
-.script p {
-  font-family: Courier, monospace;
-  font-size: 1.1em;
-}
 .card {
   /* background-color: #111; */
   margin: 1em;
@@ -74,14 +62,7 @@ div.connected .connection-status {
   color: #eee;
   clear:both;
 }
-.music {
-  margin: 1em;
-  color: #000;
-  background-color: #BBB;
-  padding: 0.5em 10%;
-  line-height: 1.4em;
-  clear:both;
-}
+
 .group {
   border: thin solid white;
   float: left;
