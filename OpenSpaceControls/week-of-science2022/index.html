@@ -148,16 +148,16 @@
 
       async function runSunrise() {
 
-        for (let i=0; i<howManyDays; i++) {
+        for (let i=dayIn; i<howManyDays; i++) {
             //console.log("initialTime"+t[1]+'  -  i = '+i);
-            openspace.time.setTime(goTimes[i]);
+            openspace.time.setTime(sunRiseTimes[i]);
             await delay(1000);
         }
 
       }
       async function runSunset() {
 
-        for (let i=0; i<howManyDays; i++) {
+        for (let i=dayIn; i<howManyDays; i++) {
             //console.log("initialTime"+t[1]+'  -  i = '+i);
             openspace.time.setTime(sunRiseTimes[i]);
             await delay(1000);
@@ -165,17 +165,36 @@
 
       }
 
+      async function goToFirstSunrise() {
+        openspace.time.setTime(sunRiseTimes[0]);
 
+
+      }
+      async function goToNextSunrise() {
+        dayIn = dayIn+1;
+        openspace.time.setTime(sunRiseTimes[dayIn]);
+
+      }
+
+      async function showNonEarthBillBoards() {
+        openspace.setPropertyValue("{planet_solarSystem_billboard_notEarth}.Renderable.Enabled",true)
+      }
+      async function hideNonEarthBillBoards() {
+        openspace.setPropertyValue("{planet_solarSystem_billboard_notEarth}.Renderable.Enabled",false)
+      }
     </script>
 
     <script type="text/javascript">
+    let sunRiseTimes = []
+    let sunSetTimes = []
+    let dayIn = 0
     function days(){
       let howManyDays = document.getElementById('howManyDays').value;
     }
     function calcSunrise(){
-      let sunRiseTimes = []
-      let sunSetTimes = []
-      var today = new Date();
+      sunRiseTimes = []
+      sunSetTimes = []
+      var today = new Date('March 1, 2022')
       //document.getElementById('howManyDays').value = 20
       howManyDays = document.getElementById('howManyDays').value;
       //howManyDays = 5;
@@ -184,7 +203,7 @@
       var times = SunCalc.getTimes(tomorrow, 40.7128, -74.0060);
       sunRiseTimes[i] = times.sunriseEnd.toISOString().slice(0, -1)
       sunSetTimes[i] = times.sunsetStart.toISOString().slice(0, -1)
-      console.log(sunSetTimes[i]);
+      console.log(sunRiseTimes[i]);
       }
     }
     </script>
@@ -196,6 +215,27 @@
         Connect to OpenSpace:
         <input id='ipaddress' type=text placeholder="Enter ip address"/>
         <button onClick="connectToOpenSpace();">Connect</button>
+      </div>
+
+      <div class="script">
+        <p>If you happen to be an early riser, then you may have noticed a stunning sight in the pre-dawn skies. In the hour before sunrise there have been 4 bright objects visible just above the horizon. They vanish quickly as the sun's rays wash the night away and begin to illuminate the celestial dome.
+        </p>
+
+      </div>
+
+      <div class="card">
+          <h2>Planet Billboards</h2>
+          <div class="group">
+          <button onClick="showNonEarthBillBoards();">On</button>
+          <button onClick="hideNonEarthBillBoards();">Off</button>
+        </div>
+      </div>
+      <div class="script">
+
+        <p>
+          What you are seeing is a rare and spectacular planetary alignment. it has been slowly coming together for a few weeks now. Let’s back up the clock and watch as these cosmic ballerinas slowly make their way into position.
+        </p>
+        <p></p>
       </div>
 
       <div class='card'>
@@ -216,18 +256,10 @@
           </div>
           <button onClick="runSunrise();">Do Sunrises</button>
           <button onClick="runSunset();">Do Sunsets</button>
-
+          <br>
+          <button onClick="goToFirstSunrise();">goToFirstSunrise</button>
+          <button onClick="goToNextSunrise();">goToNextSunrise</button>
       </div>
-
-      </div>
-
-      <div class='card'>
-        <h2>Cardinal Directions</h2>
-        <div class="group">
-          <span class="groupName">CardinalDirectionSphere</span>
-          <button onClick="fadeInSceneGraphNode('CardinalDirectionSphere');">On</button>
-          <button onClick="fadeOutSceneGraphNode('CardinalDirectionSphere');">Off</button>
-        </div>
 
       </div>
 
@@ -246,6 +278,56 @@
 
 
       </div>
+      <div class="script">
+        <p>We start back in March - then advance our time machine day by day, or sunrise by sunrise. We lookout over the meadows of concrete and steel 50 minutes before the sun’s orb breaks the line between night and day. The pre-dawn sky is tinged with the vanguard of photons about to overtake our slumbers. If our skies were the pristine canvas of centuries ago, before our streetlights and car pipes muddied the view, we would also see countless stars. Slowly shifting their stance as the Earth moves another 1 and a half million miles in its annual trip around the sun, the stars would move predictably, night after night. But, sprinkled among them would be other lights, that don’t move in the same way. The wanderers are our neighbors. The planets. </p>
+      </div>
+      <div class="music">
+        <p>Blue Skies</p>
+      </div>
+      <div class="script">
+        <p>By studying the motions of the wandering stars over centuries, ancient astronomers where able to put together various models of the solar system that would predict the positions of the planets in time. We take the modern view of the solar system as 8 concentric nearly circular orbits as given, but just imaging trying to build such a model based only on these tiny dots in the sky. </p>
+      </div>
+
+      <div class="script">
+        <h3>Mercury</h3>
+        <p>The closest planet to our sun and moves quickly in its orbit, hence its name honoring the fastest of the Greek gods, Hermes, also known at Mercury, Mercury looks not unlike the Moon at first. There's nearly no atmospheric gasses to protect the surface from incoming solar radiation or meteor impacts, leaving the surface marked with craters. (The names of the craters are all famous artists, authors and musicians: rachmaninoff: 27.6°, -302.4°) Early in its history, active Volcanos filled lower regions with magma, leading to the moonlike smooth plains on its surface. Caloris Basin (30.5°N 189.8°W) </p>
+      </div>
+
+      <div class="script">
+        <h3>Venus</h3>
+        <p></p>
+      </div>
+
+      <div class="script">
+        <h3>Mars</h3>
+        <p>Jezero Crater (18.38°N 77.58°E)</p>
+      </div>
+
+      <div class="script">
+        <h3>Jupiter</h3>
+        <p></p>
+      </div>
+
+
+      <div class="script">
+        <h3>Saturn</h3>
+        <p></p>
+      </div>
+
+
+      <div class='card'>
+        <h2>Cardinal Directions</h2>
+        <div class="group">
+          <span class="groupName">CardinalDirectionSphere</span>
+          <button onClick="fadeInSceneGraphNode('CardinalDirectionSphere');">On</button>
+          <button onClick="fadeOutSceneGraphNode('CardinalDirectionSphere');">Off</button>
+        </div>
+
+      </div>
+
+
+
+
 
       <div class='card'>
         <h2>Grids</h2>
