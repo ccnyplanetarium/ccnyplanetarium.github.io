@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Five Planets"
+title:  "The Five Planets - Live Space Show"
 date: 2022-04-29
 excerpt: "Our first live show in 2 years is all about the planetary alignment currently underway in the eastern pre-dawn skies."
 image: "assets/images/5planets-show-500.jpg"
@@ -14,6 +14,8 @@ tag: show
 It's been a while but we are delighted to be able to open our doors again and host some live space shows. Our first offering takes a look at the current planetary alignment that is happening in the pre-dawn skies. By June, all 5 naked eye planets will be visible in the hour before sunrise, creating a beautiful stepping stone like path leading up from the horizon.
 
 We had our first show on Wednesday, April 27th as part of the City College <a target="_blank" href="https://www.ccny.cuny.edu/science">Division of Science's</a> annual <a target="_blank" href="https://www.ccny.cuny.edu/science/week-science-2022">Week of Science</a> event series - a fitting way to celebrate!
+
+We'll announce a regular schedule soon!
 
 And, for those out of town or otherwise occupied guests, we'll do a virtual show on April 29th at 12:30 pm! You can watch the stream from YouTube here:
 
@@ -46,7 +48,7 @@ file="5planets-show-rachmaninoff-01024.jpg" alt="Rachmaninoff Crater"
 caption="Did you know the craters on Mercury are all named after composers, artists, and authors? Here is Rachmaninoff crater!"
 %}
 
-As usually, our tour bus will the opensource planetarium presentation software <a href="https://www.openspaceproject.com/">OpenSpace</a>.
+As usual, our tour bus will the opensource planetarium presentation software <a href="https://www.openspaceproject.com/">OpenSpace</a>.
 
 And, if you want to see the real thing, you'll have to wake up pretty early:
 
