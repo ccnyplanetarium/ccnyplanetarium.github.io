@@ -4,8 +4,11 @@ title:  "Starry Skies in the Basement"
 date:   2018-08-20
 excerpt: "The planetarium was a big deal in 1975. Here's a clip from The Campus that highlights the new facility."
 image: "assets/images/the-campus-1975-photo.jpg"
+author: "James Hedberg"
 categories: posts
+tag: history
 ---
+
 
 ## An Article from 1975
 
