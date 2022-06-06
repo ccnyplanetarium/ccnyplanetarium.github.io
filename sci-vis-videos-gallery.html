@@ -1,0 +1,43 @@
+---
+layout: video-catalog
+title: Videos
+menuListing: Videos
+description: Videos produced by the CCNY Planetarium
+permalink: /videos/
+sitemap:
+    priority: 0.7
+    lastmod: 2020-06-23
+    changefreq: weekly
+---
+
+<p>The videos we have made </p>
+
+<div class="row row-cols-1 row-cols-md-3">
+  {% for post in site.categories.videos %}
+  {% if post.thumb %}
+    <div class="card mb-2 mr-2 border-dark bg-dark" style="max-width: 520px;">
+    <div class="row no-gutters">
+      <div class="col-md-3">
+        {% if post.thumb %}
+        <img src="{{site.baseurl}}/assets/images/video-covers/{{post.thumb}}"  alt="...">
+        {% else %}
+        <img src="..." class="img-fluid rounded-start" alt="...">
+        {% endif %}
+      </div>
+
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title">{{post.videotitle}}</h5>
+          <p class="text-dark"><a href="{{ post.url | absolute_url }}" class="btn btn-dark">more &rarr;</a></p>
+          <p class="card-text">{{post.URL}}</p>
+          <p class="card-text"><small class="text-muted">Published: {{post.videodate}}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+
+
+{% endfor %}
+</div>
