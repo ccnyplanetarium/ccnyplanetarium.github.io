@@ -58,4 +58,4 @@ We'll also have an infrared camera connected to the dome, so you can get a feel 
 
 
 
-As usual, our tour bus will the opensource planetarium presentation software <a href="https://www.openspaceproject.com/">OpenSpace</a>.
+As usual, our tour bus will be the opensource planetarium presentation software <a href="https://www.openspaceproject.com/">OpenSpace</a>.
