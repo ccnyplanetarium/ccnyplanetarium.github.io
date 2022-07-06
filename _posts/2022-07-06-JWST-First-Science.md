@@ -15,12 +15,12 @@ Come join us on July 12th, in the dome to watch NASA & ESA release the first sci
 
 We'll stream the broadcast live to the dome starting at 10:30.
 
-It will be kid friendly, so feel free to bring your little ones. (Bring you own snacks!)
+It will be kid friendly, so feel free to bring your little ones. (Bring your own snacks!)
 
 <div class="row mt-3 mb-3">
 <div class="card bg-info">
 <div class="card-body">
-  <p>Unfortunately however, we will have to restrict our guest list to CUNY members with Cleared4 access since we can't offer building entry to external guests at the moment.
+  <p>Unfortunately however, we will have to restrict our guest list to CUNY members (Current Students/Faculty/Staff) with Cleared4 access since we can't offer building entry to external guests at the moment.
 </p>
   </div>
 </div>
