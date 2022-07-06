@@ -18,7 +18,7 @@ We'll stream the broadcast live to the dome starting at 10:30.
 It will be kid friendly, so feel free to bring your little ones. (Bring you own snacks!)
 
 <div class="row mt-3 mb-3">
-<div class="card bg-danger">
+<div class="card bg-info">
 <div class="card-body">
   <p>Unfortunately however, we will have to restrict our guest list to CUNY members with Cleared4 access since we can't offer building entry to external guests at the moment.
 </p>
@@ -26,11 +26,15 @@ It will be kid friendly, so feel free to bring your little ones. (Bring you own 
 </div>
 </div>
 
-Please RSVP here by Monday, July 11th 5pm.
+<hr/>
 
-[RSVP form](https://docs.google.com/forms/d/e/1FAIpQLSf9n5bdT-zdu5ha_AgPTm0Gn7z4AFZldLeBl43nw9vuICxGyw/viewform?usp=sf_link)
+#### Please RSVP here by Monday, July 11th 5pm.
 
+[RSVP form &rarr;](https://docs.google.com/forms/d/e/1FAIpQLSf9n5bdT-zdu5ha_AgPTm0Gn7z4AFZldLeBl43nw9vuICxGyw/viewform?usp=sf_link)
 
+<hr/>
+
+Directions can be found [here](https://ccnyplanetarium.org/visit.html)
 
 Can't make ours?
 
