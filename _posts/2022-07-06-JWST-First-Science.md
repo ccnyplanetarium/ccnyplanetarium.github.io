@@ -13,7 +13,7 @@ tag: show
 
 Come join us on July 12th, in the dome to watch NASA & ESA release the first science images from the James Webb Space Telescope.
 
-We'll stream the broadcast live to the dome starting at 10:30.
+We'll stream the broadcast live to the dome starting at 10:30. (Doors open at 10:00)
 
 It will be kid friendly, so feel free to bring your little ones. (Bring your own snacks!)
 
