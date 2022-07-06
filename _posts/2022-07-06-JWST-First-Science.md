@@ -11,6 +11,14 @@ tag: show
 
 ## First Images
 
+{%
+include figure.html
+max-width="800px"
+file="jwst-show.jpg" alt="The JWST/Infrared"
+caption="Our director in the infrared admiring the JWST"
+%}
+
+
 Come join us on July 12th, in the dome to watch NASA & ESA release the first science images from the James Webb Space Telescope.
 
 We'll stream the broadcast live to the dome starting at 10:30. (Doors open at 10:00)
@@ -32,6 +40,8 @@ It will be kid friendly, so feel free to bring your little ones. (Bring your own
 
 [RSVP form &rarr;](https://docs.google.com/forms/d/e/1FAIpQLSf9n5bdT-zdu5ha_AgPTm0Gn7z4AFZldLeBl43nw9vuICxGyw/viewform?usp=sf_link)
 
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9n5bdT-zdu5ha_AgPTm0Gn7z4AFZldLeBl43nw9vuICxGyw/viewform?embedded=true" width="640" height="965" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
 <hr/>
 
 Directions can be found [here](https://ccnyplanetarium.org/visit.html)
@@ -46,12 +56,6 @@ There are plenty of others all around the US:
 
 We'll also have an infrared camera connected to the dome, so you can get a feel for what the world looks like in the non-visible part of the spectrum.
 
-{%
-include figure.html
-max-width="800px"
-file="jwst-show.jpg" alt="The JWST/Infrared"
-caption="Our director in the infrared admiring the JWST"
-%}
 
 
 As usual, our tour bus will the opensource planetarium presentation software <a href="https://www.openspaceproject.com/">OpenSpace</a>.
