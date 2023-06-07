@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  {%- include ga.html -%}
+  <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ccnyplanetarium">
+<meta name="twitter:creator" content="@ccnyplanetarium">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{page.description}}">
+<meta name="twitter:image" content="https://ccnyplanetarium.org/assets/gallery/{{page.file}}">
+   {%- seo -%}
+   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+   <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
+   <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Open+Sans&family=Righteous&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+ <script async src="//www.instagram.com/embed.js"></script>
+</head>
+
+  <body class="galleryBackground">
+    <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+    {%- include header.html -%}
+
+    <div class="p-2">
+      <div class="container  page-content">
+          <h1 class="text-white">{{ page.name }}</h1>
+          <figure class="figure col-lg-8 col-sm-12">
+            <img src="{{site.baseurl}}/OpenSpaceAddons/images/{{page.mainimage}}" alt="{{page.description}}">
+            <figcaption class="figure-caption">{{page.caption}}</figcaption>
+          </figure>
+          
+          <h3>Description</h3>
+          <p class="text-white">{{page.description}}</p>
+          <h3>Instructions</h3>
+          <p class="text-white">{{page.instructions}}</p>
+          <h3>Download Link</h3>
+          <p class="text-white"><a target="_blank" href="{{page.downloadURL}}" class="btn btn-primary">{{page.downloadOBJECT}}</a></p>
+          {% if page.credit %}
+          <p class="text-white">Credit: {{page.credits}}</p>
+          {% endif %}
+          <hr>
+          <p class="text-white">Date Added: {{page.dateadded}}</p>
+          <p class="text-white">Tested with OS Version: {{page.osversion}}</p>
+          <section >
+              {% include share.html %}
+          </section>
+      </div>
+    </div>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

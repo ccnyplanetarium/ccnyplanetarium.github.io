@@ -1,0 +1,45 @@
+---
+layout: asset-lister
+title: OpenSpace Addons
+menuListing: osaddons
+description: OpenSpace addons created by us
+permalink: /OpenSpace-Addons/
+sitemap:
+    priority: 0.7
+    lastmod: 2023-06-01
+    changefreq: weekly
+---
+
+<p>Our collection of bespoke assets and other helpful addons for OpenSpace</p>
+
+<div class="row row-cols-1 row-cols-md-2">
+  
+  {% for post in site.categories.openspaceaddons %}
+ 
+ 
+    <div class="card mb-2 mr-2 ml-2 border-dark bg-dark" style="max-width: 520px;">
+    <div class="row no-gutters">
+      <div class="col-md-3">
+        {% if post.thumb %}
+        <img src="{{site.baseurl}}/OpenSpaceAddons/images/{{post.thumb}}"  alt="...">
+        {% else %}
+        <img src="..." class="img-fluid rounded-start" alt="...">
+        {% endif %}
+      </div>
+
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title">{{post.name}}</h5>
+          <p class="text-dark"><a href="{{ post.url | absolute_url }}" class="btn btn-primary">more &rarr;</a></p>
+          <!-- <p class="card-text">{{post.URL}}</p> -->
+          <p class="card-text"><small class="text-muted">Published: {{post.dateadded}}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+{% endfor %}
+</div>
