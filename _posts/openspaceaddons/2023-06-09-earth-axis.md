@@ -1,7 +1,7 @@
 ---
 layout: addonitem
 identifier: earth-axis
-downloadURL: https://drive.google.com/file/d/1oVzaIY_nIb3ZGXqO30Vs0XIhLTdDFx3Z/view?usp=sharing
+downloadURL: https://drive.google.com/file/d/1GV9X7WCdlkmj5xEH9o-yHt97aVxT0tpq/view?usp=sharing
 downloadOBJECT: ZIP file download
 name: Earth Axis
 categories: openspaceaddons
