@@ -11,7 +11,7 @@ thumb: constellation-lines-individual-th.jpg
 mainimage: constellation-lines-individual.jpg
 caption: The constellation lines for Aquarius.
 description: The asset separates all the constellation stick figures into individually addressable nodes.
-instructions: Download the asset zip file below. Unzip and place in your user assets folder. (<kbd>user/data/assets/constellation-lines-individual</kbd>). Add the asset with by dragging and dropping, or including in a profile. Then use the GUI menu to address individual constellation lines. (<kbd>Milky Way / Constellation Lines</kbd>). Searching in the GUI will also find the individual line sets.
+instructions: Download the asset zip file below. Unzip and place in your user assets folder. (<kbd>user/data/assets/constellation-lines-individual</kbd>). Add the asset by dragging and dropping the main file into the window, or by including it in a profile. Then use the GUI menu to address individual constellation lines. (<kbd>Milky Way / Constellation Lines</kbd>). Searching in the GUI will also find the individual line sets.
 group: Sky Culture
 topic: Constellations
 type: asset
