@@ -35,14 +35,14 @@ sitemap:
       {% for addon in item.items %}
       <div class="card mb-2 mr-2 ml-2 border-dark bg-dark" style="max-width: 520px;">
         <div class="row no-gutters">
-          <div class="col-md-3">
+          <div class="col-md-4">
             {% if addon.thumb %}
             <img src="{{site.baseurl}}/OpenSpaceAddons/images/{{addon.thumb}}"  alt="...">
             {% else %}
             <img src="..." class="img-fluid rounded-start" alt="...">
             {% endif %}
           </div>
-          <div class="col-md-9">
+          <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">{{addon.name}}</h5>
               <p class="text-dark"><a href="{{ addon.url | absolute_url }}" class="btn btn-primary">more &rarr;</a></p>
