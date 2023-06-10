@@ -10,7 +10,7 @@ datemodified: 2023-06-10
 thumb: moon-rabbit-th.jpg
 mainimage: moon-rabbit.jpg
 caption: The Moon Rabbit.
-description: One of the many .
+description: What do you see in the moon? One of the interpretations of the variations in color on the lunar surface is the well known Moon Rabbit. This asset is an image layer that shows the moon rabbit. 
 instructions: Download the asset zip file below. Unzip and place in your user assets folder. (<kbd>user/data/assets/moon-rabbit</kbd>). Add the asset by dragging and dropping the file <kbd>moon-rabbit.asset</kbd> into the window, or by including in a profile. The asset properties are found in the GUI under <kbd>Moon/Layers/ColorLayers</kbd>.
 group: Sky Culture
 topic: Lunar
