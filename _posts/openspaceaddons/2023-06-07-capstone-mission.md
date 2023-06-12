@@ -5,8 +5,8 @@ downloadURL: https://drive.google.com/file/d/1eZtc9B5f2-_XmTmhSGnsAYC3iHvwfrH2/v
 downloadOBJECT: ZIP file download
 name: Trails for the Capstone Mission
 categories: openspaceaddons
-dateadded: 2023-06-07
-datemodified: 2023-06-07
+dateadded: 2023-06-12
+datemodified: 2023-06-12
 thumb: capstone-mission-th.jpg
 mainimage: capstone-mission.jpg
 caption: Capstone Orbit.
