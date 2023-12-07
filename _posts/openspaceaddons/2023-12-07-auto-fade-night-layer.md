@@ -15,7 +15,7 @@ instructions: Download the asset zip file below. Unzip and place in your user ev
 group: Events
 topic: Night Sky
 type: asset
-osversion: 18.0
+osversion: 19.0
 examplevideo: toggle-night-layer-demo.mp4 
 
 ---
