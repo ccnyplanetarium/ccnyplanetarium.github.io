@@ -38,7 +38,13 @@
           
           <h3>Description</h3>
           <p class="text-white">{{page.description}}</p>
+          {% if page.examplevideo %}
+          <video controls width="300px" src="{{site.baseurl}}/OpenSpaceAddons/videos/{{page.examplevideo}}"></video>
+          
+          {% endif %}
           <h3>Instructions</h3>
+          
+          
           <p class="text-white">{{page.instructions}}</p>
           <h3>Download Link</h3>
           <p class="text-white"><a target="_blank" href="{{page.downloadURL}}" class="btn btn-primary">{{page.downloadOBJECT}}</a></p>
