@@ -11,7 +11,7 @@ thumb: basic-time-control-th.jpg
 mainimage: basic-time-control.jpg
 caption: Notebook Control of OpenSpace.
 description: "A basic template to start programmatically capturing frames using a Jupyter Notebook that controls time (or other properties). A simple example would be to show the orbit of earth throughout 1 year exactly by taking a screenshot everyday from Jan 1 to Dec 31 at noon EST. The notebook is based on earlier work provided by the OpenSpace team found here: <a target = '_blank' href='https://github.com/OpenSpace/scripts/tree/master/jupyter-notebooks'>OS Scripts</a>"
-instructions: "Begin by getting a local installation of Jupyter Notebook server running. Load the example <code>ipynb</code> notebook. Install any needing libraries based on errors. Run the cells individually. The screenshots can then be assembled using a standard video editor. (Notes: the notebook won't work using Google Colab to my knowledge. It needs to be run locally.)"
+instructions: "Begin by getting a local installation of Jupyter Notebook server running. Load the example <code>ipynb</code> notebook. Install any needed libraries based on errors. Run the cells individually. The screenshots can then be assembled using a standard video editor like Premiere Pro or Final Cut. (Notes: the notebook won't work using Google Colab to my knowledge. It needs to be run locally.)"
 html-embed: basic-time-control.html
 group: Controllers
 topic: Video Making
