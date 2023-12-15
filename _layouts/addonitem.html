@@ -39,9 +39,20 @@
           <h3>Description</h3>
           <p class="text-white">{{page.description}}</p>
           {% if page.examplevideo %}
-          <video controls width="300px" src="{{site.baseurl}}/OpenSpaceAddons/videos/{{page.examplevideo}}"></video>
+          <h4>Video Example:</h4>
+          <video controls width="400px" src="{{site.baseurl}}/OpenSpaceAddons/videos/{{page.examplevideo}}"></video>
           
           {% endif %}
+
+          {% if page.html-embed %}
+          <div class="col-lg-8 col-sm-12">
+            <iframe src="{{site.baseurl}}/OpenSpaceAddons/htmlpages/{{page.html-embed}}" frameborder="0" height="400px" width="800px"></iframe>
+
+          </div>
+          
+          
+          {% endif %}
+
           <h3>Instructions</h3>
           
           
