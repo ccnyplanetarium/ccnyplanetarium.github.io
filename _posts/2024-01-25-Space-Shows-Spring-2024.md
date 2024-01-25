@@ -20,6 +20,14 @@ We'll be doing weekly shows this spring. Open to all, but please reserve a seat 
 
 This isn't just a movie. We'll be piloting our spaceship live making stops all over the solar system, galaxy and beyond. You can ask questions, request destinations, or just sit back in our retro 1970's chairs and stare out the 30 ft sunroof into the cosmos. Shows will run about 40 minutes, and start promptly. Doors will have to close shortly after the start time and unfortunately – we can't be letting people trickly in late since it ruins the experience for the rest of the guests (Just pretend you're trying to actually catch a rocket launch - they won't be able to just open the doors real quick if you're 5 minutes late). 
 
+### The Current Schedule:
+
+* January 31st 3-4 pm. 
+* February 8th, 12:30-1:30 pm.
+* February 14th, 3-4 pm.
+
+and more to come...
+
 ### About your visit
 
 We are located in the Marshak Science Building on the City College Campus. The entrance to the building that is currently open is located at approximately 160 Convent Ave. (Though there is no obvious address indicating that). Any CUNY ID will get you in the building without issue, but external community members will likely have to sign in at the front desk. Here is a google map pin: [Google Map to Marshak](https://maps.app.goo.gl/8gSHQgDToYDjqosE7) and a map is below. See our [visiting]({{site.baseurl}}/visit/) page for more important details. 
