@@ -18,7 +18,7 @@ We'll be doing weekly shows this spring. Open to all, but please reserve a seat 
 
 ### About the show
 
-This isn't just a movie. We'll be piloting our spaceship live making stops all over the solar system, galaxy and beyond. You can ask questions, request destinations, or just sit back in our retro 1970's chairs and stare out the 30 ft sunroof into the cosmos. Shows will run about 40 minutes, and start promptly. Doors will have to close shortly after the start time and unfortunately – we can't be letting people trickly in late since it ruins the experience for the rest of the guests (Just pretend you're trying to actually catch a rocket launch - they won't be able to just open the doors real quick if you're 5 minutes late). 
+This isn't just a movie. We'll be piloting our spaceship live making stops all over the solar system, galaxy and beyond. You can ask questions, request destinations, or just sit back in our retro 1970's chairs and stare out the 30 ft sunroof into the cosmos. Shows will run about 40 minutes, and start promptly. Doors will have to close shortly after the start time and unfortunately – we can't be letting people trickle in late since it ruins the experience for the rest of the guests (Just pretend you're trying to actually catch a rocket launch - they won't be able to just open the doors real quick if you're 5 minutes late). 
 
 ### The Current Schedule:
 
