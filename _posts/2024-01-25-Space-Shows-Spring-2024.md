@@ -15,8 +15,10 @@ We'll be doing weekly shows this spring. Open to all, but please reserve a seat 
 <div style="margin: auto; width: 300px;">
    <a href="https://ccnyplanetarium.eventbrite.com" class="btn btn-primary" target="_blank">ccnyplanetarium.eventbrite.com &rarr;</a>
 
-<p>(And if eventbrite isn't your thing, then send us a note to planetarium@ccny.cuny.edu and we'll add you to the will call list.)</p>
+
 </div>
+
+(And if eventbrite isn't your thing, then send us a note to planetarium@ccny.cuny.edu and we'll add you to the will call list.)
 
 ### About the show
 
