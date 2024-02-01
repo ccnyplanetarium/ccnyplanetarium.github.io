@@ -11,11 +11,9 @@ tag: show
 
 ## We're open!
 
-We'll be doing weekly shows this spring. Open to all, but please reserve a seat by getting a free ticket here: 
+We'll be doing weekly shows this spring. Open to all, but you'll need a ticket. Get one here: 
 <div style="margin: auto; width: 300px;">
    <a href="https://ccnyplanetarium.eventbrite.com" class="btn btn-primary" target="_blank">ccnyplanetarium.eventbrite.com &rarr;</a>
-
-
 </div>
 
 (And if eventbrite isn't your thing, then send us a note to planetarium@ccny.cuny.edu and we'll add you to the will call list.)
