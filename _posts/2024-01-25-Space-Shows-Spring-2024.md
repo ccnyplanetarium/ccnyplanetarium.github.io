@@ -24,7 +24,7 @@ This isn't just a movie. We'll be piloting our spaceship live making stops all o
 
 ### About time
 
-Shows will run about 40 minutes, and start promptly. Doors open about 10 minutes before the listed start time and will will have to close shortly after the start time. Unfortunately, we can't be letting people trickle in late since it ruins the experience for the rest of the guests (Just pretend you're trying to actually catch a rocket launch - they won't be able to just open the doors real quick if you're 5 minutes late). (i.e. <b>No Late Seating</b>)
+Shows will run about 40 minutes, and start promptly. Doors open about 10 minutes before the listed start time and will have to close shortly after the start time. Unfortunately, we can't be letting people trickle in late since it ruins the experience for the rest of the guests and it's really dark. (Just pretend you're trying to actually catch a rocket launch - they won't be able to just open the doors real quick if you're 5 minutes late). (i.e. <b>No Late Seating</b>)
 
 ### The Current Schedule:
 
