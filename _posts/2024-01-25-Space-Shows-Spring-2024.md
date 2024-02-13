@@ -35,7 +35,7 @@ Shows will run about 40 minutes, and start promptly. Doors open about 10 minutes
 * February 28th, 3-4 pm.
 
 
-and more to come...
+and more to come... (usually Wednesdays at 3)
 
 ### About your visit
 
