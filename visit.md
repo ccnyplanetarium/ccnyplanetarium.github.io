@@ -4,9 +4,16 @@ title: Come Visit Us
 description: How to find us
 sitemap:
     priority: 0.7
-    lastmod: 2019-05-16
+    lastmod: 2024-02-15
     changefreq: weekly
 ---
+
+## General
+
+This semester, we are doing live space shows every Wednesday at 3pm. Reserve a seat!
+     
+<a href="{% post_url 2024-01-25-Space-Shows-Spring-2024 %}" class="btn btn-warning" target="_blank">Live Space Shows &rarr;</a>
+     
 
 
 ## Directions
