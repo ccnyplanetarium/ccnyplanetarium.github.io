@@ -31,8 +31,9 @@ Shows will run about 40 minutes, and start promptly. Doors open about 10 minutes
 * ~~January 31st 3-4 pm.~~
 * ~~February 8th, 12:30-1:30 pm.~~
 * ~~February 14th, 3-4 pm.~~
-* February 21th, 3-4 pm.
-* February 28th, 3-4 pm.
+* ~~February 21th, 3-4 pm.~~
+* ~~February 28th, 3-4 pm.~~
+* March 6th, 2-3 pm (special time).
 
 
 and more to come... (usually Wednesdays at 3)
