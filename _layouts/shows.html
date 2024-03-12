@@ -28,7 +28,7 @@
 
             <p>See our <a href="{{site.baseurl}}/visit/">Visiting</a> page for more important details and logistics. 
             </p>
-            
+
         </div>
 
     </div>
@@ -38,7 +38,7 @@
 
       
       <div class="table-responsive">
-        <table class="table table-bordered eventlist">
+        <table class="table table-bordered eventlist table-sm">
             <thead>
             <tr>
                 <th>Day</th>
@@ -62,9 +62,7 @@
                 <td>
                 {{ event.time }}
                 </td>
-                <td>
-                {{ event.description }}
-                </td>
+                
                 <td>
                     {% if event.status == 'comingsoon' %}
                     <a class="btn btn-primary" target="_blank" href="{{ event.tickets }}">Reserve a seat &rarr;</a>
@@ -73,6 +71,9 @@
                     {% else %}
                     passed
                     {% endif %}
+                </td>
+                <td>
+                    {{ event.description }}
                 </td>
             </tr>
             {% endfor %}
