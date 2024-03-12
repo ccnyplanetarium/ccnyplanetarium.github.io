@@ -52,8 +52,8 @@
   day: Wed
   time: "3:00 pm"
   description: Live Space Show
-  tickets: link
-  status: future
+  tickets: "https://www.eventbrite.com/e/live-space-show-tickets-861655433597?aff=oddtdtcreator"
+  status: comingsoon
 
 - date: March 27
   day: Wed
