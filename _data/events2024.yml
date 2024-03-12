@@ -1,0 +1,98 @@
+- date: Jan 31
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: "https://www.eventbrite.com/e/803929232977?aff=oddtdtcreator"
+  status: passed
+
+- date: Feb 8
+  day: Thurs
+  time: "12:30 pm"
+  description: Live Space Show
+  tickets: ""
+  status: passed
+
+- date: Feb 14
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: ""
+  status: passed
+
+- date: Feb 21
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: ""
+  status: passed
+
+- date: Feb 28
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: ""
+  status: passed
+
+- date: March 6
+  day: Wed
+  time: "2:00 pm"
+  description: Live Space Show
+  tickets: ""
+  status: passed
+
+
+- date: March 13
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: "https://www.eventbrite.com/e/live-space-show-tickets-856960681467?aff=oddtdtcreator"
+  status: comingsoon
+
+- date: March 20
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: link
+  status: future
+
+- date: March 27
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: link
+  status: future
+
+- date: April 3
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: link
+  status: future
+
+- date: April 10
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: link
+  status: future
+
+- date: April 17
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: link
+  status: future
+
+- date: May 1
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: link
+  status: future
+
+- date: May 8
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: link
+  status: future

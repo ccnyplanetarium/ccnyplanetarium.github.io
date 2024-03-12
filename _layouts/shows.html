@@ -1,0 +1,94 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="">
+    <!-- <div id="fb-root"></div> -->
+  <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script> -->
+    {%- include header.html -%}
+
+    <div class="p-2">
+      <div class="container  page-content">
+
+      <h3>Coming Up Under the Dome</h3>
+      <div class="row">
+        <figure class="figure float-md-left col-md-4" >
+           <img class="figure-img img-fluid" src="{{site.baseurl}}/assets/images/moon-show-dome.jpg"  alt="CCNY Planetarium"/>
+        </figure>
+
+        <div class="col">
+            <p>Below is our schedule for the Spring 2024 semester. In general, we will be hosting live space shows every Wednesday at 3pm, with a few deviations here and there. </p>
+
+            <p>You can reserve a seat for shows coming up using the link on the calendar. </p>
+
+
+            <p>See our <a href="{{site.baseurl}}/visit/">Visiting</a> page for more important details and logistics. 
+            </p>
+            
+        </div>
+
+    </div>
+  
+ 
+     
+
+      
+      <div class="table-responsive">
+        <table class="table table-bordered eventlist">
+            <thead>
+            <tr>
+                <th>Day</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Topic</th>
+                <th>Tickets</th>
+            </tr>
+            
+            </thead>
+            <tbody>
+            {% for event in site.data.events2024 %}
+
+            <tr class="{{event.status}}"">
+                <td>
+                {{ event.day }}
+                </td>
+                <td>
+                {{ event.date }}
+                </td>
+                <td>
+                {{ event.time }}
+                </td>
+                <td>
+                {{ event.description }}
+                </td>
+                <td>
+                    {% if event.status == 'comingsoon' %}
+                    <a class="btn btn-primary" target="_blank" href="{{ event.tickets }}">Reserve a seat &rarr;</a>
+                    {% elsif event.status == 'future' %}
+                    Stay Tuned!
+                    {% else %}
+                    passed
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+
+        </div>
+    
+      
+
+
+    </div>
+    </div>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
