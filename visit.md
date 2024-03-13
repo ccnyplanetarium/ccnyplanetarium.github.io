@@ -2,6 +2,7 @@
 layout: page
 title: Come Visit Us
 description: How to find us
+permalink: /visit/
 sitemap:
     priority: 0.7
     lastmod: 2024-02-15
