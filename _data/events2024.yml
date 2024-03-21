@@ -66,8 +66,8 @@
   day: Wed
   time: "3:00 pm"
   description: Live Space Show
-  tickets: link
-  status: future
+  tickets: "https://www.eventbrite.com/e/live-space-show-tickets-868530517157"
+  status: comingsoon
 
 - date: April 10
   day: Wed
