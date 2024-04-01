@@ -24,7 +24,7 @@ It's here. Many of us have been waiting since 2017 for another chance to see one
    <video class="figure-img img-fluid"  controls  autoplay alt="Sky View of 2024 Eclipse">
    <source src="{{site.baseurl}}/assets/images/eclipse2024-observing/skyview_1.mp4" type="video/mp4">
    </video>
-   <figcaption class="figure-caption">Simulated view of the Eclipse over NYC. [Simulated with OpenSpace]</figcaption>
+   <figcaption class="figure-caption">Simulated view of the April 8 Eclipse over NYC. Peak should be around 3:30 pm. [Simulated with OpenSpace]</figcaption>
  </figure>
 </div>
 
@@ -46,7 +46,7 @@ Here's a detailed view of the planned location. Right in front of the North Acad
 include figure.html
 max-width="800px"
 file="eclipse2024-observing/ccny-location-eclipse-2024.jpg" alt="2024 Eclipse"
-caption="The plan is to set up here! (If we have to move elsewhere, just look for the physics students and the telescope!)"
+caption="The plan is to set up here! April 8th around 2:45pm. (If we have to move elsewhere, just look for the physics students and the telescope!)"
 %}
 
 
