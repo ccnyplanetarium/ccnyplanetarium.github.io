@@ -2,13 +2,13 @@
 layout: post
 title:  "2024 Eclipse"
 date: 2024-03-31
-excerpt: "Join the CCNY Physics club to watch the eclipse "
+excerpt: "Join the CCNY Physics club to watch the eclipse on April 8th"
 image: "assets/images/2024-eclipse-500.jpg"
 author: "CCNY Planetarium"
 categories: posts
 ---
 
-# Observe the Eclipse with the CCNY Physics Club
+# Observe the April 8 Eclipse, 3pm with the CCNY Physics Club
 
 {%
 include figure.html
@@ -28,7 +28,7 @@ It's here. Many of us have been waiting since 2017 for another chance to see one
  </figure>
 </div>
 
-If you will be watching in NYC, then you are welcome to join the CCNY Physics club for an observation event on the CCNY campus. We've calculated the position of the sun during the peak of the eclipse and it appears it will be visible from the area in front of the NAC building. We will have the solar telescope set up which will allow for safe viewing of the sun during the eclipse. (We will <i>not</i> have many standard eclipse glasses to give out, so please try to grab a pair from another source before hand. [NYP libraries](https://www.nypl.org/press/new-york-city-public-libraries-distribute-free-solar-eclipse-glasses-safe-eclipse-viewing) have them, as do several other establishments!)
+If you will be watching in NYC on the 8th, then you are welcome to join the CCNY Physics club for an observation event on the CCNY campus. The peak time is around 3:30 pm, but there will be excitement from about 2:45 to 3:45. We've calculated the position of the sun during the peak of the eclipse and it appears it will be visible from the area in front of the NAC building. We will have the solar telescope set up which will allow for safe viewing of the sun during the eclipse. (We will <i>not</i> have many standard eclipse glasses to give out, so please try to grab a pair from another source before hand. [NYP libraries](https://www.nypl.org/press/new-york-city-public-libraries-distribute-free-solar-eclipse-glasses-safe-eclipse-viewing) have them, as do several other establishments!)
 
 <div class="row">
 <figure class="figure d-block mx-auto" style="max-width: 800px;">
