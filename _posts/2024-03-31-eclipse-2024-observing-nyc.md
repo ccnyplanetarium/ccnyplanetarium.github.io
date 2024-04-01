@@ -8,7 +8,7 @@ author: "CCNY Planetarium"
 categories: posts
 ---
 
-# Observe the April 8 Eclipse, 3pm with the CCNY Physics Club
+# Observe the April 8 Eclipse at 3pm with the CCNY Physics Club
 
 {%
 include figure.html
