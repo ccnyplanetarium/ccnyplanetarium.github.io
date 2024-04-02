@@ -60,7 +60,7 @@
   time: "3:00 pm"
   description: Live Space Show
   tickets: "https://www.eventbrite.com/e/live-space-show-tickets-862992302207?aff=oddtdtcreator"
-  status: comingsoon
+  status: passed
 
 - date: April 3
   day: Wed
@@ -73,8 +73,8 @@
   day: Wed
   time: "3:00 pm"
   description: Live Space Show
-  tickets: link
-  status: future
+  tickets: "https://www.eventbrite.com/e/live-space-show-tickets-875911022447?aff=oddtdtcreator"
+  status: comingsoon
 
 - date: April 17
   day: Wed
