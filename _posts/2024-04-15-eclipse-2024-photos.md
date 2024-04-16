@@ -41,7 +41,7 @@ There was a 'widely shared' post on IG that alerted us to the 'city' of Rapture 
 
 <div class="col">
 <p>
-Some quick map work showed that indeed, there is a place with a name called Rapture Indiana. And it is located in the path of totality. And it is directly on the way back from St. Louis where we knew we would be leaving from Monday morning. After consulting the cloud cover maps Monday morning, it looks like it would be clear, so off we went. En route to Rapture. What the IG video misrepresented about this place, was that it is a "city". There is nothing resembling a city at the location of Rapture IN. There isn't really even a town, or anything. Just some fields and a few country roads. Perfect. 
+Some quick map work showed that indeed, there is a place with a name called Rapture Indiana. And it is located in the path of totality. And it is directly on the way back from St. Louis, where we knew we would be leaving from Monday morning. After consulting the cloud cover maps Monday morning, it looks like it would be clear, so off we went. En route to Rapture. What the IG video misrepresented about this place, was that it is a "city". There is nothing resembling a city at the location of Rapture IN. There isn't really even a town, or anything. Just some fields and a few country roads. Perfect. 
 </p>
 
 <p>So, we arrived at the crossroads just as the sun was about to be eaten by the moon. There was one family already there, and they welcomed us to join. Over the next 30 minutes, several more pilgrims arrived. We set up some tripods, made a few sandwiches, and got ready. Below are some of the images we captured that day. </p>
@@ -77,7 +77,7 @@ The partial phase lasted for roughly an hour. It was at 3:00 or so that the shad
    <video class="figure-img img-fluid"  controls  autoplay loop alt="Sky View of 2024 Eclipse">
    <source src="{{site.baseurl}}/assets/images/rapture-eclipse-2024/rapture-totality-slow.mp4" type="video/mp4">
    </video>
-   <figcaption class="figure-caption">Slowed down loop of moment totality happened. </figcaption>
+   <figcaption class="figure-caption">Slowed down loop of the moment totality happened. </figcaption>
  </figure>
  </div>
 
