@@ -4,7 +4,7 @@ title:  "2024 Eclipse - Photos and more"
 date: 2024-04-15
 excerpt: "Here's what we saw on April 8th"
 image: "assets/images/rapture-eclipse-500.jpg"
-author: "CCNY Planetarium"
+author: "J. Hedberg"
 categories: posts
 ---
 
