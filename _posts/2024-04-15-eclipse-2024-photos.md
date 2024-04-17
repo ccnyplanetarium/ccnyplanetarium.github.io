@@ -134,7 +134,7 @@ In the end, this was about as good as it gets for an eclipse viewing. The weathe
 include figure.html
 max-width="800px"
 file="rapture-eclipse-2024/rapture-folks.jpg" alt="Rapture"
-caption="A group photo showing the collection of people that traveled from all corners of the US to this crossroads. There were groups from Florida, Oregon, Michigan, NY, Kentucky, and more."
+caption="A group photo showing the collection of people that traveled from all corners of the US to this crossroads. There were groups from Florida, Oregon, Michigan, NY, Kentucky, and more. (Thanks Brandon and Tim for orchestrating!)"
 %}
 
 
