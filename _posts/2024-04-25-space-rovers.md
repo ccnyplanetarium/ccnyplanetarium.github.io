@@ -10,6 +10,13 @@ categories: posts
 
 # Space Rover
 
+<div class="row mt-3 mb-3">
+<div class="card bg-warning">
+<div class="card-body">
+  <p>This event has been postponed. We will find a new date and update this post.</p>
+  </div>
+</div>
+</div>
 
 <div class="row">
 <figure class="figure float-md-left col-md-4" style="max-width: 400px;">
@@ -25,7 +32,7 @@ As we approach the end of our Spring semester, we are delighted to feature a spe
 We'll dive into the fascinating world of space exploration and more in the context of the little vehicles we dispatch around the solar system to do the things humans find difficult. This event is perfect for space enthusiasts and bookworms of all ages. Don't miss this stellar opportunity to embark on a cosmic journey with us!
 
 </p>
-<p>The event will be held Thursday, May 2nd, at 4 pm. It's free, but please register to save your seat here:
+<p>The event will be held <strike>Thursday, May 2nd, at 4 pm.</strike> It's free, but please register to save your seat here:
 </p>
 
 <div style="margin: auto; width: 300px;">

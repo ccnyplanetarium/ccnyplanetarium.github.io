@@ -88,14 +88,14 @@
   time: "3:00 pm"
   description: Live Space Show
   tickets: "https://www.eventbrite.com/e/883332149237?aff=oddtdtcreator"
-  status: comingsoon
+  status: passed
 
 - date: May 2
   day: Thursday
   time: "4:00 pm"
   description: "Space Rover: A Cosmic Book Launch"
   tickets: "https://www.eventbrite.com/e/888344671827?aff=oddtdtcreator"
-  status: comingsoon
+  status: postponed
 
 - date: May 15
   day: Wed
