@@ -130,10 +130,12 @@
 
 	  {
 	    const color = 0xFFFFFF;
-	    const intensity = 1;
+	    const intensity = 1.2;
 	    const light = new THREE.DirectionalLight(color, intensity);
-	    light.position.set(-1, 2, 4);
+	    light.position.set(-1, 0, 4);
+		const amblight = new THREE.AmbientLight( 0x404040,0.3 ); // soft white light
 	    scene.add(light);
+		scene.add(amblight );
 	  }
 
 		const controls = new OrbitControls( camera, canvas );
