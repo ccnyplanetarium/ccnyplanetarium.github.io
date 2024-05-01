@@ -1,0 +1,179 @@
+---
+layout: planets-gallery
+title: Draw Planets
+permalink: /vces-maps/
+navigation_weight: 1
+order: 1
+excerpt: Let's draw some planets and put them on a sphere.
+image: "assets/images/globe-warp-500.jpg"
+---
+
+
+	<canvas id="c"></canvas>
+
+			<div id="threejscontent">
+
+			</div>
+
+			<script type="module">
+
+				import * as THREE from '/assets/javascript/threejs/three.module.js';
+
+				import { array } from '/assets/dynamic-media/globes/vces-globe-data.js'
+
+				let canvas, renderer;
+
+				const scenes = [];
+
+				init();
+				animate();
+
+				function init() {
+
+					canvas = document.getElementById( "c" );
+
+					const content = document.getElementById( 'threejscontent' );
+
+					for ( let i = 0; i < 2; i ++ ) {
+
+						const scene = new THREE.Scene();
+
+						// make a list item
+						const element = document.createElement( 'div' );
+						element.className = 'list-item';
+
+						const sceneElement = document.createElement( 'div' );
+						element.appendChild( sceneElement );
+                        const descriptionElementLink = document.createElement( 'a' );
+						var linkText = document.createTextNode(array[i][4]+" \u2192");
+						descriptionElementLink.appendChild(linkText);
+						descriptionElementLink.title = "A Globe";
+						descriptionElementLink.href = "/vces-maps/planets/"+array[i][6]+".html";
+						element.appendChild( descriptionElementLink );
+						const descriptionElement = document.createElement( 'div' );
+						descriptionElement.innerText = ' by '+array[i][2] ;
+						element.appendChild( descriptionElement );
+
+						// the element that represents the area we want to render the scene
+						scene.userData.element = sceneElement;
+						content.appendChild( element );
+
+						const camera = new THREE.PerspectiveCamera( 50, 1, 1, 10 );
+						camera.position.z = 2;
+						scene.userData.camera = camera;
+
+
+
+						// add one random mesh to each scene
+						const geometry = new THREE.SphereGeometry( 0.8, 16, 16 );
+
+						const material = new THREE.MeshStandardMaterial({
+							roughness: 1
+						});
+
+						const textureLoader = new THREE.TextureLoader();
+						textureLoader.load("../assets/dynamic-media/globes/globe-drawings-thumbs/"+array[i][0]+"-th"+array[i][1], function(map) {
+
+							map.anisotropy = 8;
+
+							material.map = map;
+							material.needsUpdate = true;
+							material.opacity = 1;
+
+						});
+
+						scene.add( new THREE.Mesh( geometry, material ) );
+
+						//scene.add( new THREE.HemisphereLight( 0xaaaaaa, 0x444444 ) );
+
+						const light = new THREE.DirectionalLight( 0xffffff, 1 );
+						light.position.set( 1, 0, 1 );
+						scene.add( light );
+
+						scenes.push( scene );
+
+					}
+
+
+					renderer = new THREE.WebGLRenderer( { canvas: canvas, antialias: true } );
+					renderer.setClearColor( 0x000, 1 );
+					renderer.setPixelRatio( window.devicePixelRatio );
+
+				}
+
+				function updateSize() {
+
+					const width = canvas.clientWidth;
+					const height = canvas.clientHeight;
+
+					if ( canvas.width !== width || canvas.height !== height ) {
+
+						renderer.setSize( width, height, false );
+
+					}
+
+				}
+
+				function animate() {
+
+					render();
+					requestAnimationFrame( animate );
+
+				}
+
+				function render() {
+
+					updateSize();
+
+					canvas.style.transform = `translateY(${window.scrollY}px)`;
+
+					renderer.setClearColor( 0x000 );
+					renderer.setScissorTest( false );
+					renderer.clear();
+
+					renderer.setClearColor( 0x000 );
+					renderer.setScissorTest( true );
+
+					scenes.forEach( function ( scene ) {
+
+						// so something moves
+						scene.children[ 0 ].rotation.y = Date.now() * 0.0002;
+
+						// get the element that is a place holder for where we want to
+						// draw the scene
+						const element = scene.userData.element;
+
+						// get its position relative to the page's viewport
+						const rect = element.getBoundingClientRect();
+
+						// check if it's offscreen. If so skip it
+						if ( rect.bottom < 0 || rect.top > renderer.domElement.clientHeight ||
+							 rect.right < 0 || rect.left > renderer.domElement.clientWidth ) {
+
+							return; // it's off screen
+
+						}
+
+						// set the viewport
+						const width = rect.right - rect.left;
+						const height = rect.bottom - rect.top;
+						const left = rect.left;
+						const bottom = renderer.domElement.clientHeight - rect.bottom;
+
+						renderer.setViewport( left, bottom, width, height );
+						renderer.setScissor( left, bottom, width, height );
+
+						const camera = scene.userData.camera;
+
+						//camera.aspect = width / height; // not changing in this example
+						//camera.updateProjectionMatrix();
+
+						//scene.userData.controls.update();
+
+						renderer.render( scene, camera );
+
+					} );
+
+				}
+
+			</script>
