@@ -8,7 +8,7 @@ export const array = [
     ['vces-lc','.jpg','LC','05-01-2024',"Earth",7,'007'],
     ['vces-lg','.jpg','LG','05-01-2024',"Earth",8,'008'],
     ['vces-lo','.jpg','LO','05-01-2024',"Earth",9,'009'],
-    ['vces-loc','.jpg','LOC','05-01-2024',"Earth",10,'010'],
+    ['vces-lgc','.jpg','LGC','05-01-2024',"Earth",10,'010'],
     ['vces-lr','.jpg','LR','05-01-2024',"Earth",11,'011'],
     ['vces-mm','.jpg','MM','05-01-2024',"Earth",12,'012'],
     ['vces-mp','.jpg','MP','05-01-2024',"Earth",13,'013'],
@@ -16,6 +16,10 @@ export const array = [
     ['vces-nb','.jpg','NB','05-01-2024',"Earth",15,'015'],
     ['vces-rs','.jpg','RS','05-01-2024',"Earth",16,'016'],
     ['vces-sj','.jpg','SJ','05-01-2024',"Earth",17,'017'],
-    ['vces-vh','.jpg','VH','05-01-2024',"Earth",18,'018']
+    ['vces-vh','.jpg','VH','05-01-2024',"Earth",18,'018'],
+    ['vces-as','.jpg','AS','05-01-2024',"Earth",19,'019'],
+    ['vces-jd','.jpg','JD','05-01-2024',"Earth",20,'020'],
+    ['vces-sf','.jpg','SF','05-01-2024',"Earth",21,'021'],
+    ['vces-ks','.jpg','KS','05-01-2024',"Earth",22,'022']
   ];
   
