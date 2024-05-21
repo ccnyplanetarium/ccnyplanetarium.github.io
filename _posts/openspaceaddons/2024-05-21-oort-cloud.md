@@ -10,7 +10,7 @@ datemodified: 2024-05-21
 thumb: oort-cloud-artistic-th.jpg
 mainimage: oort-cloud-artistic.jpg
 caption: The Oort Cloud
-description: An visual showing the approximate location of the Oort Cloud at 50,000 AU.
+description: A visual showing the approximate location of the Oort Cloud at 50,000 AU. 
 instructions: "Download the asset zip file below. Unzip and place in your user assets folder. (<kbd>user/data/assets/oort-cloud</kbd>). Add the asset by dragging and dropping the main file into the window, or by including it in a profile."
 group: Solar System
 topic: Solar System Structure
