@@ -35,6 +35,7 @@
             <li>NYC related astronomy and space news: <a target="_blank" href="https://twitter.com/CCNYPlanetarium">Our Twitter</a> and <a href="https://bsky.app/profile/ccnyplanetarium.bsky.social">BlueSky</a></li>
             <li>Longer Videos on  <a target="_blank" href="https://www.youtube.com/channel/UCK0idWfnwPocnlCwhJoxMng">YouTube</a></li>
           </ul>
+          <p>(Tickets will be available about a week before each show date)</p>
         </div>
 
     </div>
@@ -73,7 +74,7 @@
                     {% if event.status == 'comingsoon' %}
                     <a class="btn btn-primary" target="_blank" href="{{ event.tickets }}">Reserve a seat &rarr;</a>
                     {% elsif event.status == 'future' %}
-                    Stay Tuned!
+                    <a class="btn btn-warning" target="_blank" href="{{ event.tickets }}">Stay Tuned! &rarr;</a>
                     {% elsif event.status == 'postponed' %}
                     Postponed
                     {% else %}
