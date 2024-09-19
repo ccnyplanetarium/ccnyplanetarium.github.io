@@ -17,14 +17,14 @@
   time: "3:00 pm"
   description: "Live Space Show (Destination: Europa)"
   tickets: "https://www.eventbrite.com/e/live-space-show-tickets-1005185465787"
-  status: comingsoon
+  status: passed
 
 - date: Sep 25
   day: Wed
   time: "3:00 pm"
   description: "Live Space Show (Destination: Europa)"
   tickets: "https://www.eventbrite.com/e/live-space-show-tickets-1014399695797"
-  status: future
+  status: comingsoon
 
 - date: Oct 2
   day: Wed
