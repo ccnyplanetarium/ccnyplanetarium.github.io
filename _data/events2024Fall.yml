@@ -24,17 +24,38 @@
   time: "3:00 pm"
   description: "Live Space Show (Destination: Europa)"
   tickets: "https://www.eventbrite.com/e/live-space-show-tickets-1014399695797"
-  status: comingsoon
+  status: passed
 
 
 - date: Oct 9
   day: Wed
   time: "3:00 pm"
   description: "Live Space Show (Destination: Europa)"
+  tickets: "https://www.eventbrite.com/e/live-space-show-tickets-1030090908637"
+  status: comingsoon
+
+- date: Oct 16
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
 
-- date: Oct 16
+- date: Oct 30
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
+  status: reserved
+
+- date: Nov 6
+  day: Wed
+  time: "3:00 pm"
+  description: Live Space Show
+  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
+  status: future
+
+- date: Nov 13
   day: Wed
   time: "3:00 pm"
   description: Live Space Show
