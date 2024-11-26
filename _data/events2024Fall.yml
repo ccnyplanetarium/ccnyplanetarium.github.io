@@ -65,7 +65,7 @@
 
 - date: Dec 4
   day: Wed
-  time: "2:30 pm"
-  description: Live Space Show
+  time: "<span style='color:red'>2:30 pm</span>"
+  description: Live Space Show (note special start time!)
   tickets: "https://www.eventbrite.com/e/live-space-show-tickets-1092521323689"
   status: comingsoon
