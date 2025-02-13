@@ -10,7 +10,7 @@
   time: "3:00 pm"
   description: "Live Space Show: Next Stop, Mars!"
   tickets: "https://www.eventbrite.com/e/live-space-show-next-stop-mars-tickets-1219545496409?aff=oddtdtcreator"
-  status: future
+  status: soldout
 
 - date: Feb 26
   day: Wed

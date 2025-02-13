@@ -77,6 +77,8 @@
                     <a class="btn btn-warning" target="_blank" href="{{ event.tickets }}">Stay Tuned! &rarr;</a>
                     {% elsif event.status == 'postponed' %}
                     Postponed
+                    {% elsif event.status == 'soldout' %}
+                    <a class="btn btn-secondary" target="_blank" href="{{ event.tickets }}">Join the WaitList &rarr;</a>
                     {% elsif event.status == 'reserved' %}
                     <i>reserved</i>
                     {% else %}
