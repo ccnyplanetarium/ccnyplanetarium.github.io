@@ -10,14 +10,14 @@
   time: "3:00 pm"
   description: "Live Space Show: Next Stop, Mars!"
   tickets: "https://www.eventbrite.com/e/live-space-show-next-stop-mars-tickets-1219545496409?aff=oddtdtcreator"
-  status: soldout
+  status: passed
 
 - date: Feb 26
   day: Wed
   time: "3:00 pm"
   description: "Live Space Show: Eyes in the Sky"
   tickets: "https://www.eventbrite.com/e/live-space-show-eyes-in-the-sky-tickets-1219546258689?aff=oddtdtcreator"
-  status: future
+  status: comingsoon
 
 - date: Mar 5
   day: Wed
