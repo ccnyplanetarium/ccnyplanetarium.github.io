@@ -18,14 +18,7 @@ The CCNY Planetarium is one of three found on the island in Manhattan. (The AMNH
 
 We love to host shows for nearby k-12 schools, CCNY students, and the wider NYC audience. Our favorites are our live space tours in which we use our universe simulator to fly all over the cosmos. Tours can start with a fly over of our Hamilton Heights neighborhood, then visit the Moon or Mars, and finally leave the solar system system all together and visit newly discovered exoplanet systems or intergalactic space. We are also interested in more artistic and interdisciplinary uses of the immersive space. If you are too and have some ideas - reach out!
 
-<div class="row mt-3 mb-3">
-<div class="card bg-warning">
-<div class="card-body">
-  <p>Like many planetariums around the world, we had to pause our live shows starting in March 2020. We hope to be able to open our doors wide in the very near future.</p>
-  <p>Check back soon when we have thing underway. In the meantime, you can send us a note at planetarium@ccny.cuny.edu, or do the social media things below. </p>
-  </div>
-</div>
-</div>
+
 
 <h3>Technical Details</h3>
 <div class="row mt-3">
