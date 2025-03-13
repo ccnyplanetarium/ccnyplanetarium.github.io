@@ -18,8 +18,26 @@ You can always send us an email at:
   document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
 </script>
 
+---
 
-Or, send a message on one of our social platforms, listed below.
+## Media Queries
+
+<div class="row">
+<figure class="figure col-lg-4 col-sm-12">
+  <img src="{{ "assets/images/on-the-news.jpg" | absolute_url }}" class="figure-img img-fluid rounded" alt="James Hedberg">
+  <figcaption class="figure-caption">News, local and national.</figcaption>
+</figure>
+
+<p class="col">
+Need a quick interview with an astronomer? We're happy to help spread the news about upcoming celestial events. </p>
+
+</div>
+
+
+
+## Event Rentals
+
+If you are interested in filming in the dome, please get in touch as well. 
 
 <!-- <div class="col-sm">
   <ul class="list-unstyled icons alt">
