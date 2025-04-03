@@ -38,21 +38,21 @@
   time: "3:30 pm"
   description: "Live Space Show: Next Stop Mars"
   tickets: "https://www.eventbrite.com/e/live-space-show-next-stop-mars-tickets-1284023321319?aff=oddtdtcreator"
-  status: comingsoon
+  status: passed
 
 - date: Apr 2
   day: Wed
   time: "3:00 pm"
   description: "Live Space Show: Eyes in the Sky"
   tickets: "https://www.eventbrite.com/e/live-space-show-eyes-in-the-sky-tickets-1284024695429?aff=oddtdtcreator"
-  status: future
+  status: passed
 
 - date: Apr 9
   day: Wed
   time: "3:30 pm"
   description: "Live Space Show: Voyage to the Center of the Milky Way"
   tickets: "https://www.eventbrite.com/e/live-space-show-voyage-to-the-center-of-the-milky-way-tickets-1284025939149?aff=oddtdtcreator"
-  status: future
+  status: comingsoon
 
 - date: Apr 30
   day: Wed
