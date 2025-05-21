@@ -5,7 +5,7 @@ description: How to find us
 permalink: /visit/
 sitemap:
     priority: 0.7
-    lastmod: 2024-02-15
+    lastmod: 2025-05-21
     changefreq: weekly
 ---
 
@@ -23,7 +23,7 @@ We are located in the basement of the Marshak Science Building (Map below!), on 
 
 #### By Car:
 
-The best address for driving here is: 275 St. Nicholas Terrace
+The official address of the Marshak building is 181 Convent Ave. However, Convent is closed to through traffic during the day. You'll want to park elsewhere and walk to campus. 
 
 #### By Subway:
 
