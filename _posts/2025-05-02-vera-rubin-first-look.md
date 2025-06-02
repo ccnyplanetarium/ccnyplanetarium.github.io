@@ -19,8 +19,9 @@ tag: show
 <div class="col">
 <p>Come witness the release of the first images from the Vera C. Rubin Observatory. In full dome, 360&deg; splendor, at the CCNY Planetarium. </p>
 
-<p>
+
 Reserve your seat here:
+
 
 <div style="margin: auto; width: 350px;">
    <a href="https://www.eventbrite.com/e/vera-c-rubin-observatory-first-look-watch-party-tickets-1392548813989?aff=oddtdtcreator" class="btn btn-primary" target="_blank">ccnyplanetarium.eventbrite.com &rarr;</a>
@@ -37,6 +38,8 @@ Reserve your seat here:
 
 
 ### About the event
+
+Here is the planned schedule for the watch party. 
 
 <div class="table-responsive">
 <table class="table table-bordered">
