@@ -59,7 +59,7 @@ Here is the planned schedule for the watch party.
 </tr>
 
 <tr>
-<td>10:20-10:50</td>
+<td>10:15-10:45</td>
 <td><i>Messengers of Time and Space</i> Planetarium Show</td>
 </tr>
 
