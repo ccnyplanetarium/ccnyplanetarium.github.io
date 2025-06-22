@@ -59,12 +59,12 @@ Here is the planned schedule for the watch party.
 </tr>
 
 <tr>
-<td>10:30</td>
+<td>10:20-10:50</td>
 <td><i>Messengers of Time and Space</i> Planetarium Show</td>
 </tr>
 
 <tr>
-<td>11:00</td>
+<td>11:00-12:00</td>
 <td>Live Stream From the Observatory Begins</td>
 </tr>
 
