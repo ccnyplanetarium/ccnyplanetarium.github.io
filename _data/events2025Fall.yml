@@ -1,4 +1,4 @@
-- date: Sep 10th
+- date: Sep 10
   day: Wed
   time: "3:00 pm"
   description: "Live Space Show: Voyage to the Center of the Milky Way"
@@ -12,10 +12,10 @@
   tickets: "https://www.eventbrite.com/e/live-space-show-eyes-in-the-sky-tickets-1663830885969?aff=oddtdtcreator"
   status: comingsoon
 
-- date: Oct 2
-  day: Thu
-  time: "12:30 pm"
-  description: "100 Hours of Astronomy Kickoff"
+- date: Oct 4
+  day: Sat
+  time: "2:00 pm"
+  description: "100 Hours of Astronomy"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
 
