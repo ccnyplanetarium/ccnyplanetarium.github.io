@@ -1,0 +1,34 @@
+- date: Sep 10th
+  day: Wed
+  time: "3:30 pm"
+  description: "Live Space Show: Voyage to the Center of the Milky Way"
+  tickets: "https://www.eventbrite.com/e/live-space-show-voyage-to-the-center-of-the-milky-way-tickets-1663828879969?aff=oddtdtcreator"
+  status: comingsoon
+
+- date: Sep 17
+  day: Wed
+  time: "3:30 pm"
+  description: "Live Space Show: Eyes in the Sky!"
+  tickets: "https://www.eventbrite.com/e/live-space-show-eyes-in-the-sky-tickets-1663830885969?aff=oddtdtcreator"
+  status: comingsoon
+
+- date: Oct 2
+  day: Thu
+  time: "12:30 pm"
+  description: "100 Hours of Astronomy Kickoff"
+  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
+  status: future
+
+- date: Oct 8
+  day: Wed
+  time: "3:30 pm"
+  description: "Live Space Show: Music of the Spheres"
+  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
+  status: future
+
+- date: Oct 15
+  day: Wed
+  time: "3:30 pm"
+  description: "Live Space Show: Voyage to the Center of the Milky Way"
+  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
+  status: future
