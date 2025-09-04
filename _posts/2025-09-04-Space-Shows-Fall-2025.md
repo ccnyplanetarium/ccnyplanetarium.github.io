@@ -9,7 +9,7 @@ categories: posts
 tag: show
 ---
 
-## It's on!
+## Show Time!
 
 <div class="row">
 <figure class="figure float-md-left col-md-4" style="max-width: 400px;">
@@ -17,7 +17,7 @@ tag: show
  </figure>
 
 <div class="col">
-<p>Our series of live space tours is starting up again! Reserve your seats for a show this spring:</p>
+<p>Our regular series of live space tours is starting up again! Reserve your seats for a show this fall:</p>
 
 
 <div style="margin: auto; width: 350px;">
