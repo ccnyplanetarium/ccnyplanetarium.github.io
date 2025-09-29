@@ -37,7 +37,7 @@ From vibrant cities to the most remote corners of the world, this event brings a
 <p>Tickets can be reserved here:</p>
 
 <div style="margin: auto; width: 350px;">
-   <a href="https://www.eventbrite.com/e/live-space-show-letters-from-luna-tickets-1743358134109?aff=oddtdtcreator" class="btn btn-primary" target="_blank">ccnyplanetarium.eventbrite.com &rarr;</a>
+   <a href="https://www.eventbrite.com/e/live-space-show-letters-from-luna-tickets-1743358134109?aff=oddtdtcreator" class="btn btn-primary" target="_blank">Tickets! &rarr;</a>
 </div>
 
 
