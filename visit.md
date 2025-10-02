@@ -11,10 +11,9 @@ sitemap:
 
 ## General
 
-This semester, we are doing live space shows every Wednesday at 3pm. Reserve a seat!
+This semester, we are doing live space shows every Wednesday afternoon. Reserve a seat!
      
-<a href="{% post_url 2024-08-27-Space-Shows-Fall-2024 %}" class="btn btn-warning" target="_blank">Live Space Shows &rarr;</a>
-     
+<a href="{{site.baseurl}}/shows/" class="btn btn-success" target="_blank">Live Space Shows &rarr;</a>     
 
 
 ## Directions
