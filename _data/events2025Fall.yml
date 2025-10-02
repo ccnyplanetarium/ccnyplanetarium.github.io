@@ -28,7 +28,7 @@
 
 - date: Oct 15
   day: Wed
-  time: "3:00 pm"
+  time: "4:00 pm"
   description: "Live Space Show: Voyage to the Center of the Milky Way"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
@@ -56,7 +56,7 @@
 
 - date: Nov 12
   day: Wed
-  time: "3:00 pm"
+  time: "4:00 pm"
   description: "Live Space Show: Letters From Luna"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
@@ -70,7 +70,7 @@
 
 - date: Dec 3
   day: Wed
-  time: "3:00 pm"
+  time: "4:00 pm"
   description: "Live Space Show: Music of the Spheres"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
