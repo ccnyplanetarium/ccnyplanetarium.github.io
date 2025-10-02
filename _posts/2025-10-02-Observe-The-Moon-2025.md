@@ -20,10 +20,19 @@ tag: show
  </figure>
 
 <div class="col">
-<p>Join our student clubs ( <a target="_blank" href="https://groups.ccny.cuny.edu/optica/rsvp_boot?id=1934105">Geoscience, Physics, & Optica Club </a>) for Observe the Moon night 2025. Saturday, October 4th, we'll set up some telescopes on the South Lawn by the CDI buildings and look at the moon (and maybe Saturn). </p>
-<p></p>
+<p>To Celebrate Observe the Moon Night (and the 100 Hours of Astronomy events), we'll start at 3 in the Planetarium with a live space show: Letters from Luna. You can reserve a seat for that here: </p>
+
+<div style="margin: auto; width: 350px;">
+   <a href="https://www.eventbrite.com/e/live-space-show-letters-from-luna-tickets-1743358134109?aff=oddtdtcreator" class="btn btn-primary" target="_blank">Tickets! &rarr;</a>
+</div>
+
+<br>
+
+<p>Then, later in the evening, join our student clubs ( <a target="_blank" href="https://groups.ccny.cuny.edu/optica/rsvp_boot?id=1934105">Geoscience, Physics, & Optica Club </a>) for an observation of the Moon. Saturday, October 4th, we'll set up some telescopes on the South Lawn by the CDI buildings and look at the moon (and maybe Saturn). </p>
+
 </div>
 </div>
+<br>
 
 ### Where?
 
