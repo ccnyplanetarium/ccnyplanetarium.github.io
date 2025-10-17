@@ -31,14 +31,14 @@
   time: "4:00 pm"
   description: "Live Space Show: Voyage to the Center of the Milky Way"
   tickets: "https://www.eventbrite.com/e/live-space-show-voyage-to-the-center-of-the-milky-way-tickets-1789361571629?aff=oddtdtcreator"
-  status: comingsoon
+  status: passed
 
 - date: Oct 22
   day: Wed
   time: "3:30 pm"
   description: "Live Space Show: Letters From Luna"
-  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
-  status: future
+  tickets: "https://www.eventbrite.com/e/live-space-show-letters-from-luna-tickets-1837881425819?aff=oddtdtcreator"
+  status: comingsoon
 
 - date: Oct 29
   day: Wed
