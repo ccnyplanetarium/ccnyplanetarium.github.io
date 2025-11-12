@@ -45,21 +45,21 @@
   time: "3:00 pm"
   description: "Live Space Show: Eyes in the Sky!"
   tickets: "https://www.eventbrite.com/e/live-space-show-eyes-in-the-sky-tickets-1863918724079?aff=oddtdtcreator"
-  status: comingsoon
+  status: passed
 
 - date: Nov 12
   day: Wed
   time: "4:00 pm"
   description: "Live Space Show: Letters From Luna"
   tickets: "https://www.eventbrite.com/e/live-space-show-letters-from-luna-tickets-1863960900229?aff=oddtdtcreator"
-  status: future
+  status: comingsoon
 
 - date: Nov 19
   day: Wed
   time: "3:30 pm"
   description: "Live Space Show: Voyage to the Center of the Milky Way"
   tickets: "https://www.eventbrite.com/e/live-space-show-voyage-to-the-center-of-the-milky-way-tickets-1863971080679?aff=oddtdtcreator"
-  status: future
+  status: comingsoon
 
 - date: Dec 3
   day: Wed
