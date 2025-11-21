@@ -59,11 +59,11 @@
   time: "3:30 pm"
   description: "Live Space Show: Voyage to the Center of the Milky Way"
   tickets: "https://www.eventbrite.com/e/live-space-show-voyage-to-the-center-of-the-milky-way-tickets-1863971080679?aff=oddtdtcreator"
-  status: comingsoon
+  status: passed
 
 - date: Dec 3
   day: Wed
   time: "3:00 pm"
   description: "Live Space Show: Music of the Spheres"
   tickets: "https://www.eventbrite.com/e/live-space-show-music-of-the-spheres-tickets-1863982946169?aff=oddtdtcreator"
-  status: future
+  status: comingsoon
