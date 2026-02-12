@@ -77,7 +77,7 @@
                     {% elsif event.status == 'postponed' %}
                     Postponed
                     {% elsif event.status == 'soldout' %}
-                    <a class="btn btn-secondary" target="_blank" href="{{ event.tickets }}">Join the WaitList &rarr;</a>
+                    <a class="btn btn-secondary" target="_blank" href="{{ event.tickets }}">Soldout - waitlist only &rarr;</a>
                     {% elsif event.status == 'reserved' %}
                     <i>reserved</i>
                     {% else %}

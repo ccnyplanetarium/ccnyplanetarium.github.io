@@ -10,14 +10,14 @@
   time: "3:00 pm"
   description: "Live Space Show: Letters from Luna"
   tickets: "https://www.eventbrite.com/e/live-space-show-letters-from-luna-tickets-1982190436956?aff=oddtdtcreator"
-  status: comingsoon
+  status: passed
 
 - date: Feb 17
   day: Tuesday
   time: "5:00 pm"
   description: "NISAR Satellite Show"
   tickets: "https://www.eventbrite.com/e/nasa-nisar-space-show-tickets-1982352395378?aff=oddtdtcreator"
-  status: comingsoon
+  status: soldout
 
 - date: Feb 25
   day: Wed
