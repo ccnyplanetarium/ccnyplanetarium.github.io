@@ -17,21 +17,21 @@
   time: "5:00 pm"
   description: "NISAR Satellite Show"
   tickets: "https://www.eventbrite.com/e/nasa-nisar-space-show-tickets-1982352395378?aff=oddtdtcreator"
-  status: soldout
+  status: passed
 
 - date: Feb 25
   day: Wed
   time: "3:00 pm"
   description: "Live Space Show: Space Weather"
   tickets: "https://www.eventbrite.com/e/live-space-show-space-weather-tickets-1982979704677?aff=oddtdtcreator"
-  status: comingsoon
+  status: passed
 
 - date: Mar 4
   day: Wed
-  time: "TBD"
+  time: "3:30 pm"
   description: "Live Space Show"
-  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
-  status: future
+  tickets: "https://www.eventbrite.com/e/live-space-show-next-stop-mars-tickets-1984070013821"
+  status: comingsoon
 
 - date: Mar 11
   day: Wed
