@@ -38,11 +38,11 @@
   time: "3:30 pm"
   description: "Live Space Show: Voyage to the Center of the Milky Way"
   tickets: "https://www.eventbrite.com/e/live-space-show-voyage-to-the-center-of-the-milky-way-tickets-1984563851904"
-  status: comingsoon
+  status: passed
 
 - date: Mar 25
   day: Wed
-  time: "TBD"
+  time: "3:30 pm"
   description: "Live Space Show: Voyager!"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
