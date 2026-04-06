@@ -45,14 +45,14 @@
   time: "3:30 pm"
   description: "Live Space Show: Voyager!"
   tickets: "https://www.eventbrite.com/e/live-space-show-voyager-tickets-1985247244951?aff=oddtdtcreator"
-  status: comingsoon
+  status: passed
 
 - date: Apr 8
   day: Wed
-  time: "TBD"
-  description: "Live Space Show"
-  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
-  status: future
+  time: "3:30"
+  description: "Artemis II"
+  tickets: "https://www.eventbrite.com/e/live-space-show-artemis-ii-tickets-1986802084518"
+  status: comingsoon
 
 - date: Apr 15
   day: Wed
