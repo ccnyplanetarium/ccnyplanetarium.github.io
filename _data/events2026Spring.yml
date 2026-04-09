@@ -52,12 +52,12 @@
   time: "3:30"
   description: "Artemis II"
   tickets: "https://www.eventbrite.com/e/live-space-show-artemis-ii-tickets-1986802084518"
-  status: comingsoon
+  status: passed
 
 - date: Apr 15
   day: Wed
-  time: "TBD"
-  description: "Live Space Show"
+  time: "No show"
+  description: "Do your taxes"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
 
