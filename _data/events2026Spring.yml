@@ -59,14 +59,14 @@
   time: "No show"
   description: "Do your taxes"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
-  status: future
+  status: passed
 
 - date: Apr 22
   day: Wed
-  time: "TBD"
+  time: "3:00 pm"
   description: "Earth Day"
-  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
-  status: future
+  tickets: "https://www.eventbrite.com/e/live-space-show-eyes-on-earth-tickets-1987789310337?"
+  status: comingsoon
 
 - date: Apr 29
   day: Wed
