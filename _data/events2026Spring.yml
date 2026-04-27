@@ -66,14 +66,7 @@
   time: "3:00 pm"
   description: "Earth Day"
   tickets: "https://www.eventbrite.com/e/live-space-show-eyes-on-earth-tickets-1987789310337?"
-  status: comingsoon
-
-- date: Apr 29
-  day: Wed
-  time: "TBD"
-  description: "Live Space Show"
-  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
-  status: future
+  status: passed
 
 - date: May 6
   day: Wed
