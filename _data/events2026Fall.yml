@@ -3,7 +3,7 @@
   time: "4:00 pm"
   description: "Live Space Show"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
-  status: future
+  status: reserved
 
 - date: Sep 23
   day: Wed
