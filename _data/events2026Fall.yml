@@ -1,69 +1,69 @@
 - date: Sep 16
   day: Wed
-  time: "4:00 pm"
+  time: ""
   description: "Live Space Show"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: reserved
 
 - date: Sep 23
   day: Wed
-  time: "4:00 pm"
+  time: ""
   description: "Live Space Show"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
 
 - date: Sep 30
   day: Wed
-  time: "4:00 pm"
+  time: ""
   description: "Live Space Show"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
 
 - date: Oct 7
   day: Wed
-  time: "4:00 pm"
+  time: ""
   description: "Live Space Show"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
 
 - date: Oct 14
   day: Wed
-  time: "4:00 pm"
+  time: ""
   description: "Live Space Show"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
 
 - date: Oct 21
   day: Wed
-  time: "4:00 pm"
+  time: ""
   description: "Live Space Show"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
 
 - date: Oct 28
   day: Wed
-  time: "4:00 pm"
+  time: ""
   description: "Live Space Show"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
 
 - date: Nov 4
   day: Wed
-  time: "4:00 pm"
+  time: ""
   description: "Live Space Show"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
 
 - date: Nov 18
   day: Wed
-  time: "4:00 pm"
+  time: ""
   description: "Live Space Show"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
 
 - date: Dec 2
   day: Wed
-  time: "4:00 pm"
+  time: ""
   description: "Live Space Show"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
