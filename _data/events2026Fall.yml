@@ -8,9 +8,9 @@
 - date: Sep 23
   day: Wed
   time: ""
-  description: "Live Space Show"
-  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
-  status: future
+  description: "Live Space Show: Next Stop Mars"
+  tickets: "https://www.eventbrite.com/e/live-space-show-next-stop-mars-tickets-2001607625289"
+  status: comingsoon
 
 - date: Sep 30
   day: Wed
@@ -33,12 +33,6 @@
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
   status: future
 
-- date: Oct 21
-  day: Wed
-  time: ""
-  description: "Live Space Show"
-  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
-  status: future
 
 - date: Oct 28
   day: Wed
