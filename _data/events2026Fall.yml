@@ -14,10 +14,10 @@
 
 - date: Sep 30
   day: Wed
-  time: ""
-  description: "Live Space Show"
-  tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
-  status: future
+  time: "3:30"
+  description: "Live Space Show: Voyager"
+  tickets: "https://www.eventbrite.com/e/live-space-show-voyager-tickets-2001636896841"
+  status: comingsoon
 
 - date: Oct 7
   day: Wed
