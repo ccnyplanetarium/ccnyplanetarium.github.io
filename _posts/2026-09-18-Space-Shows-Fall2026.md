@@ -13,7 +13,7 @@ tag: show
 
 <div class="row">
 <figure class="figure float-md-left col-md-4" style="max-width: 400px;">
-   <img src="{{site.baseurl}}/assets/images/sfall-2026-sq.jpg" class="figure-img img-fluid" alt="Fall Shows 2026 Mars Bars" />
+   <img src="{{site.baseurl}}/assets/images/fall-2026-sq.jpg" class="figure-img img-fluid" alt="Fall Shows 2026 Mars Bars" />
  </figure>
 
 <div class="col">
