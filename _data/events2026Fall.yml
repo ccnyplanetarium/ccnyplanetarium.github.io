@@ -3,21 +3,21 @@
   time: ""
   description: "Live Space Show"
   tickets: "https://www.eventbrite.com/o/ccny-planetarium-77712384253"
-  status: reserved
+  status: passed
 
 - date: Sep 23
   day: Wed
   time: "3:30"
   description: "Live Space Show: Next Stop Mars"
   tickets: "https://www.eventbrite.com/e/live-space-show-next-stop-mars-tickets-2001607625289"
-  status: comingsoon
+  status: passed
 
 - date: Sep 30
   day: Wed
   time: "3:30"
   description: "Live Space Show: Voyager"
   tickets: "https://www.eventbrite.com/e/live-space-show-voyager-tickets-2001636896841"
-  status: comingsoon
+  status: passed
 
 
 - date: Oct 14
